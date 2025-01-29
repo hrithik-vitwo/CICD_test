@@ -23,6 +23,18 @@ jobs:
         run: |
           ssh-keyscan -H 16.170.95.1 >> ~/.ssh/known_hosts  # Replace with your EC2 instance's public IP
 
+      - name: Check SSH connection to EC2
+        run: |
+          ssh -v -i ~/.ssh/id_rsa ec2-user@16.170.95.1 "echo 'SSH connection successful!'"
+
+      - name: Set permissions on /var/www/html (if necessary)
+        run: |
+          ssh -v -i ~/.ssh/id_rsa ec2-user@16.170.95.1 << 'EOF'
+            sudo chown -R ec2-user:ec2-user /var/www/html
+            sudo chmod -R 755 /var/www/html
+            echo "Permissions set successfully!"
+          EOF
+
       - name: Deploy Code to EC2
         run: |
           ssh -v -i ~/.ssh/id_rsa ec2-user@16.170.95.1 << 'EOF'
