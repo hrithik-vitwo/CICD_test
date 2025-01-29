@@ -21,11 +21,11 @@ jobs:
 
       - name: Add EC2 host to known hosts
         run: |
-          ssh-keyscan -H 13.60.51.196 >> ~/.ssh/known_hosts  # Replace with your EC2 public IP
+          ssh-keyscan -H 16.170.95.1 >> ~/.ssh/known_hosts  # Replace with your EC2 public IP
 
       - name: Git pull from the 'dev' branch on EC2
         run: |
-          ssh -o StrictHostKeyChecking=no ec2-user@13.60.51.196 << 'EOF'
+          ssh -o StrictHostKeyChecking=no ec2-user@16.170.95.1 << 'EOF'
             cd /path/to/your/target/folder  # Replace with the actual path on your EC2 instance
             git checkout dev  # Ensure the dev branch exists
             git pull origin dev  # Pull the latest changes from the dev branch
