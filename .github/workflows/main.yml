@@ -1,0 +1,35 @@
+name: Deploy to EC2
+
+on:
+  push:
+    branches:
+      - main  # Trigger on push to the main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Git clone the repository
+        uses: actions/checkout@v3
+
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa  # Using the secret stored in GitHub
+          chmod 600 ~/.ssh/id_rsa
+
+      - name: Add EC2 host to known hosts
+        run: |
+          ssh-keyscan -H 13.60.51.196 >> ~/.ssh/known_hosts  # Replace with your EC2 public IP
+
+      - name: Git pull from the 'dev' branch on EC2
+        run: |
+          ssh -o StrictHostKeyChecking=no ec2-user@13.60.51.196 << 'EOF'
+            cd /path/to/your/target/folder  # Replace with the actual path on your EC2 instance
+            git checkout dev  # Ensure the dev branch exists
+            git pull origin dev  # Pull the latest changes from the dev branch
+            # Restart web server if needed
+            sudo systemctl restart httpd  # For Apache, use 'nginx' for Nginx
+            echo "Deployment complete!"
+          EOF
