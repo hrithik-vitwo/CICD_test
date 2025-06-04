@@ -1,44 +1,31 @@
-name: Deploy to EC2
+name: Deploy PHP App
 
 on:
   push:
-    branches:
-      - main  # Trigger on push to the main branch
+    branches: [ main ]
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      - name: Set up SSH key
-        run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa  # Use the private key stored in GitHub Secrets
-          chmod 600 ~/.ssh/id_rsa
+    - name: Upload to EC2
+      uses: appleboy/scp-action@v0.1.4
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ec2-user
+        key: ${{ secrets.EC2_SSH_KEY }}
+        source: "."
+        target: "/home/ec2-user/app"
 
-      - name: Add EC2 host to known hosts
-        run: |
-          ssh-keyscan -H 16.170.95.1 >> ~/.ssh/known_hosts  # Replace with your EC2 instance's public IP
-
-      - name: Check SSH connection to EC2
-        run: |
-          ssh -v -i ~/.ssh/id_rsa ec2-user@16.170.95.1 "echo 'SSH connection successful!'"
-
-      - name: Set permissions on /var/www/html (if necessary)
-        run: |
-          ssh -v -i ~/.ssh/id_rsa ec2-user@16.170.95.1 << 'EOF'
-            sudo chown -R ec2-user:ec2-user /var/www/html
-            sudo chmod -R 755 /var/www/html
-            echo "Permissions set successfully!"
-          EOF
-
-      - name: Deploy Code to EC2
-        run: |
-          ssh -v -i ~/.ssh/id_rsa ec2-user@16.170.95.1 << 'EOF'
-            cd /var/www/html  # Navigate to the web directory
-            git pull origin main  # Pull the latest code from GitHub
-            echo "Deployment complete!"
-          EOF
+    - name: Run deployment script
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ec2-user
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          sudo cp -r /home/ec2-user/app/* /var/www/html/
+          sudo systemctl restart apache2 || sudo service httpd restart
