@@ -1,4 +1,4 @@
 # Ignore configuration files
 
-app/v1/config.php
-app/v1/database.php
+# app/v1/config.php
+# app/v1/database.php
