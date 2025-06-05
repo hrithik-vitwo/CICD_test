@@ -34,8 +34,14 @@ jobs:
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
           timestamp=$(date +'%Y-%m-%d_%H-%M-%S')
-          tar -czf /home/ec2-user/q1-backup-$timestamp.tar.gz -C /var/www/html q1
-          aws s3 cp /home/ec2-user/q1-backup-$timestamp.tar.gz s3://vitwodeploybackup/q1-backups/
+          backup_path="/home/ec2-user/q1-backup-$timestamp.tar.gz"
+
+          if [ -d "/var/www/html/q1" ]; then
+            tar -czf "$backup_path" -C /var/www/html q1
+            aws s3 cp "$backup_path" s3://vitwodeploybackup/q1-backups/
+          else
+            echo "Directory /var/www/html/q1 does not exist, skipping backup"
+          fi
 
     - name: Upload new code to EC2
       uses: appleboy/scp-action@v0.1.4
@@ -53,8 +59,19 @@ jobs:
         username: ec2-user
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          # sudo mkdir -p /var/www/html/q1
+          sudo mkdir -p /var/www/html/q1
           sudo cp -r /home/ec2-user/app/* /var/www/html/q1
 
-          # Restart Apache
-          sudo systemctl restart apache2 || sudo systemctl restart httpd || sudo service httpd restart || sudo service apache2 restart
+          echo "Attempting to restart Apache server..."
+          if systemctl list-units --type=service | grep -q httpd; then
+            sudo systemctl restart httpd
+          elif systemctl list-units --type=service | grep -q apache2; then
+            sudo systemctl restart apache2
+          elif service --status-all 2>&1 | grep -q httpd; then
+            sudo service httpd restart
+          elif service --status-all 2>&1 | grep -q apache2; then
+            sudo service apache2 restart
+          else
+            echo "No known Apache service found to restart"
+            exit 1
+          fi
