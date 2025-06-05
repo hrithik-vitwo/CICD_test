@@ -21,7 +21,7 @@ jobs:
         script: |
           if [ -d "/var/www/html/q1/.git" ]; then
             cd /var/www/html/q1
-            git stash push -m "Stashing uncommitted changes in q1" || echo "No uncommitted changes to stash"
+            git stash -m "Stashing uncommitted changes in q1" || echo "No uncommitted changes to stash"
           else
             echo "No git repo found in /var/www/html/q1 to stash"
           fi
