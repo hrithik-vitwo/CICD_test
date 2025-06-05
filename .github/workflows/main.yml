@@ -53,7 +53,7 @@ jobs:
         username: ec2-user
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          sudo mkdir -p /var/www/html/q1
+          # sudo mkdir -p /var/www/html/q1
           sudo cp -r /home/ec2-user/app/* /var/www/html/q1
 
           # Restart Apache
