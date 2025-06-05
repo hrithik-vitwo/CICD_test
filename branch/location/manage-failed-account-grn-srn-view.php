@@ -1,0 +1,716 @@
+<?php
+require_once("../../app/v1/connection-branch-admin.php");
+require_once("../common/header.php");
+require_once("../common/navbar.php");
+require_once("../common/sidebar.php");
+require_once("../common/pagination.php");
+
+// Add Functions
+require_once("../../app/v1/functions/branch/func-customers.php");
+require_once("../../app/v1/functions/branch/func-journal.php");
+require_once("../../app/v1/functions/company/func-ChartOfAccounts.php");
+require_once("../../app/v1/functions/admin/func-company.php");
+include_once("../../app/v1/functions/branch/func-grn-controller.php");
+include_once("../../app/v1/functions/branch/func-branch-failed-accounting-controller.php");
+
+$dbObj = new Database();
+$accountObj = new Accounting();
+$grnObj = new GrnController();
+
+if (isset($_POST['act'])) {
+
+    // console($_POST);
+    // exit();
+
+    $flug = 0;
+    $grnStatus = 0;
+    //************************START ACCOUNTING ******************** */
+
+    //-----------------------------Grn ACC Start ----------------
+    $grnType = $_POST['grnType'];
+    $grnCode = $_POST['grnCode'];
+    // $faileddocument = $dbObj->queryGet("SELECT * FROM `erp_failed_acc_documents` WHERE `document_no`='$grnCode' AND `company_id`=$company_id");
+    if ($grnType == 'grn') {
+        $accslug = "grn";
+        $remarks = "GRN By OCR " . $grnCode . " " . $extra_remark;
+    } else {
+        $accslug = "srn";
+        $remarks = "SRN By OCR " . $grnCode . " " . $extra_remark;
+    }
+    $grnPostingAccountingData = [
+        "documentNo" => $_POST['documentNo'],
+        "documentDate" => $_POST['documentDate'],
+        "invoiceDueDate" => $_POST['invoiceDueDate'],
+        "invoicePostingDate" => $_POST['invoicePostingDate'],
+        "referenceNo" => $_POST['grnCode'],
+        "journalEntryReference" => 'Purchase',
+        "remarks" => addslashes($remarks),
+        "grnItemList" =>  $_POST['grnItemList'],
+        "party_code" => $_POST['vendorCode'],
+        "party_name" =>  $_POST['vendorName']
+    ];
+    if ($grnType == 'grn') {
+        $check_sqliv = queryGet("SELECT * FROM `erp_acc_journal` WHERE `parent_id` LIKE '" . $_POST['grnId'] . "' AND `parent_slug` LIKE 'grn' AND `refarenceCode` LIKE '" . $_POST['grnCode'] . "'");
+        if ($check_sqliv['status'] == 'success') {
+            $grnJournalId = $check_sqliv['data']['id'];
+            $sqliv = "UPDATE  `erp_grn`
+                                 SET
+                        `grnPostingJournalId`=$grnJournalId 
+                        WHERE `grnId`=" . $_POST['grnId'];
+            $invoic = queryUpdate($sqliv);
+            if ($invoic['status'] == "success") {
+                $update=updatelogAccountingFailure($grnCode);
+                $grnId = $_POST['grnId'];
+                $allItems = queryGet("SELECT * FROM erp_grn_goods WHERE grnId = '$grnId'", true);
+                if ($allItems['numRows'] > 0) {
+                    foreach ($allItems['data'] as $grnItem) {
+                        $oneItemId = $grnItem["goodId"];
+                        $oneItemCode = $grnItem["goodCode"];
+                        $oneItemgoodsType = $grnItem["goodstype"] ?? "";
+
+                        if ($oneItemgoodsType == "goods") {
+                            $oneItemStocksQty = $grnItem["receivedQty"] ?? 0.00; //500
+                            $oneItemUnitPrice = $grnItem["unitPrice"] ?? 0.00; //50
+                            $oneItemAllocatedPrice =  0.00; //50
+                            $mwp = calculateNewMwp($oneItemId, $oneItemStocksQty, $oneItemUnitPrice, "GRN");
+                        }
+                    }
+                }
+            }
+        } else {
+            $grnPostingObj = $accountObj->grnAccountingPosting($grnPostingAccountingData, "grn", $_POST['grnId']);
+            if ($grnPostingObj['status'] == 'success') {
+                $grnJournalId = $grnPostingObj['journalId'];
+                $sqliv = "UPDATE  `erp_grn`
+                                 SET
+                        `grnPostingJournalId`=$grnJournalId 
+                        WHERE `grnId`=" . $_POST['grnId'];
+                $invoic = queryUpdate($sqliv);
+                if ($invoic['status'] == "success") {
+                    $update=updatelogAccountingFailure($grnCode);
+                    $grnId = $_POST['grnId'];
+                    $allItems = queryGet("SELECT * FROM erp_grn_goods WHERE grnId = '$grnId'", true);
+                    if ($allItems['numRows'] > 0) {
+                        foreach ($allItems['data'] as $grnItem) {
+                            $oneItemId = $grnItem["goodId"];
+                            $oneItemCode = $grnItem["goodCode"];
+                            $oneItemgoodsType = $grnItem["goodstype"] ?? "";
+
+                            if ($oneItemgoodsType == "goods") {
+                                $oneItemStocksQty = $grnItem["receivedQty"] ?? 0.00; //500
+                                $oneItemUnitPrice = $grnItem["unitPrice"] ?? 0.00; //50
+                                $oneItemAllocatedPrice =  0.00; //50
+                                $mwp = calculateNewMwp($oneItemId, $oneItemStocksQty, $oneItemUnitPrice, "GRN");
+                            }
+                        }
+                    }
+                }
+            } else {
+                $flug++;
+            }
+        }
+    } else {
+        $check_sqliv = queryGet("SELECT * FROM `erp_acc_journal` WHERE `parent_id` LIKE '" . $_POST['grnId'] . "' AND `parent_slug` LIKE 'srn' AND `refarenceCode` LIKE '" . $_POST['grnCode'] . "'");
+
+        if ($check_sqliv['status'] == 'success') {
+            $grnJournalId = $check_sqliv['data']['id'];
+            $sqliv = "UPDATE  `erp_grn`
+                                 SET
+                        `grnPostingJournalId`=$grnJournalId 
+                        WHERE `grnId`=" . $_POST['grnId'];
+            $invoic = queryUpdate($sqliv);
+            if ($invoic['status'] == "success") {
+                $update=updatelogAccountingFailure($grnCode);
+            }
+        } else {
+            $grnPostingObj = $accountObj->srnAccountingPosting($grnPostingAccountingData, "srn", $_POST['grnId']);
+            if ($grnPostingObj['status'] == 'success') {
+                $grnJournalId = $grnPostingObj['journalId'];
+                $sqliv = "UPDATE  `erp_grn`
+                                         SET
+                                `grnPostingJournalId`=$grnJournalId 
+                                WHERE `grnId`=" . $_POST['grnId'];
+                $invoic = queryUpdate($sqliv);
+                if ($invoic['status'] == "success") {
+                    $update=updatelogAccountingFailure($grnCode);
+                }
+            } else {
+                $flug++;
+            }
+        }
+    }
+
+    if ($flug == 0) {
+        swalAlert("success", 'Success', "GRN/SRN Accounting Posted Successfully", 'failed-accounting-grn-srn.php');
+    } else {
+        swalAlert("warning", 'Failed', "Accounting Posting Failed!");
+    }
+}
+
+
+if (isset($_GET['grn_id'])) {
+    $grn_id = base64_decode($_GET['grn_id']);
+} else {
+    $grn_id = base64_decode($_GET['srn_id']);
+}
+$cond = "AND grnId =" . $grn_id . "";
+
+
+$sql_Mainqry = "SELECT * FROM erp_grn LEFT JOIN `erp_vendor_details`as ven ON erp_grn.vendorId = ven.vendor_id  WHERE 1 " . $cond . " AND (grnPostingJournalId = 0 OR grnPostingJournalId IS NULL)   AND companyId =" . $company_id . " AND branchId=" . $branch_id . " AND locationId=" . $location_id . " AND `grnStatus` !='deleted' " . $sts . " ORDER BY grnId DESC";
+
+$sqlMainQryObj =  $dbObj->queryGet($sql_Mainqry);
+
+// console($sqlMainQryObj);
+// exit();
+$num_row = $sqlMainQryObj['numRows'];
+$grnMainData = $sqlMainQryObj['data'];
+
+$partyCode = $grnMainData['vendorCode'];
+$partyName = $grnMainData['vendorName'];
+$partyparentGlId = $grnMainData['parentGlId'];
+// console($grnMainData);
+
+
+$itemsqlMainQryObj = isset($_GET['grn_id']) ? $grnObj->getGrnItemDetails($grn_id) : $grnObj->getSrnItemDetails($grn_id);
+
+// $itemsqlMainQryObj =  $dbObj->queryGet($item_sql, true);
+$itemnum_row = $itemsqlMainQryObj['numRows'];
+$grnItemData = $itemsqlMainQryObj['data'];
+// console($grnItemData);
+
+$grnType = isset($_GET['grn_id']) ? "grn" : "srn";
+$grnDebitCreditAccListObj =  $accountObj->getCreditDebitAccountsList($grnType);
+// console($grnDebitCreditAccListObj);
+if ($grnDebitCreditAccListObj["status"] != "success") {
+    return [
+        "status" => "warning",
+        "message" => "GRN Debit & Credit Account list is not available"
+    ];
+    die();
+}
+
+$grnDebitAccList = $grnDebitCreditAccListObj["debitAccountsList"];
+$grnCreditAccList = $grnDebitCreditAccListObj["creditAccountsList"];
+
+
+$accMapp = getAllfetchAccountingMappingTbl($company_id);
+// console($accMapp);
+
+
+$roundOffGL = $accMapp['data']['0']['roundoff_gl'];
+
+$roundOff = getChartOfAccountsDataDetails($roundOffGL)['data'];
+$roundoffGlCode = $roundOff['gl_code'];
+$roundoffGlName = $roundOff['gl_label'];
+
+
+$compInvoiceTypeval = 'domestic';
+if ($compInvoiceType == 'R') {
+    //Domestic Transaction
+    $compInvoiceTypeval = 'domestic';
+} else {
+    //Export Transaction        
+    $compInvoiceTypeval = 'export';
+}
+
+
+$postingDate = $grnMainData['postingDate'];
+$date_msg = '';
+if (new DateTime(date("Y-m-d", strtotime($compOpeningDate))) < new DateTime(date("Y-m-d", strtotime($grnMainData['invoice_date'] ?? "")))) {
+    $postingDate = $compOpeningDate;
+    $date_msg = "Invoice Posting Date changed by Company Openings date.";
+}
+
+
+
+?>
+
+<style>
+    .is-failed-account-view .wrapper-account {
+        background: #fff;
+        margin: 17px;
+        padding: 10px 15px;
+        border-radius: 7px;
+        height: 93%;
+        overflow: auto;
+    }
+
+    .is-failed-account-view .wrapper-account h2 {
+        font-size: 0.8rem;
+        text-align: right;
+        color: #787878;
+    }
+
+    .is-failed-account-view .wrapper-account h2 ion-icon {
+        position: relative;
+        font-size: 1rem;
+        top: 3px;
+        margin-right: 5px;
+        font-weight: 700;
+    }
+
+    .is-failed-account-view .wrapper-account h2 p {
+        margin: 8px 0;
+        color: #000;
+        font-weight: 600;
+        font-size: 0.82rem;
+    }
+
+    .is-failed-account-view .wrapper-account .account-list {
+        position: relative;
+    }
+
+    .is-failed-account-view .wrapper-account .account-list label {
+        position: absolute;
+        top: -10px;
+        left: 13px;
+        background: #eaeaea;
+        padding: 5px 15px;
+        border-radius: 5px;
+    }
+
+    .is-failed-account-view .wrapper-account .account-list.credit-acc-list label {
+        position: absolute;
+        top: -10px;
+        left: 13px;
+        background: #c9e3c8;
+        color: #168506;
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: 1px solid #c9e3c8;
+    }
+
+    .is-failed-account-view .wrapper-account .account-list.debit-acc-list label {
+        position: absolute;
+        top: -10px;
+        left: 13px;
+        background: #edcaca;
+        color: #d52d00;
+        padding: 5px 15px;
+        border-radius: 5px;
+        border: 1px solid #edcaca;
+    }
+
+    .is-failed-account-view .wrapper-account .account-list .card-border-area {
+        border: 1px solid #eaeaea;
+        border-radius: 9px;
+        padding: 15px 5px;
+        margin-bottom: 30px;
+    }
+
+    .is-failed-account-view .wrapper-account .account-list .card-border-area table tr th {
+        background: #fff;
+        color: #000;
+        font-size: 0.7rem;
+        font-weight: 600;
+        border-bottom: 1px solid #eaeaea;
+        padding: 12px 10px 15px;
+    }
+
+    .is-failed-account-view .wrapper-account .account-list .card-border-area table tr td {
+        background: #fff;
+        font-size: 0.75rem;
+        padding: 2px 10px;
+        border-bottom: 1px solid #ececec;
+    }
+
+    .is-failed-account-view .wrapper-account .account-list .card-border-area table tr:nth-child(odd) td {
+        background: #f2f2f229;
+    }
+
+    .is-failed-account-view .wrapper-account .header-block {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #eaeaea;
+        margin-bottom: 30px;
+        position: sticky;
+        top: -11px;
+        background: #fff;
+        z-index: 9;
+        padding: 5px 0;
+    }
+
+    .is-failed-account-view .wrapper-account .account-amount {
+        border-radius: 6px;
+        border: 1px solid #eaeaea;
+        margin-bottom: 10px;
+        padding: 7px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .is-failed-account-view .wrapper-account .account-amount .card-border-area {
+        display: flex;
+        align-items: center;
+        max-width: 100%;
+        gap: 8px;
+        font-size: 0.8rem;
+        font-weight: 600;
+    }
+
+    .is-failed-account-view .wrapper-account .account-amount label {
+        background: #eaeaea;
+        padding: 5px 15px;
+        border-radius: 5px;
+        font-weight: 600;
+        margin-bottom: 0;
+        width: auto;
+    }
+
+    .is-failed-account-view .wrapper-account .account-amount .card-border-area select {
+        padding: 3px;
+        text-align: center;
+        height: 26px;
+        width: 44px;
+        font-size: 0.9rem;
+    }
+
+    .is-failed-account-view .wrapper-account .account-amount .card-border-area input {
+        padding: 3px;
+        text-align: center;
+        height: 26px;
+        width: 50px;
+        font-size: 0.75rem;
+    }
+
+    .is-failed-account-view .wrapper-account .account-list.credit-acc-list .card-border-area {
+        border: 1px solid #03a50052;
+    }
+
+    .is-failed-account-view .wrapper-account .account-list.debit-acc-list .card-border-area {
+        border: 1px solid #be000052;
+    }
+
+    .is-failed-account-view .paid-btn {
+        display: flex;
+        justify-content: center;
+    }
+</style>
+
+<link rel="stylesheet" href="../../public/assets/stock-report-new.css">
+
+<!-- Content Wrapper detailed-view -->
+<div class="content-wrapper is-failed-account-view vitwo-alpha-global" style="overflow: auto">
+
+    <div class="container-fluid mt-4">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="<?= BRANCH_URL; ?>" class="text-dark"><i class="fas fa-home po-list-icon"></i> Home</a></li>
+            <li class="breadcrumb-item active"><a href="failed-accounting-invoices.php" class="text-dark"><i class="fa fa-list po-list-icon"></i>Failed Accounting List</a></li>
+            <li class="breadcrumb-item active"><a class="text-dark"><i class="fa fa-plus po-list-icon"></i>Accounting Posting View</a></li>
+            <li class="back-button">
+                <a href="failed-accounting-invoices.php">
+                    <i class="fa fa-reply po-list-icon"></i>
+                </a>
+            </li>
+        </ol>
+    </div>
+
+    <form method="post" action="">
+        <input type="hidden" name="act">
+        <input type="hidden" name="grnCode" value="<?= $grnMainData['grnCode']; ?>">
+        <input type="hidden" name="grnId" value="<?= $grn_id; ?>">
+        <input type="hidden" name="grnType" value="<?= $grnMainData['grnType']; ?>">
+        <input type="hidden" name="documentNo" value="<?= $grnMainData['vendorDocumentNo']; ?>">
+        <input type="hidden" name="documentDate" value="<?= $grnMainData['vendorDocumentDate']; ?>">
+        <input type="hidden" name="invoicePostingDate" value="<?= $grnMainData['postingDate']; ?>">
+        <input type="hidden" name="invoiceDueDate" value="<?= $grnMainData['dueDate']; ?>">
+        <input type="hidden" name="invoiceDueDays" value="<?= $grnMainData['dueDays']; ?>">
+        <input type="hidden" name="vendorCode" value="<?= $grnMainData['vendorCode']; ?>">
+        <input type="hidden" name="vendorName" value="<?= $grnMainData['vendorName']; ?>">
+        <input type="hidden" name="vendorGstin" value="<?= $grnMainData['vendorGstin']; ?>">
+        <input type="hidden" name="totalInvoiceCGST" value="<?= $grnMainData['grnTotalCgst']; ?>">
+        <input type="hidden" name="totalInvoiceSGST" value="<?= $grnMainData['grnTotalSgst']; ?>">
+        <input type="hidden" name="totalInvoiceIGST" value="<?= $grnMainData['grnTotalIgst']; ?>">
+        <input type="hidden" name="totalInvoiceSubTotal" value="<?= $grnMainData['grnSubTotal']; ?>">
+        <input type="hidden" name="totalInvoiceTotal" value="<?= $grnMainData['grnTotalAmount']; ?>">
+        <input type="hidden" name="locationGstinStateName" value="<?= $grnMainData['locationGstinStateName']; ?>">
+        <input type="hidden" name="vendorGstinStateName" value="<?= $grnMainData['vendorGstinStateName']; ?>">
+        <input type="hidden" name="vendorDocumentFile" value="<?= $grnMainData['vendorDocumentFile']; ?>">
+        <input type="hidden" name="totalInvoiceTDS" value="<?= $grnMainData['grnTotalTds']; ?>">
+        <input type="hidden" name="currency" value="<?= $grnMainData['currency']; ?>">
+        <input type="hidden" name="currency_conversion_rate" value="<?= $grnMainData['conversion_rate']; ?>">
+
+        <div class="wrapper-account">
+            <div class="header-block">
+                <h2>Failed GRn/SRN Acconting For : <b><?= $grnMainData['grnCode'] ?></b>
+                    <?php if ($itemnum_row == 0) {
+                        swalAlert("warning", 'Reverse', "Item Issue Please reverse this grn/srn."); ?>
+                        <span class="status-bg status-closed">Item Issue Please reverse this grn/srn.</span>
+                    <?php } ?>
+                </h2>
+                <h2><ion-icon name="analytics-outline"></ion-icon>Invoice Posting Date : <p><?= formatDateWeb($postingDate); ?></p>
+                </h2>
+            </div>
+            <div class="account-list debit-acc-list">
+                <label for="">Debit account list</label>
+                <div class="card-border-area">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="25%">Ledger</th>
+                                <th>Sub Ledger</th>
+                                <th class="text-right">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $totalAmount = 0;
+                            $roundOfff = $grnMainData['adjusted_amount'];
+                            $totalcr = 0;
+                            $totaldr = 0;
+
+
+                            $pgiitem = [];
+                            // console($grnItemData);
+                            foreach ($grnItemData as $invoiceItem => $item) {
+
+                                $itemdetails = $dbObj->queryGet("SELECT *FROM `" . ERP_INVENTORY_ITEMS . "` WHERE itemId=" . $item['goodId'] . "")['data'];
+                                $summSql = "SELECT movingWeightedPrice FROM `" . ERP_INVENTORY_STOCKS_SUMMARY . "` WHERE itemId=" . $item['goodId'] . " AND company_id=$company_id AND branch_id=$branch_id AND location_id=$location_id";
+                                $itemSummeryDetails = $dbObj->queryGet($summSql)['data'];
+
+                                $movingWeightedPrice = $item['goodsMainPrice'] > 0 ? $item['goodsMainPrice'] : $itemSummeryDetails['movingWeightedPrice'];
+                                // console($itemdetails);
+                                // console($item['itemCode']);
+                                if ($item['igst'] > 0) {
+                                    $itemTax = $item['igst'];
+                                } else {
+                                    $itemTax = $item['cgst'] + $item['sgst'];
+                                }
+
+                                if ($itemdetails['goodsType'] != 5) { ?>
+
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemId]" value="<?= $item['goodId'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemCode]" value="<?= $item['goodCode'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemHsn]" value="<?= $item['goodHsn'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemName]" value="<?= $item['goodName'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemQty]" value="<?= $item['goodQty'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemTax]" value="<?= $itemTax ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemUnitPrice]" value="<?= $item['unitPrice'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemGrandTotalPrice]" value="<?= $item['totalAmount'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemTotalPrice]" value="<?= $item['unitPrice'] * $item['receivedQty'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemStorageLocationId]" value="<?= $item['itemStorageLocation'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemStockQty]" value="<?= $item['itemStocksQty'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemReceivedQty]" value="<?= $item['receivedQty'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemUOM]" value="<?= $item['itemUOM'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemCGST]" value="<?= $item['cgst'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemSGST]" value="<?= $item['sgst'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemIGST]" value="<?= $item['igst'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemTds]" value="<?= $item['tds'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][itemInvoiceGoodsType]" value="<?= $item['goodstype'] ?>">
+                                    <input type="hidden" name="grnItemList[<?= $invoiceItem ?>][parentGlId]" value="<?= $itemdetails['parentGlId'] ?>">
+                                    <input type="hidden" name="totalInvoiceCGST" value="<?= $grnMainData['cgst'] ?>">
+                                    <input type="hidden" name="totalInvoiceSGST" value="<?= $grnMainData['sgst'] ?>">
+                                    <input type="hidden" name="totalInvoiceIGST" value="<?= $grnMainData['igst'] ?>">
+                                    <input type="hidden" name="totalInvoiceTDS" value="<?= $grnMainData['grnTotalTds'] ?>">
+                                    <input type="hidden" name="totalInvoiceSubTotal" value="<?= $grnMainData['grnSubTotal'] ?>">
+                                    <input type="hidden" name="totalInvoiceTotal" value="<?= $grnMainData['grnTotalAmount'] ?>">
+                                <?php   }
+                                $totalAmount += $item['receivedQty'] * $item['unitPrice'];
+                                $inventory = getChartOfAccountsDataDetails($itemdetails['parentGlId'])['data'];
+                                // console($inventory);
+                                ?>
+
+                                <tr>
+                                    <td>
+                                        <p class="pre-normal">
+                                            <?= $inventory['gl_code'] ?> ||<?= $inventory['gl_label']; ?>
+                                            <input type="hidden" name="[parentGlId]" value="<?= $itemdetails['parentGlId'] ?>">
+                                            <input type="hidden" name="[gl_code]" value="<?= $inventory['gl_code'] ?>">
+                                            <input type="hidden" name="[gl_label]" value="<?= $inventory['gl_label'] ?>">
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="pre-normal">
+                                            <?= $item['goodCode'] ?> || <?= $item['goodName'] ?>
+                                            <input type="hidden" name="[goodsType]" value="<?= $itemdetails['goodsType'] ?>">
+                                            <input type="hidden" name="[itemCode]" value="<?= $item['itemCode'] ?>">
+                                            <input type="hidden" name="[itemName]" value="<?= $item['itemName'] ?>">
+                                            <input type="hidden" name="[goodsMainPrice]" value="<?php echo $movingWeightedPrice; ?>">
+                                            <input type="hidden" name="[qty]" value="<?= $item['qty'] ?>">
+                                        </p>
+                                    </td>
+                                    <td class="text-right"><?php echo decimalValuePreview($item['receivedQty'] * $item['unitPrice']) ?></td>
+                                    <input type="hidden" name="[totalPrice]" value="<?= $item['totalPrice'] ?>">
+                                    <input type="hidden" name="[totalTax]" value="<?= $item['totalTax'] ?>">
+                                </tr>
+                            <?php }
+                            $totalcr = $totalAmount;
+                            if ($roundOfff > 0) {
+                                $totalcr = $totalAmount + $roundOfff;
+                            ?>
+
+                                <tr>
+                                    <td>
+                                        <p class="pre-normal">
+                                            <?= $roundoffGlCode; ?> || <?= $roundoffGlName ?>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="pre-normal">
+                                            --
+                                        </p>
+                                    </td>
+                                    <td class="text-right"><?php echo abs($roundOfff); ?></td>
+                                    <input type="hidden" name="roundOffValue" value="<?= $roundOfff ?>">
+                                </tr>
+                            <?php } ?>
+
+                            <tr>
+                                <td>
+                                    <p class="pre-normal">
+                                        <b>Total</b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="pre-normal">
+                                        --
+                                    </p>
+                                </td>
+                                <td class="text-right text-bold"><?php echo decimalValuePreview($totalcr); ?></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="account-list credit-acc-list">
+                <label for="">Credit account list</label>
+                <div class="card-border-area">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th width="25%">Ledger</th>
+                                <th>Sub Ledger</th>
+                                <th class="text-right">Amount</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php
+                            $totaldr = $totalAmount + $roundOfff;
+                            $partydr = $totalAmount + $roundOfff;
+                            if ($roundOfff < 0) {
+                                $partydr = $totalAmount + $roundOfff;
+                                $totaldr = $partydr + abs($roundOfff);
+                            } ?>
+                            <tr>
+                                <td>
+                                    <p class="pre-normal">
+                                        <?php echo $grnCreditAccList[0]['gl_code'] ?> || <?php echo $grnCreditAccList[0]['gl_label'] ?>
+                                        <input type="hidden" name="[gl_id]" value="<?= $grnCreditAccList[0]['id'] ?>">
+                                        <input type="hidden" name="[gl_code]" value="<?= $grnCreditAccList[0]['gl_code'] ?>">
+                                        <input type="hidden" name="[gl_label]" value="<?= $grnCreditAccList[0]['gl_label'] ?>">
+                                    </p>
+                                </td>
+                                <td> </td>
+                                <td class="text-right"><?= decimalValuePreview($partydr); ?></td>
+                            </tr>
+                            <?php
+                            $diffAmount = $totalcr - $totaldr;
+                            if ($roundOfff < 0) { ?>
+                                <tr>
+                                    <td>
+                                        <p class="pre-normal">
+                                            <?= $roundoffGlCode; ?> || <?= $roundoffGlName ?>
+                                        </p>
+                                    </td>
+                                    <td>
+                                        <p class="pre-normal">
+                                            --
+                                        </p>
+                                    </td>
+                                    <td class="text-right"><?php echo abs($roundOfff); ?></td>
+                                    <input type="hidden" name="roundOffValue" value="<?= $roundOfff ?>">
+                                </tr>
+                            <?php } ?>
+                            <tr>
+                                <td>
+                                    <p class="pre-normal">
+                                        <b>Total</b>
+                                    </p>
+                                </td>
+                                <td>
+                                    <p class="pre-normal">
+                                        --
+                                    </p>
+                                </td>
+                                <td class="text-right text-bold"><?php echo decimalValuePreview($totaldr); ?></td>
+                                <input type="hidden" name="[totalamount]" value="<?= $totaldr ?>">
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="account-amount deffrence-amount">
+                <label for="">Amount Difference</label>
+                <div class="card-border-area">
+                    <p><?= $diffAmount; ?></p>
+                </div>
+            </div>
+            <?php if ($diffAmount != 0) { ?>
+                <div class="account-amount adjust-amount">
+                    <label for="">Extra Adjustment Amount</label>
+                    <div class="card-border-area">
+                        <!-- <select name="" id="" class="form-control" readonly>
+                            <option value="+" <?php if ($diffAmount > 0) {
+                                                    echo "selected";
+                                                } ?>>+</option>
+                            <option value="-"<?php if ($diffAmount < 0) {
+                                                    echo "selected";
+                                                } ?>>-</option>
+                        </select> -->
+                        <input type="text" name="diffrenceAdjAmount" class="form-control" value="<?= ($diffAmount); ?>" readonly>
+                    </div>
+                </div>
+            <?php } ?>
+
+        </div>
+        <?php
+        if ($itemnum_row > 0) {
+            if ($grnMainData['journal_id'] > 0) { ?>
+                <div class="paid-btn">
+                    Already Posted
+                </div>
+            <?php } else { ?>
+                <div class="paid-btn">
+                    <button type="submit" class="btn btn-primary float-right">Post</button>
+                </div>
+
+            <?php }
+        } else { ?>
+            <!-- <div class="paid-btn">
+            <label for="" style="background-color:red;">Item Issue Please reverse and repost this invoice.</label>
+ </div> -->
+        <?php } ?>
+    </form>
+</div>
+
+
+<?php
+require_once("../common/footer.php");
+?>
+
+<script>
+    function initializeDataTable() {
+        dataTable = $("#dataTable_detailed_view").DataTable({
+            dom: '<"dt-top-container"<l><"dt-center-in-div"B><f>r>t<ip>',
+            "lengthMenu": [10, 25, 50, 100, 200, 250],
+            "ordering": false,
+            info: false,
+            "initComplete": function(settings, json) {
+                $('#dataTable_detailed_view_filter input[type="search"]').attr('placeholder', 'Search....');
+            },
+
+            buttons: [],
+            // select: true,
+            "bPaginate": false,
+
+        });
+
+    }
+    $('#dataTable_detailed_view thead tr').append('<th>Action</th>');
+
+    initializeDataTable();
+</script>

@@ -1,0 +1,502 @@
+[26-Oct-2022 17:35:32 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[26-Oct-2022 17:35:32 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[26-Oct-2022 17:35:32 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 17:35:32 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 17:35:32 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 17:35:32 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[26-Oct-2022 17:35:32 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[26-Oct-2022 17:35:32 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[26-Oct-2022 17:35:32 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 17:35:32 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 17:35:32 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 17:35:32 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[26-Oct-2022 17:51:46 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[26-Oct-2022 17:51:46 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[26-Oct-2022 17:51:46 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 17:51:46 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 17:51:46 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 17:51:46 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[26-Oct-2022 17:51:46 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[26-Oct-2022 17:51:46 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[26-Oct-2022 17:51:46 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 17:51:46 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 17:51:46 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 17:51:46 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[26-Oct-2022 17:52:39 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[26-Oct-2022 17:52:39 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[26-Oct-2022 17:52:39 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 17:52:39 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 17:52:39 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 17:52:39 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[26-Oct-2022 17:52:39 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[26-Oct-2022 17:52:39 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[26-Oct-2022 17:52:39 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 17:52:39 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 17:52:39 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 17:52:39 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[26-Oct-2022 18:25:38 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[26-Oct-2022 18:25:38 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[26-Oct-2022 18:25:38 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 18:25:38 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 18:25:38 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[26-Oct-2022 18:25:38 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[26-Oct-2022 18:25:38 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[26-Oct-2022 18:25:38 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[26-Oct-2022 18:25:38 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 18:25:38 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 18:25:38 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[26-Oct-2022 18:25:38 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:20:54 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:20:54 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:20:54 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:20:54 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:20:54 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:20:54 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:20:54 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:20:54 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:20:54 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:20:54 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:20:54 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:20:54 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:21:12 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:21:12 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:21:12 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:21:12 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:21:12 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:21:12 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:21:12 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:21:12 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:21:12 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:21:12 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:21:12 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:21:12 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:21:26 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:21:26 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:21:26 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:21:26 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:21:26 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:21:26 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:21:26 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:21:26 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:21:26 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:21:26 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:21:26 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:21:26 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:21:37 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:21:37 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:21:37 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:21:37 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:21:37 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:21:37 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:21:37 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:21:37 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:21:37 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:21:37 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:21:37 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:21:37 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:22:03 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:22:04 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:22:04 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:22:04 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:22:04 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:22:04 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:22:04 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:22:04 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:22:04 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:22:04 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:22:04 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:22:04 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:23:46 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:23:46 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:23:46 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:23:46 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:23:46 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:23:46 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:23:46 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:23:46 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:23:46 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:23:46 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:23:46 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:23:46 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:23:49 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:23:49 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:23:49 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:23:49 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:23:49 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:23:49 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:23:49 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:23:49 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:23:49 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:23:49 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:23:49 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:23:49 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:24:29 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:24:29 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:24:29 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:29 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:29 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:29 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:24:29 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:24:29 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:24:29 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:29 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:29 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:29 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:24:38 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:24:38 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:24:38 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:38 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:38 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:38 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:24:38 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:24:38 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:24:38 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:38 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:38 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:38 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:24:43 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:24:43 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:24:43 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:43 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:43 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:43 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:24:43 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:24:43 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:24:43 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:43 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:43 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:43 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:24:52 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:24:52 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:24:52 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:52 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:52 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:24:52 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:24:52 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:24:52 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:24:52 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:52 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:52 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:24:52 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:27:16 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:27:16 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:27:16 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:27:16 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:27:16 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:27:16 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:27:16 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:27:16 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:27:16 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:27:16 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:27:16 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:27:16 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:28:06 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:28:06 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:28:06 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:28:06 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:28:06 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:28:06 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:28:06 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:28:06 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:28:06 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:28:06 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:28:06 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:28:06 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:30:15 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:30:15 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:30:15 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:30:15 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:30:15 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:30:15 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:30:15 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:30:15 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:30:15 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:30:15 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:30:15 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:30:15 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:34:08 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:34:08 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:34:08 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:34:08 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:34:08 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:34:08 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[27-Oct-2022 05:34:08 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:34:08 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:34:08 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:34:08 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:34:08 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:34:08 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:34:14 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:34:14 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 2
+[27-Oct-2022 05:34:14 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:34:14 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-customers-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:34:14 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-customers-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 3
+[27-Oct-2022 05:34:14 UTC] PHP Fatal error:  Uncaught Error: Class 'CustomersController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers.php on line 7
+[27-Oct-2022 05:34:14 UTC] PHP Warning:  include_once(../../../app/v1/connection-branch-admin.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:34:14 UTC] PHP Warning:  include_once(): Failed opening '../../../app/v1/connection-branch-admin.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 2
+[27-Oct-2022 05:34:14 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:34:14 UTC] PHP Warning:  include(../../../app/v1/functions/branch/func-items-controller.php): failed to open stream: No such file or directory in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:34:14 UTC] PHP Warning:  include(): Failed opening '../../../app/v1/functions/branch/func-items-controller.php' for inclusion (include_path='.:/opt/cpanel/ea-php73/root/usr/share/pear') in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 3
+[27-Oct-2022 05:34:14 UTC] PHP Fatal error:  Uncaught Error: Class 'ItemsController' not found in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php:7
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items.php on line 7
+[04-Nov-2022 12:57:22 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items-list.php on line 16
+[04-Nov-2022 13:45:24 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-items-list.php on line 16
+[04-Nov-2022 16:30:27 Asia/Kolkata] PHP Notice:  Undefined index: vendor_code in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-list.php on line 18
+[04-Nov-2022 16:30:27 Asia/Kolkata] PHP Notice:  Undefined index: vendor_gstin in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-list.php on line 19
+[04-Nov-2022 16:30:27 Asia/Kolkata] PHP Notice:  Undefined index: vendor_status in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-list.php on line 22
+[02-Dec-2022 14:46:25 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:25 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:46:25 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:25 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:46:25 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:25 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:46:25 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:25 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:46:28 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:50:19 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:50:19 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:50:19 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:50:19 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:50:19 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:50:19 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:50:19 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:50:19 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[02-Dec-2022 14:51:46 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:51:46 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[02-Dec-2022 14:51:46 Asia/Kolkata] PHP Warning:  Use of undefined constant ERP_STATUS_MASTER - assumed 'ERP_STATUS_MASTER' (this will throw an Error in a future version of PHP) in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/branch/func-brunch-so-controller.php on line 1283
+[02-Dec-2022 14:51:46 Asia/Kolkata] PHP Notice:  Undefined index: label in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[03-Dec-2022 11:23:06 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method BranchSo::fetchStatusMasterByCode() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php:36
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[03-Dec-2022 11:23:09 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method BranchSo::fetchStatusMasterByCode() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php:36
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[03-Dec-2022 11:23:11 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method BranchSo::fetchStatusMasterByCode() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php:36
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[03-Dec-2022 11:24:16 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[03-Dec-2022 11:24:16 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:46:56 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:46:56 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:01 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:01 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:01 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:01 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:01 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:01 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:10 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:27 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:27 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:27 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:27 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:47:27 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:47:27 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:59:00 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:59:00 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 12:59:00 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 12:59:00 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 13:04:47 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 13:04:47 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 13:04:47 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 13:04:47 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 20:11:44 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 20:11:44 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[06-Dec-2022 20:11:44 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 36
+[06-Dec-2022 20:11:44 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-invoice-customer-list.php on line 41
+[07-Dec-2022 17:31:50 Asia/Kolkata] PHP Notice:  Undefined index: itemId in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-list.php on line 9
+[07-Dec-2022 17:31:50 Asia/Kolkata] PHP Notice:  Undefined offset: 0 in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-list.php on line 11
+[07-Dec-2022 17:31:50 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-list.php on line 19
+[07-Dec-2022 17:31:50 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-list.php on line 20
+[07-Dec-2022 17:31:50 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-list.php on line 24
+[07-Dec-2022 17:31:50 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-list.php on line 28
+[07-Dec-2022 17:31:50 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-list.php on line 95
+[07-Dec-2022 17:34:40 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method CustomersController::getDataCustomerAddressDetailsById() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-address.php:16
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-address.php on line 16
+[07-Dec-2022 17:35:18 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method CustomersController::getDataCustomerAddressDetailsById() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-address.php:16
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-address.php on line 16
+[07-Dec-2022 17:35:26 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method CustomersController::getDataCustomerAddressDetailsById() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-address.php:16
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-address.php on line 16
+[07-Dec-2022 17:35:33 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method CustomersController::getDataCustomerAddressDetailsById() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-address.php:16
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-address.php on line 16
+[07-Dec-2022 17:36:22 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method CustomersController::getDataCustomerAddressDetailsByPrimary() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-address.php:10
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/so/ajax-customers-address.php on line 10

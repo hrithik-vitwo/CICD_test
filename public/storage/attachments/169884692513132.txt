@@ -1,0 +1,30 @@
+Sales Quotation for the service
+----------------------------
+1. SQ to SO > Instead of Stock displaying Order Qty.
+2. Base Amount, SUb total, Total amount and all it is displaying zero.
+3. SQ to SO > able to change the customer
+4. SQ to SO > Displaying "adjustment amount"
+5. SQ > Mail > displaying SGST and CGST instead of IGST
+6. Non GST customer > Mail > detail of customer is not displayed.
+7. Mail > Discount is not displaying.
+8. Mail > When clicking Accept or Reject on first click page is getting refreshed but no action performed.
+9. SQ to SO > able to create the duplicate SO Number. (SO2310010)
+10. Manage Sale Order > Exceptional tab > right side modal > Price is displayed wrong in word.
+11.  Manage Sale Order > Exceptional tab > right side modal > displaying UOM id instead of name;
+12. SQ to SO > SO to invoice > Make the Customer name field as disabled.
+13. SQ to SO > SO to invoice > Write "Create Service to Invoice" instead of "Create Goods Invoice".
+14. SQ to SO > SO to invoice > qnty is displayed as zero(0).
+14. SO to Invoice > qnty is displayed as zero(0).
+15. Invoice > Round off value is not added on Transactional Day book.
+16. Invoice to Collection > When adjusting the value. In Advance captured value is displayed wrong in decimal number.
+17. Created SQ with 2 items > Created SO with 1 items > SQ status is displayed as closed.
+
+
+need to be fixed later on 
+--------------------------
+1. SQ to SO > Qty should be disabled.
+2.  Manage Sales Order > Pending SO > Table column Setting icon Total item column is added but it's not displayed on the table of Pending SO.
+3. 2.  Manage Sales Order > Exception SO > added Total Item colomn successfully from the Table Column Setting but it's not displayed on table and coming back to setting icon it's not selected even.
+4. SO > Trail is displayed two times.
+5. Trail is not found on invoice modal.
+6. Invoice > Select customer from the Search functionality for Collection > When selecting number of invoice row for collection, on collection page Rec amount  should be displayed in Rec amount field and Total amount  should be displayed in Enter amount field. (That can be amended)

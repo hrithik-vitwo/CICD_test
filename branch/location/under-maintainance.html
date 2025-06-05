@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Server Under Maintenance</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #f3f4f6, #e5e7eb);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #1f2937;
+    }
+
+    .container {
+      text-align: center;
+      padding: 40px;
+      background: white;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      border-radius: 16px;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .container h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: #111827;
+    }
+
+    .container p {
+      font-size: 1.125rem;
+      margin-bottom: 30px;
+      color: #4b5563;
+    }
+
+    .spinner {
+      width: 60px;
+      height: 60px;
+      border: 6px solid #e5e7eb;
+      border-top: 6px solid #3b82f6;
+      border-radius: 50%;
+      animation: spin 1s linear infinite;
+      margin: 0 auto 20px;
+    }
+
+    @keyframes spin {
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    .footer {
+      font-size: 0.9rem;
+      color: #9ca3af;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="spinner"></div>
+    <h1>We'll Be Back Soon</h1>
+    <p>Our server is currently undergoing scheduled maintenance. We apologize for the inconvenience and appreciate your patience. Please check back later.</p>
+  </div>
+</body>
+</html>

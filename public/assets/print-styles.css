@@ -1,0 +1,11 @@
+@media print {
+
+    body {
+        Visibility: hidden !important;
+    }
+
+    .printable-view {
+        visibility: visible !important;
+    }
+
+}

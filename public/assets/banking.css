@@ -1,0 +1,1023 @@
+/* :root {
+    --line-border-fill: #3498db;
+    --line-border-empty: #adadad;
+} */
+
+:root {
+
+  --template-color: #003060;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.is-banking-transaction button {
+  border-radius: 25px;
+}
+
+.form-input {
+  margin: 10px 0;
+}
+
+.card.card-tabs {
+  overflow: hidden !important;
+}
+
+.account-details .card {
+  background: #EBEBEB;
+}
+
+.account-details .card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.balance-blocks .box {
+  background: #E8E8E8;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  width: 237px;
+  justify-content: space-around;
+  padding: 10px 15px;
+  gap: 13px;
+}
+
+div#change_bank {
+  background-color: #e7e7e7 !important;
+  display: flex;
+  align-items: center;
+}
+
+.balance-blocks .box.green {
+  background: #D4F6E3;
+}
+
+.balance-blocks .box.pink {
+  background: #F2E9FF;
+}
+
+.balance-blocks .box .desc p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+.balance-blocks .box .desc p:nth-child(1) {
+  color: #646262;
+}
+
+.balance-blocks {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+}
+
+.account-details .right-blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 1rem;
+}
+
+.redirect-graphic a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+}
+
+.transaction-list {
+  width: 100%;
+  height: calc(100vh - 250px);
+  overflow: auto;
+}
+
+
+.list-table thead {
+  position: sticky;
+  top: 0rem;
+  z-index: 99;
+}
+
+.list-table thead tr th {
+  background: #E8E8E8 !important;
+  color: #000 !important;
+  padding: 10px 20px !important;
+  font-weight: 600;
+}
+
+.list-table tbody tr td {
+  background: #fff !important;
+  color: #000 !important;
+  padding: 10px 20px !important;
+  font-size: 0.83rem;
+  border: 0;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+
+.list-table tbody tr td p {
+  font-size: 0.83rem;
+  font-weight: 600;
+  color: #4d4d4d;
+}
+
+.list-table tbody tr td p.pending-amount {
+  font-weight: 600;
+  color: #da9a11;
+}
+
+
+.list-table tbody tr td ion-icon {
+  color: #646464;
+  font-size: 1.2rem;
+}
+
+.recon-classic-table tr th,
+.recon-classic-table tr td {
+  font-size: 10px !important;
+}
+
+
+/******banking import statement*******/
+
+
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+  margin: 0 auto;
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 20px;
+}
+
+
+.progress-container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 100%;
+  width: 350px;
+}
+
+.progress-container::before {
+  content: '';
+  background-color: #ccc;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 100%;
+  z-index: 1;
+}
+
+
+.progress-container .progress {
+  background-color: #4BAE4F;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  height: 4px;
+  width: 0%;
+  z-index: 1;
+  transition: .4s ease;
+}
+
+.circle {
+  background-color: #999;
+  color: #fff;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid #fff;
+  transition: .4s ease;
+  z-index: 2;
+}
+
+.circle.active {
+  border-color: #fff;
+  background-color: #4BAE4F;
+}
+
+.circle span {
+  position: absolute;
+  top: 36px;
+  color: #000;
+}
+
+.form-step {
+  width: 100%;
+}
+
+
+.file-upload {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  gap: 20px;
+}
+
+
+.upload-btn-wrapper {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--template-color);
+  border-radius: 7px;
+  width: 160px;
+  background: var(--template-color);
+  ;
+}
+
+
+.upload-btn-wrapper .btn {
+  border: 2px solid gray;
+  color: white;
+  background-color: transparent;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.upload-btn-wrapper input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.upload-btn-wrapper .icon {
+  border-right: 1px solid #fff;
+  padding-right: 5px;
+  vertical-align: middle;
+  display: flex;
+}
+
+.upload-btn-wrapper .icon ion-icon {
+  color: #fff;
+  font-size: 20px;
+}
+
+.card.upload-card .card-body {
+  border: 2px dotted #e1e1e1;
+}
+
+.card.tips-card ul {
+  padding-left: 4rem;
+  padding-top: 10px;
+}
+
+.card.tips-card ul li {
+  list-style: disc;
+}
+
+.row.upload-tips-block .card {
+  min-height: 90%;
+  height: 240px;
+}
+
+section.content.banking-import-statement .body-container .btns-grp button {
+  padding: 5px 15px !important;
+  font-size: 12px;
+}
+
+.btns-grp button {
+  cursor: pointer;
+}
+
+.btns-grp button.bg-light {
+  border-color: #ccc;
+}
+
+.banking-transaction-modal .modal-header {
+  display: block;
+  height: 180px;
+}
+
+.banking-transaction-modal .modal-header .right-btns button {
+  background-color: #fff;
+  color: #003060;
+  font-weight: 600;
+}
+
+.is-banking-transaction .banking-transaction-modal .modal-header .right-btns button.active,
+.banking-transaction-modal .modal-header .right-btns button:hover {
+  background-color: #003060;
+  color: #fff;
+}
+
+.banking-amount h3 span {
+  color: #003060;
+  font-weight: 600;
+}
+
+.is-banking-transaction .filter-list a {
+  font-weight: 700;
+}
+
+.banking-number-info p {
+  font-weight: 600;
+  max-width: 70%;
+  margin-left: auto;
+}
+
+ul.match-transactions {
+  top: -4rem;
+}
+
+ul.match-transactions button {
+  background-color: #fff;
+  color: #003060;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+ul.match-transactions button:hover,
+ul.match-transactions button.active {
+  background-color: #003060;
+  color: #fff;
+}
+
+span#warning_text {
+  position: absolute;
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: red;
+}
+
+.is-banking-transaction .dataTables_wrapper {
+  overflow: auto;
+  height: calc(100vh - 420px);
+}
+
+
+/***************uncategorized transaction************/
+
+
+div#transaction-modal .modal-header {
+  height: 130px !important;
+}
+
+
+.possible-match-body .progress {
+  width: 70px;
+  height: auto;
+}
+
+.possible-match-body .progress .progress-bar {
+  width: 70% !important;
+  position: relative !important;
+  left: 0;
+  height: 16px;
+}
+
+
+
+/****visualized chart*****/
+
+
+.chartContainer {
+  width: 100%;
+  height: 500px;
+}
+
+
+
+
+
+
+/****************common css**************/
+
+.bankstatement-modal .modal-dialog {
+  max-width: 70%;
+}
+
+.list-table thead tr.dynamic-th th {
+  background-color: #fff !important;
+}
+
+
+
+
+/**************Add new bank****************/
+
+.header-bg {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.header-bg h2,
+.left-blocks h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.banks-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.banks-card .card {
+  margin-bottom: 0;
+}
+
+.banks-card .card .card-body {
+  text-align: center;
+}
+
+.banks-card .card img {
+  max-width: 120px;
+  aspect-ratio: 3/1;
+  object-fit: contain;
+}
+
+.card.supported-bank-card {
+  background: #fff;
+  margin: 2rem 0;
+  border: 1px solid #ebebeb;
+}
+
+.card.supported-bank-card .card-header {
+  background: #ebebeb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom-block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ebebeb;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.card.supported-bank-card .card-body {
+  padding: 2rem 5rem;
+}
+
+.left-blocks p {
+  font-size: 0.8rem;
+}
+
+.bank-name-blocks {
+  gap: 1.5rem;
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+}
+
+.bank-name-blocks .box {
+  background: #f9f9f9;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+}
+
+.bank-name-blocks .box img {
+  max-width: 50px;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+}
+
+.bank-name-blocks button {
+  border: 0;
+  border-radius: 0.5rem;
+}
+
+.bank-name-blocks .box p {
+  font-size: 0.8rem;
+}
+
+.bank-name-blocks .box span {
+  position: absolute;
+  bottom: 1rem;
+  right: 1.5rem;
+}
+
+
+.modal.bankDetailsAdd .modal-header h5 {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+.modal.bankDetailsAdd .modal-body p {
+  font-size: 0.7rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.modal.bankDetailsAdd .modal-body .acount-types-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4rem;
+}
+
+.modal.bankDetailsAdd .modal-body .typebox {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  font-size: 0.8rem;
+  background: #ffffff;
+  padding: 1.5rem;
+  cursor: pointer;
+  height: 7rem;
+  margin: 1rem 0;
+}
+
+.acount-types-block button {
+  border: 0;
+  background: transparent;
+}
+
+.form-left-block nav.logo img {
+  max-width: 150px;
+}
+
+.form-left-block h5 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.form-left-block p {
+  font-size: 0.9rem;
+}
+
+.form-left-block ul {
+  padding-left: 0;
+}
+
+.form-left-block ul li {
+  margin-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.form-left-block nav.logo img {
+  max-width: 150px;
+}
+
+.modal.bankDetailsAdd .modal-body .typebox.personal-acc {
+  border-right: 1px solid #00000036;
+  padding-right: 6rem;
+}
+
+.modal.bankDetailsAdd .modal-body .typebox i {
+  border: 1px solid #1f1f1f52;
+  border-radius: 50%;
+  padding: 1rem;
+  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+
+.modal.bankDetailsAdd .modal-body .typebox i:hover {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* .modal.bankFormModal .modal-dialog {
+  max-width: 94%;
+  left: 0px;
+} */
+.modal.bankFormModal .modal-dialog .modal-content {
+  border-radius: 1rem;
+}
+
+.modal.bankFormModal .modal-body .row {
+  height: 100vh;
+  align-items: center;
+}
+
+.modal.bankFormModal .modal-body .row .col-12 {
+  height: 100%;
+}
+
+.form-left-block {
+  display: grid;
+  gap: 6rem;
+  background: #ccc;
+  padding: 3rem 2rem;
+  border-radius: 1rem;
+  height: 95%;
+}
+
+.form-right-block p {
+  font-size: 10px;
+  font-weight: 600;
+  font-style: italic;
+  margin: 1rem auto;
+}
+
+.form-right-block {
+  padding: 1rem 2rem;
+  height: 95%;
+}
+
+.form-right-block .form-input {
+  margin: 55px 0;
+}
+
+.form-left-block p {
+  font-size: 0.8rem;
+  margin: 1rem 0;
+}
+
+/**************banking statement upload*************/
+
+.upload {
+  --color-black-softest: #485461;
+  /* softer black */
+  --color-black-soft: #363F48;
+  /* softer black */
+  --color-black-hard: #2d353c;
+  /* harder black */
+  --color-black-hardest: #21282e;
+  /* hardest black */
+  --color-green-light: #65cca9;
+  /* light green */
+  --color-green: #29b586;
+  /* medium green */
+  --ease-in-out-quartic: cubic-bezier(0.645, 0.045, 0.355, 1);
+  position: relative;
+  display: inline-flex;
+  background: #f1f1f1;
+  border-radius: 10px;
+  overflow: hidden;
+  transform: rotate(0);
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.upload-info {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  margin-right: 40px;
+  fill: #fff;
+  color: #000;
+  position: absolute;
+}
+
+.upload-filename {
+  padding-left: 8px;
+  transition: opacity 300ms ease;
+}
+
+.upload-filename.inactive {
+  opacity: 0.6;
+}
+
+.upload-button {
+  position: relative;
+  margin: 0;
+  font-size: 100%;
+  padding: 0 8px;
+  font-family: inherit;
+  background: none;
+  border: none;
+  border-radius: inherit;
+  outline: none;
+}
+
+.upload-button-text {
+  padding: 8px 16px;
+  color: white;
+  background-color: #003060;
+  border-radius: inherit;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 200ms ease, box-shadow 300ms ease;
+}
+
+.upload-button-text:hover,
+.upload-button-text:focus {
+  background-color: #003060;
+}
+
+.upload-button-text.inactive {
+  background-color: rgba(255, 255, 255, 0.38);
+  cursor: not-allowed;
+}
+
+.upload-hint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  transform: translateY(100%);
+}
+
+.upload-progress {
+  position: absolute;
+  top: 90%;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  color: rgb(0, 0, 0);
+  background: linear-gradient(270deg, #003060 0%, #003060 50%, #003060 100%);
+  transform-origin: left;
+}
+
+.upload.uploading .upload-button-text {
+  animation: fade-up-out 0.4s 0.4s forwards, button-pulse 500ms forwards;
+}
+
+.upload.uploading .upload-info>* {
+  animation: fade-up-out 0.4s 0.4s forwards;
+}
+
+.upload.uploading .upload-hint {
+  animation: fade-up-in 0.4s 0.8s forwards;
+}
+
+.upload.uploading .upload-progress {
+  animation: load-right 2s 1s var(--ease-in-out-quartic) forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes button-pulse {
+  from {
+    box-shadow: 0 0 0 0 #003060;
+  }
+
+  to {
+    box-shadow: 0 0 0 8px rgba(255, 255, 255, 0);
+  }
+}
+
+@keyframes fade-up-out {
+  to {
+    opacity: 0;
+    transform: translateY(-40%);
+  }
+}
+
+@keyframes fade-up-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes load-right {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 0;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+[type=file] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+  cursor: pointer;
+}
+
+.drop-area {
+  border: 1px solid #0050a500;
+}
+
+.drop-area.droppable {
+  border: 1px dashed rgba(255, 255, 255, 0.6);
+}
+
+.drop-area.highlight {
+  border: 1px dashed #003060;
+}
+
+.wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.wrapper .upload-wrapper {
+  display: inline-block;
+  margin: 2rem auto 2rem;
+}
+
+.upload-info ion-icon {
+  font-size: 19px;
+  color: #454545;
+}
+
+.bank-statement-list.uploadStatementResponseDiv {
+  overflow: auto;
+}
+
+.match-transac-btn {
+  position: absolute;
+  top: 0;
+  right: 33px;
+}
+
+.is-banking-transaction ul.match-transactions li button.active {
+  background: #fff;
+  color: #003060;
+}
+
+.is-banking-transaction ul.match-transactions li button {
+  background: #fff;
+  color: #003060;
+  border: 1px solid #fff;
+  border-radius: 7px;
+}
+
+.is-banking-transaction .match-transaction-tab ul.match-transactions button.active {
+  background-color: #003060;
+  color: #fff;
+}
+
+.is-banking-transaction .match-transaction-tab ul.match-transactions button {
+  border: 1px solid #003060;
+  color: #003060;
+  border-radius: 15px;
+  font-weight: 600;
+}
+
+.is-banking-transaction .modal.banking-transaction-modal ul.match-transactions li button.active,
+.is-banking-transaction ul.match-transactions li button:hover {
+  background-color: #003060;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 7px;
+}
+
+.custom-select-inner {
+  max-width: 50px;
+}
+
+
+div.acc-tab-content {
+  background: #cccccc4d;
+  padding: 20px 24px;
+  border-radius: 0 0 8px 8px;
+  position: relative;
+}
+
+.customerWiseBankingDiv .btn-group {
+  position: absolute;
+  top: 2.4rem;
+  right: 13px;
+}
+
+.customerWiseBankingDiv .btn-group button {
+  background: #003060;
+}
+
+.customerWiseBankingDiv .btn-group button span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.customerWiseBankingDiv .btn-group button span ion-icon {
+  font-size: 0.95rem;
+}
+
+.customerWiseBankingDiv div#paginationinner ol {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* s */
+
+/* .customerWiseBankingDiv div#paginationinner ol li.active {
+  background-color: #fff;
+  color: #003060;
+  border: 1px solid #00306066;
+} */
+
+.customerWiseBankingDiv .row.custom-table-footer {
+  align-items: center;
+  margin: 15px 0;
+}
+
+/* .customerWiseBankingDiv div#paginationinner ol li.active a {
+  color: #003060;
+} */
+
+.is-banking-transaction .match-transaction-tab .tab-pane-body.acc-nonacc-panebody li button {
+  background: #fff;
+  border-radius: 25px;
+  color: #003060;
+  font-size: 0.8rem;
+  z-index: 99;
+}
+
+
+.is-banking-transaction .match-transaction-tab .tab-pane-body.acc-nonacc-panebody li button.active {
+  background: #f0f0f0;
+}
+
+.tab-pane-body.acc-nonacc-panebody li button {
+  padding: 10px 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.possible-match-head {
+  position: absolute;
+  top: -5.5rem;
+  width: 100%;
+}
+
+.match-btn {
+  background: green !important;
+  padding: 10px 25px;
+}
+
+.is-banking-transaction .dt-top-container {
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  gap: 0;
+  height: 4rem;
+  background-color: transparent !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9;
+  box-shadow: none;
+}
+
+.is-banking-transaction .length-row {
+  margin-top: 0;
+  margin-bottom: 10px;
+  z-index: 99;
+}
+
+table.baking-transaction-wise thead {
+  position: sticky;
+  top: 0;
+}
+
+.is-banking-transaction select.form-control.custom-select-inner {
+  appearance: auto !important;
+}
+
+.acc-tab-content hr {
+  margin: 0;
+  border-color: #ccc;
+}
+
+.is-banking-transaction .baking-transaction-wise td {
+  font-size: 0.8rem !important;
+  font-weight: 500;
+  border: 0;
+  border-bottom: 1px solid #d4d4d4;
+}
+
+.is-banking-transaction .baking-transaction-wise td p{
+  font-size: 0.8rem !important;
+  font-weight: 600;
+}
+
+.is-banking-transaction div.dataTables_wrapper div.dataTables_filter {
+  right: 16px;
+  top: 1.3rem;
+}
+
+.tab-pane-body.acc-nonacc-panebody li {
+  margin-left: 0;
+  margin-bottom: 10px;
+}

@@ -1,0 +1,202 @@
+<?php
+require_once("../../../../../app/v1/connection-branch-admin.php");
+require_once("../../../../../app/v1/functions/branch/func-journal.php");
+require_once("../../../../../app/v1/functions/company/func-ChartOfAccounts.php");
+require_once("../../../../../app/v1/functions/admin/func-company.php");
+require_once("../../../../../app/v1/functions/branch/func-brunch-so-controller.php");
+require_once("../../../../../app/v1/functions/branch/func-items-controller.php");
+require_once("../../../../../app/v1/functions/common/templates/template-sales-order.controller.php");
+require_once("../../../../../app/v1/functions/common/templates/template-creditnote.controller.php");
+$headerData = array('Content-Type: application/json');
+$branchSoObj = new BranchSo();
+$tempObj = new TemplateCreditNoteController();
+
+if ($_SERVER["REQUEST_METHOD"] == "GET" && $_GET['act'] == 'modaldata') {
+
+    $cr_note_id = $_GET['cr_id'];
+    $check_e_inv = queryGet("SELECT count(`id`) AS e_inv_count FROM `erp_e_invoices` WHERE `invoice_id` = $cr_note_id");
+    // $sql="SELECT cr.* FROM `erp_credit_note` as cr WHERE cr_note_id =$cr_note_id";
+    $sql = "SELECT cr.*,eInv.`ack_no`, eInv.`ack_date`, eInv.`irn`, eInv.`signed_qr_code` FROM `erp_credit_note` as cr LEFT JOIN `erp_e_invoices` as eInv ON cr.cr_note_id = eInv.invoice_id WHERE cr_note_id =$cr_note_id";
+    $oneList = queryGet($sql)['data'];
+    // console($oneList);
+
+    $companyDetailsObj = queryGet("SELECT company_website,company_name,company_pan,company_cin,company_tan,company_currency,company_logo,`signature`,company_footer FROM `" . ERP_COMPANIES . "` WHERE `company_id`='$company_id'")['data'];
+    $companyAdminDetailsObj = queryGet("SELECT fldAdminEmail as companyEmail,fldAdminPhone as companyPhone FROM `" . TBL_BRANCH_ADMIN_DETAILS . "` WHERE `fldAdminCompanyId`='$company_id' AND `fldAdminBranchId`='$branch_id' AND `fldAdminRole`=1 ORDER BY `fldAdminKey`")['data'];
+    $branchDetailsObj = queryGet("SELECT branch_name,branch_gstin FROM `" . ERP_BRANCHES . "` WHERE `branch_id`='$branch_id' AND `company_id`='$company_id'")['data'];
+    $companyBankDetailsObj = queryGet("SELECT bank_name,ifsc_code,account_no,account_holder_name,bank_address FROM `" . ERP_ACC_BANK_CASH_ACCOUNTS . "` WHERE company_id='$company_id' AND flag='1'")['data'];
+    $locationDetailsObj = queryGet("SELECT othersLocation_building_no as location_building_no,othersLocation_flat_no as location_flat_no, othersLocation_street_name as location_street_name, othersLocation_pin_code as location_pin_code, othersLocation_location as `location`, othersLocation_city as location_city, othersLocation_district as location_district, othersLocation_state as location_state FROM `" . ERP_BRANCH_OTHERSLOCATION . "` WHERE `branch_id`='$branch_id' AND `company_id`='$company_id' AND othersLocation_id='$location_id'")['data'];
+    $companyData = array_merge($companyDetailsObj, $companyBankDetailsObj, $companyAdminDetailsObj, $branchDetailsObj, $locationDetailsObj);
+
+    $currencyDetails = $branchSoObj->fetchCurrencyIcon($companyData['company_currency'])['data'];
+    $companyCurrencyName = $currencyDetails['currency_name'];
+
+    $itemDetailsObj = queryGet("SELECT * FROM `credit_note_item` AS cr_item, `erp_inventory_items` AS item  WHERE item.itemId=cr_item.item_id AND `credit_note_id` = '" . $cr_note_id . "'", true);
+
+    $contactDetails = queryGet("SELECT `contact_details` FROM `erp_debit_note` WHERE `dr_note_id`='" . $cr_note_id . "'")['data']['contact_details'];
+
+    $itemDetails = $itemDetailsObj['data'];
+    $partydetails = [];
+    // console($itemDetails);
+    $bill_id = $oneList['creditNoteReference'];
+    $creditors_type = $oneList['creditors_type'];
+    if ($creditors_type == 'customer') {
+        $customerDetailsObj = queryGet("SELECT * FROM `" . ERP_CUSTOMER . "` WHERE `customer_id`=" . $oneList['party_id'] . "");
+        $customerData = $customerDetailsObj['data'];
+        // console($customerDetailsObj);
+
+
+        $iv = queryGet("SELECT * FROM `erp_branch_sales_order_invoices` WHERE `so_invoice_id`=$bill_id");
+        // console($iv);
+        $ref = $iv['data']['invoice_no'];
+        $iv_date = explode(" ", $iv['data']['created_at'], 1);
+
+        $source_address_sql = queryGet("SELECT * FROM `erp_customer_address` WHERE `customer_address_id`= '" . $oneList['billing_address'] . "' ")['data'];
+
+        $source_address = $source_address_sql['customer_address_building_no'] . ' , ' . $source_address_sql['customer_address_flat_no'] . ' , ' . $source_address_sql['customer_address_street_name'] . ' , ' . $source_address_sql['customer_address_pin_code'] . ' , ' . $source_address_sql['customer_address_location'] . ' , ' . $source_address_sql['customer_address_city'] . ' , ' . $source_address_sql['customer_address_district'] . ' , ' . $source_address_sql['customer_address_country'] . ' , ' . $source_address_sql['customer_address_state'];
+        // console($iv_date);
+
+        $destination_address_sql =  queryGet("SELECT * FROM `erp_customer_address` WHERE `customer_address_id`= '" . $oneList['shipping_address'] . "' ")['data'];
+
+        $destination_address = $destination_address_sql['customer_address_building_no'] . ' , ' . $destination_address_sql['customer_address_flat_no'] . ' , ' . $destination_address_sql['customer_address_street_name'] . ' , ' . $destination_address_sql['customer_address_pin_code'] . ' , ' . $destination_address_sql['customer_address_location'] . ' , ' . $destination_address_sql['customer_address_city'] . ' , ' . $destination_address_sql['customer_address_district'] . ' , ' . $destination_address_sql['customer_address_country'] . ' , ' . $destination_address_sql['customer_address_state'];
+    } else {
+        $customerDetailsObj = queryGet("SELECT * FROM `" . ERP_VENDOR_DETAILS . "` WHERE `vendor_id`=" . $oneList['party_id'] . "");
+        $customerData = $customerDetailsObj['data'];
+        // echo '----------------------------------------------------------------';
+        // console($customerDetailsObj);
+
+        $iv = queryGet("SELECT * FROM `erp_grninvoice` WHERE `grnIvId`=$bill_id");
+        // console($iv);
+        $ref = $iv['data']['invoice_ number'];
+        $iv_date = explode(" ", $iv['data']['created_at'], 1);
+
+        // console($iv_date);
+        $source_address_sql = queryGet("SELECT * FROM `erp_vendor_bussiness_places` WHERE `vendor_business_id`= '" . $oneList['billing_address'] . "' ")['data'];
+        // console($source_address_sql);
+
+        $source_address = $source_address_sql['vendor_business_building_no'] . ' , ' . $source_address_sql['vendor_business_flat_no'] . ' , ' . $source_address_sql['vendor_business_street_name'] . ' , ' . $source_address_sql['vendor_business_pin_code'] . ' , ' . $source_address_sql['vendor_business_location'] . ' , ' . $source_address_sql['vendor_business_city'] . ' , ' . $source_address_sql['vendor_business_district'] . ' , ' . $source_address_sql['vendor_business_country'] . ' , ' . $source_address_sql['vendor_business_state'];
+
+        $destination_address_sql =  queryGet("SELECT * FROM `erp_customer_address` WHERE `vendor_business_id`= '" . $oneList['shipping_address'] . "' ")['data'];
+
+        $destination_address = $destination_address_sql['vendor_business_building_no'] . ' , ' . $destination_address_sql['vendor_business_flat_no'] . ' , ' . $destination_address_sql['vendor_business_street_name'] . ' , ' . $destination_address_sql['vendor_business_pin_code'] . ' , ' . $destination_address_sql['vendor_business_location'] . ' , ' . $destination_address_sql['vendor_business_city'] . ' , ' . $destination_address_sql['vendor_business_district'] . ' , ' . $destination_address_sql['vendor_business_country'] . ' , ' . $destination_address_sql['vendor_business_state'];
+    }
+
+    $branchGstin = substr($companyData['branch_gstin'], 0, 2);
+    $customerGstin = substr($customerData['customer_gstin'], 0, 2);
+    $conditionGST = $branchGstin == $customerGstin;
+    $totalTaxAmt = 0;
+    $subTotalAmt = 0;
+    $allSubTotalAmt = 0;
+    $totalDiscountAmt = 0;
+    $totalAmt = 0;
+    $totaligst = 0;
+    $totalcgst = 0;
+    $totalsgst = 0;
+    $items = [];
+    $sl = 0;
+    foreach ($itemDetails as  $item) {
+        $uom = queryGet("SELECT `uomName` FROM `erp_inventory_mstr_uom` WHERE uomID='" . $item['baseUnitMeasure'] . "'");
+        $uomName = $uom['data']['uomName'];
+
+        $totalTaxAmt += $item['item_tax'];
+        $allSubTotalAmt += $item['unitPrice'] * $item['qty'];
+        $totalDiscountAmt += $item['itemTotalDiscount'];
+        $subTotalAmt += ($item['item_qty'] * $item['item_rate']);
+        $totalAmt += $item['item_amount'];
+        $taxbleAmount = $item['item_qty'] * $item['item_rate'];
+        $gstamt = ($taxbleAmount * $item['item_tax']) / 100;
+
+        $items[] = [
+            "slNo" => $sl,
+            "itemName" => $item['itemName'],
+            "itemCode" => $item['itemCode'],
+            "hsnCode" => $item['hsnCode'],
+            "item_qty" => $item['item_qty'],
+            "uomName" => $uomName,
+            "item_rate" => number_format($item['item_rate']),
+            "taxbleAmount" => $taxbleAmount,
+            "item_tax" => $item['item_tax'],
+            "item_amount" => $item['item_amount'],
+            "gstamt" => $gstamt
+        ];
+    }
+
+    $partydetails = [
+        "customerData" => $customerData,
+        "destination_address" => $destination_address,
+        "source_address" => $source_address
+    ];
+
+
+
+
+    // if (value.cn_status == 'active' && value.goods_journal_id > 0) {
+    //     // console.log(value.del_status);
+    //     reverseRepostButton = `
+    //         <li>
+    //             <button class="reverseCreditNote" data-id="${value.cr_note_id}" ><ion-icon name="refresh-outline"></ion-icon>Reverse</button>
+    //         </li>`;
+    //     sClass = `status-bg status-open`;
+    // } else if (value.cn_status == 'reverse') {
+    //     reverseRepostButton = `
+    //         <li>
+    //             <button class="repostCreditNote" data-id="${value.cr_note_id}" data-code="${ value.credit_note_no}" ><ion-icon name="repeat-outline"></ion-icon>Repost</button>
+    //         </li>`;
+    //     sClass = `status-bg status-open`;
+
+    // }
+
+    // echo "start  ";
+    // echo $oneList['status'];
+    // echo " haha ";
+    // echo $oneList['goods_journal_id'];
+    // echo " haha ";
+
+    // echo $oneList['cr_note_id'];
+    // echo " haha ";
+
+    // echo $oneList['credit_note_no'];
+    // echo " haha ";
+
+
+
+    // $btn='';
+    // if ($oneList['status'] == "active" && $oneList['goods_journal_id'] >0) {
+    //     $btn .=   "<button class='reverseCreditNote' data-id='".$oneList['cr_note_id']."' ><ion-icon name='refresh-outline'></ion-icon>Reverse</button>";
+    // }else if($oneList['status']=='reverse'){
+    //     echo "inside ";
+    //     $btn.="<button class='reverseCreditNote' data-id='".$oneList['cr_note_id']."' data-code='".$oneList['credit_note_no']."' ><ion-icon name='repeat-outline'></ion-icon>Repost</button>";
+    //     echo $btn;
+    // }
+
+    // $navbar = '<div class="action-btns display-flex-gap create-delivery-btn-sales" id="action-navbar">' . $btn . '</div>';
+
+    // echo $navBar;
+    //  exit();
+
+
+    $dynamic_data = [
+        "items" => $items,
+        'crNoteobj' => $oneList,
+        "ref" => $ref,
+        "partydetails" => $partydetails,
+        "subTotalAmt" => $subTotalAmt,
+        "created_by" => getCreatedByUser($oneList['created_by']),
+        "created_at" => formatDateORDateTime($oneList['created_at']),
+        "updated_by" => getCreatedByUser($oneList['updated_by']),
+        "updated_at" => formatDateORDateTime($oneList['updated_at']),
+        "e_inv_count" => $check_e_inv['data']['e_inv_count'],
+        "irn" => $oneList['irn'],
+        "companyCurrency" => getSingleCurrencyType($company_currency)??"-",
+        // "navBar" => $navBar
+    ];
+
+    $res = [
+        "status" => true,
+        "msg" => "Success",
+        "data" => $dynamic_data
+    ];
+
+    echo json_encode($res);
+} else if ($_SERVER["REQUEST_METHOD"] == "GET" && $_GET['act'] == 'classicView') {
+    $tempObj->printCreditNotes($_GET['cr_id']);
+}

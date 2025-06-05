@@ -1,0 +1,33 @@
+.has-float-label .form-control:placeholder-shown:not(:focus)+* {
+     font-size: 15px !important;
+     opacity: .5 !important;
+     top: 0.9em !important;
+}
+    .has-float-label input, .has-float-label select, .has-float-label textarea {
+     font-size: inherit;
+     margin-bottom: 2px;
+     border-radius: 5px;
+     border: 2px solid rgba(0,0,0,.1);
+     height: 44px;
+    }
+    
+    .has-float-label input:focus, .has-float-label select:focus, .has-float-label textarea:focus {
+     outline: 0;
+     border-color: rgba(0,0,0,.5);
+     border: 1px solid;
+     padding: 7px 10px;
+    }   
+    
+    .has-float-label label, .has-float-label>span {
+     position: absolute;
+     left: 0;
+     top: -7px;
+     cursor: text;
+     font-size: 70%;
+     opacity: 1;
+     -webkit-transition: all .2s;
+     transition: all .2s;
+     background: #fff;
+    }
+    
+    

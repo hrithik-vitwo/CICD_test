@@ -1,0 +1,3406 @@
+# Webalizer V2.23-08 Incremental Data - 05/15/2024 22:53:57
+2024 5 15 22 53 57
+213873 154616 268 821 327 51 5893221900 116901 1505 0 0 0
+30 3 31518 1 15
+348 171 2883055 12 165 10 0 0
+15127 8179 224031725 44 6931 101 0 0
+13054 9785 256793704 30 4956 54 0 0
+3223 1829 49645795 29 988 30 0 0
+2897 1488 38525284 28 322 18 0 0
+14132 7977 195385462 22 4971 59 0 0
+12652 8533 246781069 24 3623 52 0 0
+14074 8462 288222128 20 3866 54 0 0
+17912 15288 979835989 21 11036 749 0 0
+65711 63269 2655780791 31 62208 73 0 0
+1490 849 32416440 42 680 36 0 0
+2242 1368 89387837 19 1167 17 0 0
+13861 7004 169935030 17 5882 69 0 0
+19538 13540 480345010 24 5278 83 0 0
+17612 6874 183252581 30 4828 100 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+0 0 0 0 0 0 0 0
+103 57 653009 45 0 0
+167 97 884336 94 0 0
+589 250 3288885 241 0 0
+640 447 33041954 278 0 0
+5409 4137 146198107 968 0 0
+14956 8833 278006933 5514 0 0
+19662 11785 565124385 8468 0 0
+21283 14999 659620254 11212 0 0
+11623 6154 174797783 5084 0 0
+3771 1714 52936095 1312 0 0
+16180 8812 298018033 6357 0 0
+19908 13034 333187524 6192 0 0
+45712 37747 1525951436 33272 0 0
+43461 38752 1541203307 35967 0 0
+7507 6055 212227701 914 0 0
+532 220 4586619 321 0 0
+531 195 12145538 185 0 0
+1199 996 26725805 211 0 0
+461 236 22044074 189 0 0
+117 65 2165291 63 0 0
+8 3 15938 5 0 0
+39 16 143281 4 0 0
+4 2 30343 2 0 0
+11 10 225269 3 0 0
+0
+0
+0
+154616
+0
+0
+0
+0
+0
+222
+0
+12
+701
+0
+569
+0
+0
+847
+101
+0
+194
+55976
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+0
+635
+0
+0
+0
+0
+0
+# -urls- 
+/branch/location/ajaxs/vendor/ajax-gst-review.php
+0 8 0 13222 0 1 0 0
+/api/v2/customer/logout.php
+0 6 0 3714 0 2 0 0
+/public/assets/blobz/blobz.min.css
+0 91 0 133878 0 0 0 0
+/public/assets/plugins/datatables-buttons/js/buttons.print.min.js
+0 239 0 348815 0 0 0 0
+/company/manage-chart-of-account.php
+0 1 0 15547 1 1 0 0
+/public/assets/img/icons/MMicon/create-grn.svg
+0 264 0 214616 0 0 0 0
+/branch/location/pr-list-closed-p.php
+0 2 0 50982 0 0 0 0
+/uploads/1/grn-invoice/170651393723366.pdf
+0 1 0 453765 0 0 0 0
+/public/assets/animated.js
+0 248 0 216062 0 0 0 0
+/app/v1/functions/common/templates/template-cash-voucher.php
+0 4 0 14923 0 0 0 0
+/branch/location/ajaxs/items/ajax-storage-type.php
+0 71 0 50527 2 2 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-location-items-modal.php
+0 183 0 219086 3 7 0 0
+/public/validations/rfqValidation.js
+0 9 0 17244 0 0 0 0
+/public/main-assets/images/banner/main-home/Branch_white.png
+1 34 0 612246 0 0 0 0
+/public/assets/img/icons/PPIcon/mrp.svg
+0 265 0 294191 0 0 0 0
+/branch/location/ajaxs/grn/ajax-invoice-vendor-advanced.php
+0 5 0 2582 1 0 0 0
+/uploads/1/others/169823109798050.jpg
+1 1 0 67029 0 0 0 0
+/api/v2/customer/add-to-cart.php
+0 25 0 17775 0 0 0 0
+/company/manage-acc-functional-mapping.php
+0 2 0 128278 0 0 0 0
+/uploads/1/grn-invoice/170650943410178.pdf
+0 1 0 407310 0 0 0 0
+/branch/location/ajaxs/ajax-subgl-list.php
+0 5 0 7392 0 0 0 0
+/uploads/1/grn-invoice/171265132728686.jpeg
+0 15 0 1232016 0 0 0 0
+/public/assets/img/icons/SDicon/pgi.svg
+0 267 0 207780 0 0 0 0
+/branch/location/pf-p.php
+0 1 0 25708 0 0 0 0
+/branch/location/recieved-item-fg-p.php
+0 3 0 79675 0 0 0 0
+/branch/location/manage-storage-location.php
+0 39 0 976393 1 2 0 0
+/uploads/1/grn-invoice/171506237592726.pdf
+0 1 0 347807 0 0 0 0
+/branch/location/ajaxs/grn/ajax-fetch-po.php
+0 2 0 597 0 0 0 0
+/branch/location/manage-failed-account-view.php
+0 248 0 5353737 1 5 0 0
+/branch/location/ajaxs/items/ajax-good-groups.php
+0 351 0 388492 2 2 0 0
+/branch/location/manage-sales-orders-item-wise-p.php
+0 6 0 166506 0 0 0 0
+/public/assets/img/sidebar/reports.gif
+1 258 0 101150351 0 0 0 0
+/uploads/1/grn-invoice/171231136048340.jpeg
+0 13 0 6477041 0 0 0 0
+/public/validations/locationValidation.js
+0 2 0 2870 0 0 0 0
+/api/v2/customer/invoice-open.php
+0 7 0 286056 0 0 0 0
+/company/js/variant.js
+0 2 0 3732 0 0 0 0
+/public/assets/ref-style.css
+0 330 0 10383744 0 0 0 0
+/branch/location/ajaxs/ajax-ptax.php
+0 1 0 1304 0 0 0 0
+/public/assets/img/icons/SDicon/sales-order-delivery.svg
+0 266 0 301704 0 0 0 0
+/branch/location/ajaxs/so/ajax-customers.php
+0 805 0 1233629 6 2 0 0
+/public/assets/img/icons/VMIcons/direct-payment.svg
+0 264 0 338360 0 0 0 0
+/branch/location/ajaxs/ajax-vendor-chart.php
+0 2378 0 1588250 5 8 0 0
+/uploads/1/grn-invoice/170650927546365.pdf
+0 1 0 693997 0 0 0 0
+/public/assets/new_listing.css
+0 14 0 337504 0 0 0 0
+/uploads/1/grn-invoice/171499068617833.pdf
+0 15 0 932485 0 0 0 0
+/branch/location/ajaxs/vendor/ajax-account.php
+0 69 0 20576 0 0 0 0
+/public/main-assets/css/slick.css
+0 38 0 48716 0 0 0 0
+/company/login.php
+0 70 0 531442 0 2 0 0
+/branch/location/manage-purchases-orders-pending-p.php
+0 2 0 52142 0 1 0 0
+/public/storage/icons/google-sheets.png
+1 258 0 1510499 0 0 0 0
+/api/v2/vendor/invoice-reconcilliation-list.php
+0 8 0 13052 0 0 0 0
+/branch/location/ajaxs/pr/ajax-items.php
+0 254 0 1490135 0 3 0 0
+/public/assets/comboTreePlugin.js
+0 12 0 64509 0 0 0 0
+/branch/location/ajaxs/ajax-customer-with-out-verify-gstin.php
+0 1 0 8175 0 0 0 0
+/branch/location/manage-invoices.php
+0 310 0 44560625 26 3 0 0
+/uploads/1/grn-invoice/170905122519149.pdf
+0 13 0 1404850 0 0 0 0
+/app/v1/functions/common/templates/template-vendor-voucher.php
+0 121 0 210118 0 5 0 0
+/branch/location/ajaxs/vendor/ajax-account-edit.php
+0 237 0 242402 0 3 0 0
+/api/v2/vendor/dashboard.php
+0 51 0 791643 0 2 0 0
+/public/storage/invoice-icon/invoice.png
+1 5 0 104745 0 0 0 0
+/uploads/1/grn-invoice/170670963684609.pdf
+0 1 0 126348 0 0 0 0
+/public/assets/plugins/datatables-buttons/js/buttons.colVis.min.js
+0 239 0 322223 0 0 0 0
+/uploads/1/grn-invoice/169840588577889.pdf
+0 1 0 103457 0 0 0 0
+/public/main-assets/images/banner/main-home/shape5.png
+1 32 0 121297 0 0 0 0
+/uploads/1/grn-invoice/170107402412811.pdf
+0 1 0 1115798 0 0 0 0
+/branch/location/ajaxs/ajax-bom.php
+0 76 0 165130 0 1 0 0
+/uploads/1/grn-invoice/171024296834498.pdf
+0 13 0 3105083 0 0 0 0
+/uploads/1/others/169738485478907.jpg
+1 8 0 32104 0 0 0 0
+/public/assets/plugins/sparklines/sparkline.js
+0 247 0 582646 0 0 0 0
+/uploads/1/grn-invoice/170470931224039.pdf
+0 1 0 535518 0 0 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+0 99 0 1247694 1 1 0 0
+/public/validations/collectionValidation.js
+0 5 0 6137 0 0 0 0
+/branch/location/manage-sfg-stock.php
+0 3 0 1033641 1 0 0 0
+/branch/location/manage-proforma-invoice.php
+0 9 0 386128 0 1 0 0
+/branch/location/advancePaymnetSettlement.php
+0 34 0 863716 0 0 0 0
+/public/storage/icons/gst.png
+1 8 0 165890 0 0 0 0
+/branch/location/manage-assets.php
+0 33 0 2226207 0 0 0 0
+/public/assets/img/icons/MMicon/my-items.svg
+0 265 0 453471 0 0 0 0
+/branch/location/bom/bom-p.php
+0 48 0 1112579 0 1 0 0
+/branch/location/manage-payments-old_04.05.2024.php
+0 3 0 94429 0 0 0 0
+/style.css
+0 44 0 1525037 0 0 0 0
+/uploads/1/grn-invoice/170651413917088.pdf
+0 1 0 389933 0 0 0 0
+/branch/manage-user-variant-access.php
+0 8 0 209742 1 1 0 0
+/branch/location/ajaxs/po/ajax-items.php
+0 45 0 266107 0 1 0 0
+/public/main-assets/images/banner/main-home/shape4.png
+1 32 0 78982 0 0 0 0
+/branch/location/accountingreports/purchase-register-product-wise.php
+0 5 0 130571 0 0 0 0
+/branch/location/manage-pgi.php
+0 50 0 2752600 0 0 0 0
+/branch/login.php
+0 66478 0 2822981897 28 461 0 0
+/branch/location/ajaxs/items/ajax-hsn.php
+0 334 0 829464 3 4 0 0
+/api/v2/customer/dashboard.php
+0 1 0 43166 2 0 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-pr-modal.php
+0 1080 0 1081915 0 22 0 0
+/uploads/1/others/170201603536712.jpg
+1 1 0 29176 0 0 0 0
+/branch/location/po-items.php
+0 3 0 76111 0 1 0 0
+/branch/location/manage-item-discount-group.php
+0 11 0 251289 0 0 0 0
+/public/storage/icons/admin-user.png
+1 7 0 170784 0 0 0 0
+/company/manage-functionalities.php
+0 1 0 14064 1 0 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-goods-modal.php
+0 836 0 1170197 11 16 0 0
+/public/assets/img/sidebar/Accounting/accounts.gif
+1 267 0 84081790 0 0 0 0
+/uploads/1/grn-invoice/170470909687733.pdf
+0 1 0 265158 0 0 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-grn-pending-modal.php
+0 72 0 331940 0 2 0 0
+/public/main-assets/css/font-awesome.min.css
+0 40 0 336650 0 0 0 0
+/public/assets/plugins/summernote/summernote-bs4.min.css
+0 302 0 1248884 0 0 0 0
+/public/assets/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css
+0 309 0 473593 0 0 0 0
+/public/assets/plugins/fontawesome-free/webfonts/fa-brands-400.woff2
+0 19 0 1379578 0 0 0 0
+/branch/location/ajaxs/vendor/ajax-vendor-pan.php
+0 111 0 81002 0 0 0 0
+/api/v2/customer/list-items.php
+0 6 0 92025 2 0 0 0
+/branch/location/ajaxs/debit-note/ajax-items-stock-list.php
+0 1 0 4291 0 1 0 0
+/branch/location/report-profit-and-loss.php
+0 2 0 46687 0 0 0 0
+/branch/location/ajaxs/ajax-warehouse.php
+0 95 0 203100 0 0 0 0
+/public/assets/img/sidebar/dashboard.png
+1 7 0 148960 0 0 0 0
+/uploads/1/others/171351723963868.JPG
+1 20 0 479070 0 0 0 0
+/public/assets/plugins/bs-stepper/css/bs-stepper.min.css
+0 303 0 439129 0 0 0 0
+/branch/location/manage-debit-notes-p.php
+0 132 0 3706695 2 2 0 0
+/uploads/1/grn-invoice/170651646538762.pdf
+0 1 0 643064 0 0 0 0
+/branch/location/ajaxs/mail/ajax-mail-trail.php
+0 4 0 2523 0 0 0 0
+/uploads/1/grn-invoice/169786442325346.pdf
+0 1 0 411051 0 0 0 0
+/branch/location/esi-p.php
+0 1 0 25713 0 0 0 0
+/branch/location/ajaxs/ajax-goods-fg.php
+0 2 0 4368 0 0 0 0
+/branch/location/matrix.php
+0 40 0 1288857 0 1 0 0
+/branch/location/bom/ajax/ajax-other-expense-head.php
+0 5 0 5527 0 0 0 0
+/public/validations/goodsValidation.js
+0 15 0 59897 0 0 0 0
+/branch/location//ajaxs/ajax-manage-pr.php
+0 3 0 19302 0 0 0 0
+/public/assets/plugins/bs-stepper/js/bs-stepper.min.js
+0 242 0 591634 0 0 0 0
+/branch/ajaxs/ajax-variant-list.php
+0 2 0 2216 0 0 0 0
+/branch/location/ajaxs/credit-note/ajax-generate-cn-number.php
+0 3 0 1647 0 0 0 0
+/public/assets/img/sidebar/material-management.png
+1 281 0 966039 0 0 0 0
+/branch/location/ajaxs/ajax-inventory-stock-log.php
+0 162 0 299571 1 0 0 0
+/branch/location/ajaxs/items/ajax-group-modal.php
+0 103 0 67056 1 1 0 0
+/public/assets/mobile-menu.css
+0 275 0 622331 0 0 0 0
+/public/assets/AdminLTE/dist/js/adminlte.js
+0 240 0 3981377 0 0 0 0
+/branch/location/credit-notes-creation.php
+0 8 0 496489 0 0 0 0
+/branch/location/manage-sales-orders-pending-p.php
+0 8 0 253987 0 0 0 0
+/uploads/1/grn-invoice/171482722315207.jpeg
+0 14 0 1395315 0 0 0 0
+/uploads/1/grn-invoice/169773583527012.pdf
+0 1 0 125909 0 0 0 0
+/uploads/1/others/169891160066593.jpg
+1 3 0 87528 0 0 0 0
+/branch/location/manage-grn-pending-p.php
+0 323 0 8177595 3 2 0 0
+/public/assets/AdminLTE/dist/css/adminlte.min.css
+0 354 0 43551932 0 0 0 0
+/public/assets/img/vitt/vittnew2.png
+1 112 0 26587738 0 0 0 0
+/public/assets/img/icons/SDicon/sales-order.svg
+0 266 0 656750 0 0 0 0
+/branch/location/ajaxs/so/ajax-customers-address.php
+0 576 0 261294 13 1 0 0
+/branch/location/collect-payment.php
+0 248 0 7124449 4 3 0 0
+/branch/location/ajaxs/ajax-manage-payment.php
+0 362 0 2984474 3 3 0 0
+/uploads/1/grn-invoice/170832450739015.jpeg
+0 13 0 529257 0 0 0 0
+/api/v2/vendor/invoice.php
+0 81 0 611055 0 7 0 0
+/branch/location/ajaxs/ajax-recieved-items-rm.php
+0 1 0 3678 0 0 0 0
+/branch/location/manage-job-order-list.php
+0 7 0 815354 0 0 0 0
+/.well-known/acme-challenge/doethqE7tP3PeOFCTTuL8o7o_FPloCITKVrrxCvcDqI
+0 5 0 1460 0 0 0 0
+/company/manage-user-variant-access.php
+0 1 0 27381 0 0 0 0
+/branch/location/manage-vendor-payment.php
+0 14 0 330190 0 0 0 0
+/public/main-assets/images/logo/Vitwo-AI-LOGO.png
+1 115 0 21704224 0 0 0 0
+/branch/location/ajaxs/po/ajax-edititems-list.php
+0 1 0 1886 0 0 0 0
+/branch/location/ajaxs/customer/ajax-dateRange-statement.php
+0 158 0 836206 0 1 0 0
+/branch/location/accountingreports/receivable-analysis.php
+0 16 0 481268 1 0 0 0
+/branch/location/tds-p.php
+0 1 0 25698 0 0 0 0
+/branch/location/manage-pending-grn-p.php
+0 3 0 78640 0 0 0 0
+/public/main-assets/images/banner/main-home/background-min.png
+1 35 0 3243072 0 0 0 0
+/public/assets/gif/OCR-2.gif
+1 13 0 6507373 0 0 0 0
+/branch/location/ajaxs/ajax-gl-value.php
+0 6 0 11205 0 0 0 0
+/branch/location/manage-purchases-orders-service-p.php
+0 3 0 78663 0 0 0 0
+/branch/location/recieved-item-rejected-p.php
+0 2 0 52468 0 0 0 0
+/branch/location/manage-job-order-pending-list-p.php
+0 558 0 17842819 7 7 0 0
+/public/assets/plugins/fontawesome-free/webfonts/fa-solid-900.eot
+0 1 0 203323 0 0 0 0
+/branch/ajaxs/reports/ajax-charts.php
+0 46 0 45671 13 3 0 0
+/branch/location/manage-payments-p.php
+0 330 0 9683097 4 4 0 0
+/branch/location/ajaxs/ajax-goods-sfg.php
+0 2 0 4112 0 0 0 0
+/public/main-assets/images/banner/main-home/hero-shpae-min.png
+1 33 0 8279497 0 0 0 0
+/uploads/1/grn-invoice/171378088130922.jpeg
+0 16 0 2550756 0 0 0 0
+/branch/location/ajaxs/so/ajax-generate-inv-number.php
+0 1217 0 723675 1 11 0 0
+/branch/location/ajaxs/ajax-closing-subgl.php
+0 1 0 2365 0 0 0 0
+/branch/location/ajaxs/transfer/ajax-items-goods-type.php
+0 46 0 352523 8 0 0 0
+/branch/location/manage-fg-stock.php
+0 12 0 30960257 3 0 0 0
+/public/assets/img/icons/WMSIcon/fg-stock.svg
+0 266 0 355199 0 0 0 0
+/branch/location/goods-actions.php
+0 16 0 710964 0 0 0 0
+/api/v2/customer/recent-order-list.php
+0 71 0 4319257 1 7 0 0
+/public/assets/img/CLick-Me.webp
+0 11 0 1572340 0 0 0 0
+/branch/location/manage-assets-p.php
+0 48 0 1307575 0 0 0 0
+/branch/location/ajaxs/mrp/ajax-mrp.php
+0 45 0 21905 0 1 0 0
+/branch/location/manage-goods-stock.php
+0 149 0 4061998 0 1 0 0
+/branch/location/ajaxs/grn/ajax-grn-invoice-settlement.php
+0 1 0 299 0 0 0 0
+/uploads/1/grn-invoice/170892602386183.jpeg
+0 13 0 529801 0 0 0 0
+/public/assets/plugins/datatables-responsive/js/responsive.bootstrap4.min.js
+0 239 0 229728 0 0 0 0
+/branch/location/ajaxs/ledger/ajax-gl-value.php
+0 69 0 204908 0 1 0 0
+/branch/location/ajaxs/debit-note/ajax-bill-list.php
+0 2 0 1544 0 0 0 0
+/public/assets/img/icons/SDicon/settlement.svg
+0 265 0 240182 0 0 0 0
+/branch/location/ajaxs/ajax-manage-rm-stock.php
+0 7 0 22974 0 0 0 0
+/branch/location/banking-visualize-chart.php
+0 1 0 25236 0 0 0 0
+/branch/location/ajaxs/so/ajax-invoice-templates.php
+0 434 0 1377543 0 4 0 0
+/api/v2/vendor/logout.php
+0 3 0 1857 0 0 0 0
+/public/validations/creditNotesValidation.js
+0 8 0 15302 0 0 0 0
+/branch/location/ajaxs/pr/ajax-items-list.php
+0 51 0 92262 0 1 0 0
+/branch/location/ajaxs/so/ajax-customerslst-select2.php
+0 738 0 764451 4 24 0 0
+/branch/location/manage-pr.php
+0 326 0 13308087 1 9 0 0
+/public/validations/pgiValidation.js
+0 31 0 22171 0 0 0 0
+/public/main-assets/images/banner/main-home/shape2.png
+1 32 0 97892 0 0 0 0
+/uploads/1/others/169841798634980.JPG
+1 1 0 13641 0 0 0 0
+/public/validations/quotationValidation.js
+0 1 0 7109 0 0 0 0
+/public/assets/img/icons/WMSIcon/warehouse.svg
+0 261 0 430417 0 0 0 0
+/uploads/1/others/171343545611464.jpg
+1 16 0 793451 0 0 0 0
+/branch/location/manage-sales-orders-approved.php
+0 15 0 1476756 0 0 0 0
+/public/validations/soValidation.js
+0 105 0 276580 0 0 0 0
+/api/v2/customer/all-products.php
+0 234 0 22724635 60 4 0 0
+/public/assets/img/down-arrow.png
+1 3 0 8204 0 0 0 0
+/branch/location/manage-rfq.php
+0 142 0 4211901 1 1 0 0
+/public/assets/plugins/fontawesome-free/webfonts/fa-regular-400.woff2
+0 283 0 3835682 0 0 0 0
+/branch/location/ajaxs/grn/ajax-fetch-multiple-po.php
+0 30 0 51769 0 0 0 0
+/api/v2/customer/product-single-group-with-products.php
+0 11 0 84342 0 1 0 0
+/public/main-assets/fonts/flaticon.css
+0 38 0 70470 0 0 0 0
+/uploads/1/others/171343545697301.jpg
+1 13 0 174843 0 0 0 0
+/api/v2/customer/product-group-list.php
+0 32 0 802330 0 0 0 0
+/branch/location/ajaxs/ajax-customer-chart.php
+0 3340 0 2437566 1 4 0 0
+/public/mailstatus/mail-status-so-invoice.php
+0 2 0 8162 1 1 0 0
+/public/assets/img/icons/WMSIcon/storage-location.svg
+0 261 0 238912 0 0 0 0
+/branch/location/ajaxs/grn/ajax-posted-grn.php
+0 30 0 266655 0 0 0 0
+/uploads/1/others/169933874068694.jpg
+1 1 0 39105 0 0 0 0
+/public/validations/vendorValidation.js
+0 12 0 45941 0 0 0 0
+/branch/location/ajaxs/modals/vm/ajax-manage-rfq-modal.php
+0 46 0 50699 0 0 0 0
+/branch/location/manage-production-declaration.php
+0 51 0 4811530 0 0 0 0
+/branch/location/manage-storage-location-p.php
+0 149 0 3826788 18 4 0 0
+/app/v1/functions/common/templates/template-collect-payment.php
+0 44 0 31341 0 0 0 0
+/public/assets/dist/filepond-plugin-file-encode.min.js
+0 1 0 1742 0 0 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+0 341 0 501314 6 2 0 0
+/branch/location/accountingreports/sales-register-customer-wise.php
+0 38 0 905929 2 1 0 0
+/public/assets/gif/no-response.gif
+1 3 0 1103301 0 0 0 0
+/branch/location/pending-po.php
+0 43 0 2258171 2 0 0 0
+/public/assets/plugins/jszip/jszip.min.js
+0 243 0 6853851 0 0 0 0
+/branch/location/manage-bin.php
+0 6 0 133719 1 1 0 0
+/public/storage/icons/menu.png
+1 12 0 159752 0 0 0 0
+/uploads/1/grn-invoice/170798508333118.pdf
+0 12 0 3908303 0 0 0 0
+/branch/location/failed-accounting-invoices.php
+0 33 0 815445 0 0 0 0
+/branch/location/manage-purchases-orders-p.php
+0 538 0 16845765 4 5 0 0
+/public/storage/icons/trial-balance.png
+1 262 0 5280341 0 0 0 0
+/branch/location/pr-list-p.php
+0 9 0 229387 0 0 0 0
+/public/assets/plugins/moment/moment.min.js
+0 245 0 4669919 0 0 0 0
+/branch/location/manage-purchases-orders-closed-p.php
+0 1 0 26073 0 0 0 0
+/branch/location/manage-production-order.php
+0 248 0 19547664 4 2 0 0
+/public/assets/img/icons/MMicon/purchase-order.svg
+0 264 0 192170 0 0 0 0
+/branch/location//manage-pr-p.php
+0 3 0 87038 0 0 0 0
+/public/assets/filepond/filepond-plugin-file-validate-size.min.js
+0 12 0 19023 0 0 0 0
+/public/assets/img/icons/WMSIcon/manage-bin.svg
+0 260 0 353819 0 0 0 0
+/branch/location/ajaxs/ajax-recieved-items-fg.php
+0 3 0 8733 0 0 0 0
+/public/assets/core.js
+0 248 0 70703258 0 0 0 0
+/branch/location/vendor-multipayments-test.php
+0 4 0 105102 0 1 0 0
+/public/assets/dist/filepond-plugin-image-exif-orientation.min.js
+0 1 0 1621 0 0 0 0
+/public/validations/prValidation.js
+0 32 0 63528 0 0 0 0
+/api/v2/customer/cart-list-items.php
+0 281 0 1185171 1 7 0 0
+/uploads/1/others/169804896440220.jpg
+1 1 0 7206 0 0 0 0
+/branch/location/bom/ajax/get-prod-tree-view.php
+0 10 0 5636 0 0 0 0
+/branch/location/goods.php
+0 192 0 18992288 0 3 0 0
+/public/assets/img/sidebar/Sales-Order/Credit-Notes.png
+1 261 0 1588042 0 0 0 0
+/public/assets/AdminLTE/dist/js/demo.js
+0 237 0 884054 0 0 0 0
+/public/assets/plugins/summernote/summernote-bs4.min.js
+0 243 0 9201753 0 0 0 0
+/uploads/1/grn-invoice/170797718071095.pdf
+0 10 0 3639629 0 0 0 0
+/branch/location/ajaxs/ajax-manage-rfq.php
+0 87 0 175226 0 2 0 0
+/admin/login.php
+0 4 0 6594 4 0 0 0
+/public/assets/AdminLTE/dist/js/adminlte.min.js
+0 101 0 1185669 0 0 0 0
+/app/v1/functions/common/templates/template-vendor-payout.php
+0 6 0 29205 1 0 0 0
+/public/assets/img/icons/FAIcon/asset-depriciation.svg
+0 261 0 301918 0 0 0 0
+/branch/location//goods.php
+0 3 0 335228 0 0 0 0
+/public/assets/print.css
+0 15 0 7329 0 0 0 0
+/uploads/1/grn-invoice/170670932325530.pdf
+0 1 0 44094 0 0 0 0
+/branch/location/rfq-actions.php
+0 6 0 148449 0 0 0 0
+/branch/location/manage-charts.php
+0 1 0 71072 0 0 0 0
+/public/assets/sunburst.js
+0 246 0 646481 0 0 0 0
+/public/storage/audittrail/ADD.png
+1 7 0 27728 0 0 0 0
+/public/assets/plugins/datatables-responsive/css/responsive.bootstrap4.min.css
+0 303 0 436485 0 0 0 0
+/branch/location/ajaxs/so/ajax-invoice-customer-advanced.php
+0 2 0 1472 0 0 0 0
+/api/v2/customer/login.php
+0 5 0 6046 0 0 0 0
+/branch/location/ajaxs/ajax-tds.php
+0 1 0 990 0 0 0 0
+/branch/location/stock-count.php
+0 6 0 447725 1 0 0 0
+/public/storage/icons/manage-role.png
+1 12 0 234794 0 0 0 0
+/uploads/1/others/169933685578294.jpg
+1 3 0 87528 0 0 0 0
+/branch/location/ajaxs/po/ajax-vendors-list.php
+0 21 0 28137 1 0 0 0
+/uploads/1/others/171333767654102.jpg
+1 7 0 1051547 0 0 0 0
+/branch/location/manage-discount-variation.php
+0 109 0 2711377 0 1 0 0
+/public/assets/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js
+0 242 0 4778231 0 0 0 0
+/branch/location/ajaxs/so/ajax-currency.php
+0 74 0 58632 16 0 0 0
+/public/assets/img/sidebar/logout.png
+1 7 0 157011 0 0 0 0
+/branch/location/recieved-item-sfg-p.php
+0 2 0 53161 0 0 0 0
+/public/storage/icons/setting.png
+1 259 0 6932333 0 0 0 0
+/branch/location/ledger-view-report.php
+0 33 0 931594 0 1 0 0
+/public/assets/img/header-icon/branch.png
+1 286 0 3671232 0 0 0 0
+/branch/location/warehouse.php
+0 35 0 781491 0 0 0 0
+/public/assets/script.js
+0 247 0 198544 0 0 0 0
+/branch/location/manage-credit-notes-p.php
+0 335 0 9546215 5 6 0 0
+/branch/location/ajaxs/ajax-save-cookies.php
+0 158 0 126475 1 1 0 0
+/api/v2/vendor/invoice-status.php
+0 46 0 30452 0 1 0 0
+/uploads/1/grn-invoice/170921372132799.jpeg
+0 13 0 2510493 0 0 0 0
+/uploads/1/others/169780300218791.png
+1 1 0 3918 0 0 0 0
+/public/assets/img/sidebar/acc-report.png
+1 281 0 1459596 0 0 0 0
+/branch/location/ajaxs/so/ajax-item-discount.php
+0 498 0 434575 0 12 0 0
+/public/assets/img/icons/VMIcons/vendor.svg
+0 262 0 235840 0 0 0 0
+/branch/location/ajaxs/grn/ajax-multiple-invoice-grn.php
+0 12 0 21086 3 0 0 0
+/public/web.png
+1 14 0 73648 0 0 0 0
+/branch/location/ajaxs/modals/so/ajax-manage-so-pending-modal.php
+0 2 0 4338 0 0 0 0
+/branch/location/ajaxs/ajax-inventory-stock-detail.php
+0 152 0 137156 1 4 0 0
+/company/
+0 34 0 663030 1 1 0 0
+/public/assets/img/sidebar/wms.png
+1 278 0 1497127 0 0 0 0
+/branch/location/manage-sales-orders-exceptional-p.php
+0 19 0 606529 0 0 0 0
+/branch/location/pos/pos.php
+0 8 0 326847 0 0 0 0
+/public/assets/plugins/jqvmap/jquery.vmap.min.js
+0 245 0 1592018 0 0 0 0
+/branch/location/
+0 2825 0 469399811 716 284 0 0
+/vendor-rfq.php
+0 1 0 11241 0 0 0 0
+/public/assets/img/header-icon/company.png
+1 288 0 3741234 0 0 0 0
+/public/assets/banking.css
+0 1 0 3347 0 0 0 0
+/public/assets/plugins/datatables-buttons/js/dataTables.buttons.min.js
+0 239 0 1683893 0 0 0 0
+/branch/location/manage-payments.php
+0 203 0 5572832 3 0 0 0
+/uploads/1/others/169763746152184.jpg
+1 1 0 12619 0 0 0 0
+/branch/location/ajaxs/so/ajax-items-reserve-stock-check.php
+0 5 0 7293 0 0 0 0
+/branch/location/accountingreports/sales-register-product-wise.php
+0 35 0 854018 3 3 0 0
+/branch/location/ajaxs/ajax-manage-so-approve.php
+0 22 0 1541230 0 1 0 0
+/uploads/1/others/169823212876993.jpg
+1 1 0 29176 0 0 0 0
+/public/assets/plugins/chart.js/Chart.min.js
+0 247 0 13204094 0 0 0 0
+/public/assets/img/icons/VMIcons/vendor-invoice.svg
+0 262 0 425704 0 0 0 0
+/branch/location/ajaxs/po/ajax-vendors-prev.php
+0 21 0 22095 0 1 0 0
+/uploads/1/others/171351723977523.jpg
+1 27 0 3468062 0 0 0 0
+/branch/location/ajaxs/ajax-debit-notes.php
+0 90 0 298331 0 3 0 0
+/public/assets/img/icons/WMSIcon/sfg-stock.svg
+0 260 0 348679 0 0 0 0
+/public/assets/img/icons/FAIcon/cost-center.svg
+0 261 0 341953 0 0 0 0
+/branch/location/ajaxs/so/ajax-customers-invoice-log.php
+0 778 0 527614 0 4 0 0
+/branch/location/manage-pr-p.php
+0 1660 0 46075387 23 27 0 0
+/branch/location/ajaxs/ajax-manage-vendors.php
+0 1 0 4035 0 0 0 0
+/uploads/1/grn-invoice/171465245813348.pdf
+0 19 0 5042781 0 0 0 0
+/branch/location/manage-customer-mrp-group.php
+0 9 0 197304 0 0 0 0
+/public/assets/plugins/daterangepicker/daterangepicker.css
+0 306 0 678221 0 0 0 0
+/uploads/1/others/169779270180291.jpg
+1 2 0 165758 0 0 0 0
+/branch/location/bom/ajax/ajax-table.php
+0 132 0 58915 0 0 0 0
+/public/assets/plugins/datatables-buttons/js/buttons.bootstrap4.min.js
+0 239 0 211520 0 0 0 0
+/branch/location/manage-grn.php
+0 156 0 3737406 1 0 0 0
+/public/assets/img/icons/SDicon/invoice.svg
+0 265 0 425736 0 0 0 0
+/branch/location/ajaxs/audittrail/ajax-audit-trail.php
+0 224 0 143493 0 2 0 0
+/public/assets/plugins/bs-stepper/css/bs-stepper.min.css.map
+0 154 0 336769 0 0 0 0
+/public/main-assets/images/banner/main-home/shape1.png
+1 32 0 209494 0 0 0 0
+/.well-known/acme-challenge/JPAUOk-D2k24wgDdSqrMIfQ0blldRxKRjWsrIzzom6g
+0 5 0 1466 0 0 0 0
+/branch/location/ajaxs/ajax-collect-payment.php
+0 488 0 13301247 0 3 0 0
+/branch/location/debit-notes-creation.php
+0 35 0 1803441 0 1 0 0
+/branch/location/ajaxs/ajax-manage-assets.php
+0 37 0 144318 1 0 0 0
+/branch/location/ajaxs/ajax-salary.php
+0 1 0 987 0 0 0 0
+/branch/location/ajaxs/modals/fa/ajax-credit-note-modal.php
+0 173 0 264698 0 3 0 0
+/public/assets/forceDirected.js
+0 249 0 1692359 0 0 0 0
+/public/main-assets/css/magnific-popup.css
+0 38 0 86544 0 0 0 0
+/branch/location/recieved-item-p.php
+0 7 0 186891 0 0 0 0
+/branch/location/ajaxs/modals/so/ajax-manage-pgi-modal.php
+0 4 0 6677 0 0 0 0
+/branch/location/bom/bom.php
+0 117 0 3850084 0 3 0 0
+/api/v2/vendor/dashboard-pie.php
+0 29 0 20010 0 0 0 0
+/uploads/1/grn-invoice/170650914281680.pdf
+0 1 0 729532 0 0 0 0
+/public/assets/plugins/sweetalert2/sweetalert2.min.js
+0 281 0 4359911 0 0 0 0
+/public/assets/accordion.css
+0 56 0 66839 0 0 0 0
+/branch/location/ajaxs/so/ajax-customers-list.php
+0 1412 0 3053778 23 14 0 0
+/branch/location/ajaxs/ajax-manage-inventory.php
+0 149 0 6989140 7 1 0 0
+/public/main-assets/css/responsive.css
+0 43 0 363390 0 0 0 0
+/public/assets/img/icons/FAIcon/debit-note.svg
+0 261 0 261118 0 0 0 0
+/branch/location/ajaxs/vendor/ajax-statement.php
+0 44 0 92592 0 3 0 0
+/public/assets/img/sidebar/product-planning.png
+1 282 0 1857871 0 0 0 0
+/api/v2/customer/remove-from-cart.php
+0 11 0 7961 0 1 0 0
+/public/assets/img/icons/SDicon/collections.svg
+0 264 0 502600 0 0 0 0
+/branch/location/ajaxs/items/ajax-good-types.php
+0 328 0 183460 2 2 0 0
+/branch/location/ajaxs/modals/so/ajax-manage-so-all-classicview.php
+0 16 0 26686 0 1 0 0
+/uploads/1/grn-invoice/170140747553381.pdf
+0 1 0 433719 0 0 0 0
+/uploads/1/grn-invoice/170011933289174.pdf
+0 1 0 1081103 0 0 0 0
+/branch/location/ajaxs/accounting/ajax-getglbyp.php
+0 35 0 30863 0 0 0 0
+/branch/location/ajaxs/ajax-stock-report.php
+0 8 0 98049 0 0 0 0
+/public/assets/plugins/jqvmap/jqvmap.min.css
+0 314 0 357792 0 0 0 0
+/public/assets/dist/filepond-plugin-image-preview.min.css
+0 1 0 1442 0 0 0 0
+/branch/location/stock-count-p.php
+0 1 0 25820 0 0 0 0
+/branch/location/goods-fg-p.php
+0 2 0 51530 0 0 0 0
+/uploads/1/grn-invoice/171473930189497.pdf
+0 15 0 1199009 0 0 0 0
+/branch/location/ajaxs/ajax-manage-so-exceptional.php
+0 15 0 57417 0 0 0 0
+/branch/location/my-tickets.php
+0 2 0 1182 1 0 0 0
+/branch/location/manage-production-declaration-p.php
+0 1 0 26575 0 0 0 0
+/branch/location/manage-vendors-p.php
+0 1 0 25820 0 0 0 0
+/branch/location/ajaxs/ajax-manage-so.php
+0 82 0 6141806 0 1 0 0
+/public/assets/img/VitNew 1.png
+1 1 0 40366 0 0 0 0
+/branch/location/ajaxs/so/ajax-invoice-customer-list.php
+0 28 0 147648 0 0 0 0
+/public/main-assets/css/uicons-regular-rounded.css
+0 38 0 185209 0 0 0 0
+/branch/location/ajaxs/ajax-esi.php
+0 1 0 996 0 0 0 0
+/public/assets/dist/filepond-plugin-file-validate-size.min.js
+0 1 0 1464 0 0 0 0
+/branch/location/sub-ledger-view-report.php
+0 44 0 1717933 0 0 0 0
+/public/storage/signature/bs-signature-demo_4.png
+1 5 0 21090 0 0 0 0
+/branch/location/ajaxs/vendor/ajax-vendor-quick-register.php
+0 4 0 6857 0 0 0 0
+/branch/location/manage-customer-discount-group.php
+0 12 0 280696 0 0 0 0
+/public/assets/filepond/filepond-plugin-file-encode.min.js
+0 12 0 22219 0 0 0 0
+/branch/location/manage-rm-stock-p.php
+0 5 0 125574 0 1 0 0
+/public/main-assets/images/banner/main-home/Location_white.png
+1 34 0 426569 0 0 0 0
+/uploads/1/profile/169745887862279.png
+1 38 0 4329882 0 0 0 0
+/customer/login.php
+0 1 0 1629 1 0 0 0
+/api/v2/customer/order-list-items.php
+0 6 0 148935 0 0 0 0
+/public/assets/img/sidebar/material.png
+1 264 0 8354211 0 0 0 0
+/public/main-assets/images/banner/main-home/shape3.png
+1 32 0 94576 0 0 0 0
+/branch/location/ajaxs/ajax-manage-po-pending.php
+0 2 0 7636 0 1 0 0
+/api/v2/vendor/po-invoice.php
+0 5 0 3055 0 0 0 0
+/public/vitwo.png
+1 13 0 135000 0 0 0 0
+/public/assets/cookies.js
+0 254 0 309730 0 0 0 0
+/public/assets/img/cheque-book.jpg
+1 5 0 232397 0 0 0 0
+/branch/ajaxs/compliance/ajax-create-e-invoice.php
+0 21 0 41814 0 2 0 0
+/company/manage-invoice-format.php
+0 1 0 13686 1 0 0 0
+/uploads/1/others/171343136680083.jpg
+1 8 0 325008 0 0 0 0
+/branch/location/manage-mrp-variant.php
+0 25 0 616747 0 0 0 0
+/branch/location/classic-view/preview-print.php
+0 17 0 39374 0 0 0 0
+/public/storage/avatar/1.jpg
+1 2 0 37880 0 0 0 0
+/uploads/1/others/170201700291470.jpg
+1 3 0 87528 0 0 0 0
+/branch/location/ajaxs/debit-note/ajax-bill-address-details.php
+0 1 0 1053 0 0 0 0
+/branch/location/ajaxs/items/ajax-qa-storage-type.php
+0 42 0 24276 0 0 0 0
+/branch/location/ajaxs/credit-note/ajax-bill-list.php
+0 44 0 32428 0 0 0 0
+/branch/location/ajaxs/ajax-manage-so-item-wise.php
+0 13 0 611898 0 0 0 0
+/public/assets/img/sidebar/location.png
+1 8 0 244605 0 0 0 0
+/api/v2/vendor/purchase-orders.php
+0 21 0 179268 0 2 0 0
+/branch/location/warehouse-actions.php
+0 12 0 197277 0 0 0 0
+/branch/location/goods-sfg-p.php
+0 2 0 51540 0 0 0 0
+/api/v2/vendor/invoice-reconcilliation.php
+0 1 0 689 0 0 0 0
+/uploads/1/grn-invoice/170618618976751.pdf
+0 1 0 104523 0 0 0 0
+/branch/location/manage-journal.php
+0 13 0 339793 1 0 0 0
+/public/assets/plugins/jquery-knob/jquery.knob.min.js
+0 242 0 973101 0 0 0 0
+/branch/location/ajaxs/ajax-manage-vm-quotation.php
+0 40 0 83098 0 0 0 0
+/branch/location/manage-rfq-p.php
+0 107 0 2558115 3 1 0 0
+/public/assets/plugins/sweetalert2-theme-bootstrap-4/bootstrap-4.min.css
+0 338 0 2280524 0 0 0 0
+/public/assets/gif/AI-Loader.gif
+1 362 0 118252353 0 0 0 0
+/branch/location/ajaxs/items/ajax-purchase-groups.php
+0 328 0 311504 0 4 0 0
+/branch/location/ajaxs/transfer/ajax-items.php
+0 28 0 9257 1 2 0 0
+/company/manage-invoice-mapping.php
+0 1 0 12040 1 0 0 0
+/branch/location/ajaxs/pr/ajax-vendor-matrix.php
+0 4 0 8806 0 0 0 0
+/branch/location/ajaxs/ajax-recieved-items-rejected.php
+0 2 0 4772 0 0 0 0
+/public/assets/dist/lottie-player.js
+0 1 0 93977 0 0 0 0
+/branch/location/pos/ajax/ajax-items-list.php
+0 1 0 2760 0 0 0 0
+/public/assets/
+0 82 0 80422 0 0 0 0
+/public/assets/plugins/daterangepicker/daterangepicker.js
+0 242 0 2917244 0 0 0 0
+/uploads/1/others/171343136613666.JPG
+1 8 0 55576 0 0 0 0
+/branch/location/payroll.php
+0 41 0 1120867 0 0 0 0
+/branch/location/ajaxs/ajax-manage-grn-pending.php
+0 203 0 11662173 3 4 0 0
+/public/assets/gif/login-bg.webm
+0 164 0 374881348 0 0 0 0
+/public/validations/poValidation.js
+0 5 0 11639 0 0 0 0
+/uploads/1/grn-invoice/169883865431194.pdf
+0 1 0 658436 0 0 0 0
+/uploads/1/grn-invoice/169920462635974.pdf
+0 1 0 73856 0 0 0 0
+/public/assets/dist/filepond-plugin-image-preview.min.js
+0 1 0 11094 0 0 0 0
+/uploads/1/grn-invoice/170094256464855.pdf
+0 1 0 239634 0 0 0 0
+/public/main-assets/fonts/fontawesome-webfont.woff2
+0 14 0 1085828 0 0 0 0
+/public/assets/sass/custom.css
+0 307 0 619494 0 0 0 0
+/branch/location/manage-sales-orders-approved-p.php
+0 28 0 731590 1 0 0 0
+/uploads/1/grn-invoice/170556626467629.pdf
+0 1 0 1467595 0 0 0 0
+/public/assets/img/icons/SDicon/pos.svg
+0 264 0 258993 0 0 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-asset-modal.php
+0 21 0 23819 0 0 0 0
+/branch/location/ajaxs/grn/ajax-invoice-vendor-list.php
+0 19 0 47115 0 0 0 0
+/branch/location/ajaxs/grn/ajax-grn-proceed.php
+0 1 0 1019 0 0 0 0
+/branch/location/manage-quotation-p.php
+0 32 0 783861 0 0 0 0
+/branch/location/ajaxs/credit-note/credit-vendor-customer-details.php
+0 48 0 55613 0 0 0 0
+/branch/location/direct-create-invoice.php
+0 657 0 31698822 12 4 0 0
+/public/storage/icons/expense-income.png
+1 259 0 6489723 0 0 0 0
+/branch/location/manage-territory.php
+0 5 0 115801 0 0 0 0
+/branch/location/manage-mrp.php
+0 10 0 352803 0 0 0 0
+/branch/location/ajaxs/so/ajax-items-stock-list.php
+0 21 0 36033 0 0 0 0
+/public/main-assets/images/banner/main-home/Company_white.png
+1 34 0 484904 0 0 0 0
+/uploads/1/grn-invoice/170921335825140.jpeg
+0 13 0 2490621 0 0 0 0
+/public/validations/paymentValidation.js
+0 3 0 3386 0 0 0 0
+/uploads/1/grn-invoice/170738947410857.pdf
+0 5 0 896208 0 0 0 0
+/branch/location/ajaxs/credit-note/ajax-bill-address-details.php
+0 24 0 18902 0 1 0 0
+/branch/location/ajaxs/so/ajax-items.php
+0 782 0 1899653 77 5 0 0
+/uploads/1/grn-invoice/170166941873342.pdf
+0 1 0 467866 0 0 0 0
+/public/assets/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js
+0 242 0 3338478 0 0 0 0
+/branch/location/ajaxs/ajax-payroll.php
+0 2 0 1990 0 0 0 0
+/public/assets/plugins/fontawesome-free/webfonts/fa-regular-400.eot
+0 1 0 34325 0 0 0 0
+/branch/location/ajaxs/debit-note/credit-vendor-customer-details.php
+0 2 0 2564 0 0 0 0
+/uploads/1/grn-invoice/170379016042674.jpg
+1 1 0 1026900 0 0 0 0
+/uploads/1/cancelled-cheque/171482765961598.jpeg
+0 1 0 114946 0 0 0 0
+/public/assets/img/icons/SDicon/sales-quotation.svg
+0 266 0 264647 0 0 0 0
+/uploads/1/grn-invoice/171506248570662.pdf
+0 1 0 407257 0 0 0 0
+/branch/location/ajaxs/grn/ajax-po.php
+0 32 0 2344033 0 1 0 0
+/branch/location/ajaxs/so/ajax-deliverypreview.php
+0 20 0 18118 0 1 0 0
+/uploads/1/grn-invoice/170108092433084.pdf
+0 1 0 711594 0 0 0 0
+/public/main-assets/css/rs-spacing.css
+0 38 0 1976136 0 0 0 0
+/public/main-assets/images/banner/main-home/shape6.png
+1 32 0 129902 0 0 0 0
+/branch/location/ajaxs/credit-note/ajax-address-details.php
+0 27 0 25320 0 2 0 0
+/branch/location/assets-under-construction.php
+0 1 0 26269 0 0 0 0
+/branch/location/ajaxs/grn/ajax-grn-po-items.php
+0 3 0 8042 0 0 0 0
+/public/assets/plugins/summernote/summernote-bs4.min.js.map
+0 121 0 13403411 0 0 0 0
+/company/forgotpass.php
+0 1 0 5387 1 0 0 0
+/public/assets/gif/loadingGRN-data.gif
+1 8 0 760928 0 0 0 0
+/uploads/1/grn-invoice/170094257227511.pdf
+0 1 0 1791984 0 0 0 0
+/public/assets/img/icons/VMIcons/manage-quotation.svg
+0 263 0 317375 0 0 0 0
+/branch/location/ajaxs/reports/ajax-charts.php
+0 2226 0 2180402 39 13 0 0
+/public/storage/icons/blancesheet.png
+1 262 0 8750784 0 0 0 0
+/branch/location/accountingreports/payable-analysis.php
+0 7 0 164021 0 0 0 0
+/public/assets/gif/animation_640_lf2gpcp2.gif
+1 3 0 7037202 0 0 0 0
+/public/main-assets/css/off-canvas.css
+0 38 0 79537 0 0 0 0
+/branch/location/pr-list.php
+0 45 0 1229136 0 0 0 0
+/public/assets/comboTreeWrapper.css
+0 11 0 17775 0 0 0 0
+/branch/location/ajaxs/ajax-pr-list-closed.php
+0 2 0 4164 0 0 0 0
+/public/assets/sales-order.css
+0 85 0 218388 0 0 0 0
+/branch/location/manage-pgi-p.php
+0 16 0 459071 0 0 0 0
+/uploads/1/grn-invoice/170651347213850.pdf
+0 1 0 401254 0 0 0 0
+/branch/location/ajaxs/ajax-manage-goods-stock.php
+0 110 0 3467417 0 1 0 0
+/public/storage/icons/chart-library.png
+1 8 0 125503 0 0 0 0
+/branch/location/ajaxs/transfer/ajax-batch-details.php
+0 4 0 7746 0 0 0 0
+/public/assets/gif/no-transaction.gif
+1 21 0 3302289 0 0 0 0
+/public/assets/img/grn-robot-static.png
+1 1 0 30174 0 0 0 0
+/branch/manage-locations.php
+0 4 0 78457 0 0 0 0
+/public/assets/img/icons/MMicon/purchase-request.svg
+0 265 0 330476 0 0 0 0
+/branch/location/po-items-p.php
+0 2 0 53094 0 0 0 0
+/branch/location/ajaxs/so/ajax-items-goods-type.php
+0 711 0 2353556 78 1 0 0
+/uploads/1/grn-invoice/170547822155813.pdf
+0 1 0 1115757 0 0 0 0
+/public/assets/plugins/fontawesome-free/webfonts/fa-solid-900.woff2
+0 287 0 22409647 0 0 0 0
+/branch/location/classic-view/invoice-preview-print.php
+0 187 0 3404606 1 5 0 0
+/branch/location/manage-grn-posted-p.php
+0 44 0 1174180 0 0 0 0
+/branch/location/manage-sales-orders-item-wise.php
+0 2 0 53747 0 0 0 0
+/public/validations/pendingGrnValidation.js
+0 17 0 26059 0 0 0 0
+/uploads/1/others/169738545044045.jpg
+1 2 0 101570 0 0 0 0
+/branch/location/ajaxs/po/ajax-items-list.php
+0 5 0 10862 0 0 0 0
+/branch/location/ajaxs/ajax-stock-count.php
+0 1 0 2157 0 0 0 0
+/public/validations/goodsInvoiceValidation.js
+0 9 0 12938 0 0 0 0
+/public/assets/img/sidebar/settings.png
+1 260 0 1092379 0 0 0 0
+/app/v1/functions/common/templates/template-collection-advise.php
+0 12 0 52723 1 0 0 0
+/branch/location//ajaxs/items/ajax-hsn.php
+0 3 0 8493 0 0 0 0
+/branch/location/ajaxs/ajax-manage-pgi.php
+0 7 0 19975 0 0 0 0
+/uploads/1/grn-invoice/171506251862052.pdf
+0 1 0 406660 0 0 0 0
+/branch/location/accountingreports/stock-report.php
+0 30 0 1010233 0 0 0 0
+/public/assets/img/sidebar/account-and-finance.png
+1 281 0 1533877 0 0 0 0
+/branch/location/ajaxs/mrp/ajax-group-item.php
+0 6 0 10450 0 0 0 0
+/branch/location/manage-location-items.php
+0 74 0 3041006 1 2 0 0
+/branch/location/ajaxs/modals/so/ajax-manage-so-modal.php
+0 53 0 82984 0 1 0 0
+/public/assets/plugins/datatables/jquery.dataTables.min.js
+0 240 0 6945353 0 0 0 0
+/branch/location/ajaxs/ajax-po-items.php
+0 2 0 4611 0 0 0 0
+/uploads/1/grn-invoice/170011456694796.pdf
+0 1 0 551732 0 0 0 0
+/branch/location//ajaxs/items/ajax-purchase-groups.php
+0 3 0 2530 0 0 0 0
+/public/assets/img/bank-balance.png
+1 1 0 2050 0 0 0 0
+/company/manage-cost-center.php
+0 1 0 14832 1 0 0 0
+/main.js
+0 24 0 27630 0 0 0 0
+/public/assets/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js
+0 242 0 352617 0 0 0 0
+/branch/location/ajaxs/ajax-manage-so-pending.php
+0 8 0 192370 0 0 0 0
+/company/manage-customer-discount-group.php
+0 1 0 14420 0 0 0 0
+/uploads/1/grn-invoice/170236430981805.pdf
+0 1 0 100085 0 0 0 0
+/api/v2/customer/invoice-amount.php
+0 9 0 6090 0 0 0 0
+/public/assets/filepond/filepond-plugin-image-preview.min.css
+0 13 0 23242 0 0 0 0
+/branch/location/ajaxs/ajax-goods.php
+0 369 0 1177909 0 2 0 0
+/public/assets/img/icons/MMicon/bill-of-material.svg
+0 263 0 441763 0 0 0 0
+/uploads/1/others/169754633357246.jpg
+1 1 0 119072 0 0 0 0
+/uploads/1/others/169890941887048.jpg
+1 3 0 87528 0 0 0 0
+/branch/location/recieved-item-rm-p.php
+0 1 0 26509 0 0 0 0
+/public/storage/logo/165985132599981.ico
+0 310 0 461274 0 0 0 0
+/branch/manage-charts.php
+0 1 0 25356 1 0 0 0
+/uploads/1/others/169779270118134.jpg
+1 2 0 14412 0 0 0 0
+/branch/location/manage-rm-stock.php
+0 20 0 68355546 6 0 0 0
+/branch/location/ajaxs/transfer/ajax-items-list-direct.php
+0 36 0 504083 10 1 0 0
+/branch/location/goods-service-p.php
+0 1 0 25484 0 0 0 0
+/uploads/1/grn-invoice/171437198918163.pdf
+0 19 0 9806868 0 0 0 0
+/public/main-assets/css/bootstrap.min.css
+0 39 0 1188288 0 0 0 0
+/public/validations/debitNotesValidation.js
+0 6 0 11012 0 0 0 0
+/public/assets/charts.js
+0 252 0 7738935 0 0 0 0
+/branch/location/ajaxs/pr/ajax-customers.php
+0 223 0 309124 0 0 0 0
+/branch/location/manage-customers.php
+0 126 0 27312252 6 1 0 0
+/public/assets/filepond/filepond.min.css
+0 12 0 51075 0 0 0 0
+/save_screenshot.php
+0 2 0 1301 2 2 0 0
+/branch/location/manage-stock-transfer.php
+0 50 0 1183039 0 0 0 0
+/api/v2/customer/single-product-details.php
+0 93 0 241000 1 2 0 0
+/branch/location/ajaxs/transfer/ajax-items-stock-list.php
+0 1 0 1699 0 0 0 0
+/public/assets/AdminLTE/dist/css/adminlte.min.css.map
+0 153 0 59412009 0 0 0 0
+/public/assets/img/icons/FAIcon/transactional-daybook.svg
+0 261 0 239188 0 0 0 0
+/branch/location/ajaxs/modals/wms/ajax-manage-goods-stock-details.php
+0 42 0 27928 0 0 0 0
+/public/assets/img/icons/PPIcon/inventory.svg
+0 263 0 243638 0 0 0 0
+/branch/location/ajaxs/ajax-manage-po-closed.php
+0 1 0 3433 0 0 0 0
+/uploads/1/grn-invoice/171532821462517.pdf
+0 5 0 834765 0 0 0 0
+/company/manage-kam.php
+0 1 0 14765 1 0 0 0
+/uploads/1/grn-invoice/170055989678224.pdf
+0 1 0 406219 0 0 0 0
+/branch/location/boq/boq.php
+0 10 0 198777 0 1 0 0
+/branch/location/manage-sales-orders-delivery.php
+0 90 0 3075362 1 1 0 0
+/api/v2/vendor/miscellaneous-reconcilliation-list.php
+0 1 0 971 0 0 0 0
+/branch/location/ajaxs/modals/so/ajax-manage-job-order-pending-modal.php
+0 215 0 624825 4 8 0 0
+/branch/location/manage-vendors.php
+0 72 0 12387898 3 1 0 0
+/public/assets/img/icons/goods-service.png
+1 17 0 290298 0 0 0 0
+/company/manage-branches.php
+0 6 0 126132 0 0 0 0
+/branch/location/ajaxs/ajax-assets-under-construction.php
+0 5 0 21365 0 0 0 0
+/branch/location/ajaxs/so/ajax-items-list-direct-new.php
+0 588 0 2948651 9 22 0 0
+/branch/location/ajaxs/ajax-manage-job-order.php
+0 6 0 181294 0 0 0 0
+/branch/location/ajaxs/ajax-manage-goods-stock-details.php
+0 36 0 18955 0 0 0 0
+/branch/location/manage-debit-notes.php
+0 19 0 2082490 0 0 0 0
+/branch/location/ajaxs/ajax-customer-verify-gstin.php
+0 2 0 1182 0 0 0 0
+/public/storage/logo/166274402264313.png
+1 12 0 179125 0 0 0 0
+/public/assets/img/reports-bg.jpeg
+0 12 0 88462 0 0 0 0
+/branch/location/ajaxs/modals/so/ajax-manage-so-approve-modal.php
+0 4 0 7977 0 0 0 0
+/branch/location/manage-cost-center.php
+0 6 0 133397 0 0 0 0
+/public/main-assets/css/owl.carousel.css
+0 38 0 71370 0 0 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-grn-invoice.php
+0 109 0 531077 0 0 0 0
+/branch/location/ajaxs/modals/so/ajax-manage-sales-orders-delivery-classicview.php
+0 4 0 7703 0 0 0 0
+/branch/location/manage-storage-location-actions.php
+0 10 0 184273 0 0 0 0
+/public/assets/plugins/jquery-ui/jquery-ui.min.js
+0 9 0 628886 0 0 0 0
+/branch/location/ajaxs/ajax-currency-convert.php
+0 37 0 28575 4 1 0 0
+/branch/location/ajaxs/ledger/ajax-subgl-value.php
+0 29 0 72642 0 0 0 0
+/branch/location/collectpaymentsettelment.php
+0 32 0 862190 0 0 0 0
+/uploads/1/cancelled-cheque/171499121410421.jpeg
+0 1 0 114944 0 0 0 0
+/uploads/1/acc-statement/171498014365150.pdf
+0 2 0 27028 0 0 0 0
+/branch/location/ajaxs/ajax-recieved-items-sfg.php
+0 2 0 2248 0 0 0 0
+/branch/
+0 65 0 1315726 8 2 0 0
+/branch/location/ajaxs/so/ajax-items-stock-check.php
+0 21 0 20197 0 0 0 0
+/branch/location//purchase-to-pay-creations.php
+0 1 3461614883570279023 41768 0 0 0 0
+/uploads/1/grn-invoice/170859947832039.pdf
+0 13 0 8315803 0 0 0 0
+/public/assets/plugins/datatables-responsive/js/dataTables.responsive.min.js
+0 240 0 1252243 0 0 0 0
+/branch/location/manage-quotation.php
+0 34 0 1182037 1 0 0 0
+/uploads/1/grn-invoice/170488311481379.pdf
+0 1 0 175803 0 0 0 0
+/branch/location/manage-opening-close-balance.php
+0 1 0 29626 0 0 0 0
+/branch/location/ajaxs/modals/so/ajax-manage-sales-orders-delivery-modal.php
+0 11 0 17582 0 0 0 0
+/branch/location/ajaxs/grn/ajax-fetch-child-po.php
+0 30 0 24494 0 0 0 0
+/public/assets/img/icons/FAIcon/payroll.svg
+0 261 0 455938 0 0 0 0
+/public/assets/img/icons/VMIcons/manage-rfq.svg
+0 263 0 864237 0 0 0 0
+/company/manage-variant.php
+0 21 0 497623 0 0 0 0
+/company/administrator-setting.php
+0 1 0 17879 1 0 0 0
+/branch/location/ajaxs/ajax-gst-details.php
+0 41 0 53741 0 0 0 0
+/public/assets/plugins/jqvmap/maps/jquery.vmap.usa.js
+0 245 0 5042284 0 0 0 0
+/uploads/1/grn-invoice/169883809965427.pdf
+0 1 0 1384257 0 0 0 0
+/branch/location/accountingreports/stock-report-new.php
+0 13 0 490618 0 0 0 0
+/uploads/1/grn-invoice/170651632284497.pdf
+0 1 0 672988 0 0 0 0
+/uploads/1/others/169763411772201.jpg
+1 1 0 6356 0 0 0 0
+/public/assets/jquery.fancy.css
+0 4 0 11406 0 0 0 0
+/branch/location/manage-quotations.php
+0 24 0 1485957 0 0 0 0
+/branch/location/manage-pending-grn.php
+0 138 0 4626113 7 5 0 0
+/public/assets/img/icons/SDicon/customers.svg
+0 265 0 737128 0 0 0 0
+/branch/location/ajaxs/modals/so/ajax-done-jobs-modal.php
+0 2 0 4885 0 0 0 0
+/public/assets/img/sidebar/dashboard-blue.png
+1 261 0 843055 0 0 0 0
+/api/v2/customer/featured-products.php
+0 114 0 730531 2 2 0 0
+/uploads/1/grn-invoice/170834024148753.jpg
+1 13 0 380752 0 0 0 0
+/public/assets/AdminLTE/dist/js/adminlte.min.js.map
+0 11 0 330913 0 0 0 0
+/public/assets/img/sidebar/quality_management.svg
+0 266 0 3205179 0 0 0 0
+/branch/location/manage-sales-orders-pending.php
+0 21 0 969366 0 0 0 0
+/branch/location/ajaxs/ajax-manage-job-order-pending.php
+0 205 0 2917899 0 1 0 0
+/public/assets/plugins/moment/moment.min.js.map
+0 122 0 4022848 0 0 0 0
+/branch/location/recieved-item.php
+0 56 0 4678147 0 0 0 0
+/public/assets/img/icons/PPIcon/transper-stock.svg
+0 260 0 178813 0 0 0 0
+/public/assets/img/icons/WMSIcon/rm-stock.svg
+0 260 0 399791 0 0 0 0
+/branch/location/ajaxs/modals/wms/ajax-storage-loc-modal.php
+0 51 0 27924 0 1 0 0
+/
+0 222 0 888902 51 7 0 0
+/public/assets/img/icons/PPIcon/production-order.svg
+0 262 0 227840 0 0 0 0
+/uploads/1/grn-invoice/170177391878250.pdf
+0 1 0 401247 0 0 0 0
+/branch/location/manage-location-items-p.php
+0 46 0 1319244 0 0 0 0
+/branch/location/manage-purchases-orders.php
+0 204 0 13451448 1 2 0 0
+/public/assets/img/sidebar/logout-red.png
+1 262 0 940514 0 0 0 0
+/branch/location/manage-vendor-invoice.php
+0 17 0 462329 0 0 0 0
+/public/assets/listing.css
+0 894 0 25415152 0 0 0 0
+/uploads/1/grn-invoice/171024217393333.pdf
+0 13 0 5875264 0 0 0 0
+/public/assets/stock-report-new.css
+0 792 0 9716373 0 0 0 0
+/public/assets/img/icons/SDicon/payments.svg
+0 262 0 589176 0 0 0 0
+/branch/location/ajaxs/ajax-manage-location-item.php
+0 45 0 138863 0 0 0 0
+/public/assets/img/sidebar/bill-of-material.png
+1 262 0 277548 0 0 0 0
+/uploads/1/others/171325646187429.jpg
+1 7 0 197830 0 0 0 0
+/branch/location/manage-pr-creation.php
+0 38 0 870760 0 2 0 0
+/branch/location/manage-sales-orders-exceptional.php
+0 15 0 659107 0 0 0 0
+/public/storage/logo/loader.gif
+1 31 0 8039636 0 0 0 0
+/public/main-assets/images/logo/Vitwo-AI-LOGO-white.png
+1 4 0 367596 0 0 0 0
+/public/assets/img/header-icon/location.png
+1 265 0 2797911 0 0 0 0
+/public/assets/plugins/pdfmake/pdfmake.min.js.map
+0 120 0 125825839 0 0 0 0
+/public/validations/customerValidation.js
+0 17 0 53542 0 0 0 0
+/api/v2/customer/add-to-order.php
+0 2 0 1394 0 0 0 0
+/branch/location/ajaxs/ajax-failed-acc-invoices.php
+0 50 0 486133 0 0 0 0
+/branch/location/manage-manual-grn.php
+0 62 0 2221736 2 2 0 0
+/public/assets/plugins/jquery/jquery.min.js
+0 370 0 11707755 0 0 0 0
+/branch/location/ajaxs/vendor/ajax-reconciliation.php
+0 2 0 5793 0 0 0 0
+/public/assets/img/sidebar/Sales-Order/Sales-Orders.png
+1 246 0 1052336 0 0 0 0
+/public/assets/img/icons/MMicon/grn-list.svg
+0 263 0 278311 0 0 0 0
+/branch/location/purchase-to-pay-creations.php
+0 253 0 8420875 0 6 0 0
+/branch/location/ajaxs/debit-note/ajax-address-details.php
+0 2 0 1872 0 0 0 0
+/branch/location/ajaxs/grn/ajax-grn-vendor-details.php
+0 3 0 4994 0 0 0 0
+/branch/location/ajaxs/pr/ajax-rfq-submit.php
+0 4 3832393328611190851 3676 0 0 0 0
+/public/assets/img/sidebar/sales-and-distribution.png
+1 279 0 1840334 0 0 0 0
+/public/assets/img/image/goods-item-image.png
+1 14 0 2944453 0 0 0 0
+/branch/location/ajaxs/items/ajax-suggestions.php
+0 542 0 453733 5 6 0 0
+/branch/location/ajaxs/customer/ajax-reconciliation.php
+0 1 0 1175 0 0 0 0
+/branch/location/ajaxs/grn/ajax-invoice-vendor-list2.php
+0 5 0 15301 0 1 0 0
+/branch/location/ajaxs/ajax-manage-fg-stock.php
+0 2 0 8264 0 0 0 0
+/branch/location/ajaxs/ajax-reverse-post.php
+0 35 0 36190 0 0 0 0
+/public/main-assets/css/animate.css
+0 38 0 277207 0 0 0 0
+/public/assets/img/icons/FAIcon/journal-entry.svg
+0 262 0 268544 0 0 0 0
+/branch/location/goods-type-items.php
+0 4 0 3419650 0 0 0 0
+/public/assets/plugins/bs-stepper/js/bs-stepper.min.js.map
+0 121 0 770024 0 0 0 0
+/branch/location/bom/ajax/get-multi-mrp-preview.php
+0 9 0 115079 0 0 0 0
+/branch/location/ajaxs/production/ajax-items.php
+0 35 0 29885 0 0 0 0
+/public/storage/icons/location.png
+1 8 0 172091 0 0 0 0
+/api/v2/customer/related-products.php
+0 146 0 2243925 6 9 0 0
+/public/assets/dist/filepond.min.js
+0 1 0 43303 0 0 0 0
+/uploads/1/others/169738519287788.jpg
+1 2 0 7645 0 0 0 0
+/branch/location/manage-job-order-list-p.php
+0 6 0 190185 0 0 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-purchases-orders-modal.php
+0 276 0 358001 9 9 0 0
+/branch/location/ajaxs/ajax-manage-po-all.php
+0 136 0 5347395 0 1 0 0
+/public/assets/filepond/filepond-plugin-image-preview.min.js
+0 12 0 139625 0 0 0 0
+/branch/location/ajaxs/so/ajax-invoice-customer-list2.php
+0 2 0 29968 0 0 0 0
+/branch/location/manage-sales-orders.php
+0 232 0 32072489 8 4 0 0
+/public/assets/img/icons/MMicon/item-master.svg
+0 265 0 303378 0 0 0 0
+/branch/location/ajaxs/production/ajax-production-order-bom-item-and-stocks.php
+0 48 0 81135 0 0 0 0
+/public/storage/icons/profitandloss.png
+1 259 0 9380617 0 0 0 0
+/public/assets/plugins/overlayScrollbars/css/OverlayScrollbars.min.css
+0 306 0 1594570 0 0 0 0
+/public/assets/html2canvas.min.js
+0 246 0 9926455 0 0 0 0
+/branch/location/ajaxs/po/ajax-vendors.php
+0 342 0 461882 0 8 0 0
+/branch/location/ptax-p.php
+0 1 0 25703 0 0 0 0
+/branch/location/goods-type-items-p.php
+0 2 0 53109 0 0 0 0
+/public/assets/plugins/datatables-buttons/js/buttons.html5.min.js
+0 244 0 1710056 0 0 0 0
+/public/assets/img/icons/PPIcon/consumption-posting.svg
+0 264 0 548399 0 0 0 0
+/company/manage-reports.php
+0 1 0 15307 0 0 0 0
+/branch/location/ajaxs/items/ajax-group-child.php
+0 24 0 11834 0 0 0 0
+/branch/location/ajaxs/ajax-recieved-items.php
+0 8 0 29856 0 0 0 0
+/branch/location/ajaxs/modals/fa/ajax-manage-rfq-modal.php
+0 20 0 11657 0 0 0 0
+/branch/location/ajaxs/modals/so/ajax-collect-payment-modal.php
+0 264 0 429613 2 4 0 0
+/uploads/1/grn-invoice/170135029688879.pdf
+0 1 0 356733 0 0 0 0
+/public/assets/img/logo/vitwo-logo.png
+1 310 0 4014028 0 0 0 0
+/uploads/1/grn-invoice/170705812155906.jpg
+1 2 0 3563644 0 0 0 0
+/public/assets/gif/loading-data.gif
+1 145 0 4731293 0 0 0 0
+/public/assets/AdminLTE/dist/js/pages/dashboard.js
+0 237 0 659820 0 0 0 0
+/public/assets/simple-tree-table/dist/jquery-simple-tree-table.js
+0 14 0 66278 0 0 0 0
+/uploads/1/grn-invoice/170235845762329.pdf
+0 1 0 354124 0 0 0 0
+/branch/location//ajaxs/po/ajax-vendors.php
+0 1 2976378205118811439 1379 0 0 0 0
+/uploads/1/grn-invoice/170715915255219.pdf
+0 3 0 275186 0 0 0 0
+/uploads/1/grn-invoice/170142883984557.pdf
+0 1 0 355310 0 0 0 0
+/public/assets/img/icons/MMicon/stock-report.svg
+0 265 0 367351 0 0 0 0
+/public/assets/img/icons/Settings/manage-openings.svg
+0 8 0 23318 0 0 0 0
+/branch/location/ajaxs/ajax-pr-list.php
+0 9 0 19699 0 0 0 0
+/public/assets/plugins/select2/js/select2.min.js
+0 249 0 5059704 0 0 0 0
+/public/assets-2/js/script.js
+0 278 0 1586057 0 0 0 0
+/branch/location/ajaxs/ledger/ajax-subledger-list.php
+0 18 0 31615 0 0 0 0
+/public/assets/plugins/icheck-bootstrap/icheck-bootstrap.min.css
+0 337 0 823790 0 0 0 0
+/uploads/1/grn-invoice/170097722952208.pdf
+0 1 0 514739 0 0 0 0
+/uploads/1/grn-invoice/170134731920111.pdf
+0 1 0 357621 0 0 0 0
+/uploads/1/others/169763456719714.jpg
+1 1 0 5066 0 0 0 0
+/public/assets/sidebar.css
+0 278 0 936489 0 0 0 0
+/public/assets/img/sidebar/vendor.png
+1 259 0 2582209 0 0 0 0
+/branch/location/goods-p.php
+0 451 0 12712213 1 3 0 0
+/public/assets/AdminLTE/dist/js/adminlte.js.map
+0 121 0 4502856 0 0 0 0
+/branch/location/ajaxs/credit-note/ajax-bill-details.php
+0 24 0 182003 0 0 0 0
+/public/assets/img/sidebar/vendor-management.png
+1 280 0 1908298 0 0 0 0
+/public/main-assets/images/banner/main-home/Website Vitt.png
+1 38 0 18853647 0 0 0 0
+/public/assets/dist/filepond.min.css
+0 1 0 3895 0 0 0 0
+/branch/location/ajaxs/grn/ajax-multiple-grn.php
+0 1 0 887 0 0 0 0
+/branch/location/ajaxs/transfer/ajax-dropdown.php
+0 40 0 48052 0 0 0 0
+/uploads/1/grn-invoice/170094193345255.pdf
+0 1 0 237248 0 0 0 0
+/uploads/1/others/169769861327051.jpeg
+0 1 0 4547 0 0 0 0
+/branch/location/manage-party-orders.php
+0 8 0 492408 0 0 0 0
+/uploads/1/acc-statement/171498026931144.pdf
+0 3 0 40458 0 0 0 0
+/uploads/1/others/169823004693306.jpg
+1 1 0 33150 0 0 0 0
+/api/v2/vendor/login.php
+0 15 0 16665 0 0 0 0
+/branch/location/collect-payment-p.php
+0 262 0 6999811 1 3 0 0
+/api/v2/vendor/miscellaneous-reconcilliation.php
+0 1 0 689 0 0 0 0
+/branch/location/ajaxs/ajax-goods-type-items.php
+0 2 0 7224 0 0 0 0
+/public/assets/plugins/bootstrap/js/bootstrap.bundle.min.js
+0 280 0 6352191 0 0 0 0
+/branch/location/report-balance-sheet.php
+0 20 0 472529 0 0 0 0
+/branch/location/components/grn/pending-grn2-p.php
+0 4 0 69237 0 0 0 0
+/branch/location/payroll-p.php
+0 2 0 52523 0 0 0 0
+/public/assets/img/icons/FAIcon/credit-note.svg
+0 261 0 262138 0 0 0 0
+/public/main-assets/css/rsmenu-main.css
+0 38 0 138804 0 0 0 0
+/public/assets/filepond/filepond.min.js
+0 12 0 540218 0 0 0 0
+/branch/location/ajaxs/so/ajax-close.php
+0 2 0 1844 0 1 0 0
+/public/assets/plugins/bootstrap/js/bootstrap.bundle.min.js.map
+0 124 0 10507354 0 0 0 0
+/branch/location/ajaxs/so/ajax-invoice-customer-details-list.php
+0 23 0 3655353 0 0 0 0
+/uploads/1/cancelled-cheque/171498052773734.jpeg
+0 1 0 114944 0 0 0 0
+/public/assets/plugins/datatables-buttons/css/buttons.bootstrap4.min.css
+0 305 0 397237 0 0 0 0
+/public/mailstatus/mail-status.php
+0 16 0 50439 16 7 0 0
+/branch/location/ajaxs/vendor/ajax-dateRange-statement.php
+0 83 0 230257 0 0 0 0
+/uploads/1/grn-invoice/171559594427049.pdf
+0 4 0 370335 0 0 0 0
+/uploads/1/grn-invoice/170651565667375.pdf
+0 1 0 644790 0 0 0 0
+/branch/location/manage-reports.php
+0 82 0 1545347 4 1 0 0
+/uploads/1/grn-invoice/170650824632821.pdf
+0 1 0 785333 0 0 0 0
+/uploads/1/others/169779742791976.jpg
+1 1 0 299129 0 0 0 0
+/branch/location/ajaxs/ajax-manage-prod-declaration.php
+0 1 0 2845 0 0 0 0
+/branch/location/ajaxs/ajax-manage-pr.php
+0 850 0 10227168 0 15 0 0
+/branch/location/ajaxs/credit-note/ajax-items-stock-list.php
+0 22 0 66489 0 0 0 0
+/branch/location/manage-grn-invoice.php
+0 37 0 1088412 1 0 0 0
+/uploads/1/grn-invoice/171465293343705.jpeg
+0 18 0 5979712 0 0 0 0
+/branch/location//ajaxs/items/ajax-good-types.php
+0 3 0 1620 0 0 0 0
+/branch/location/ajaxs/mrp/ajax-items-list.php
+0 10 0 29195 0 0 0 0
+/public/assets/plugins/pdfmake/pdfmake.min.js
+0 243 0 127265575 0 0 0 0
+/uploads/1/acc-statement/171498031648974.pdf
+0 1 0 13486 0 0 0 0
+/public/assets/img/sidebar/branch.png
+1 7 0 27970 0 0 0 0
+/uploads/1/others/171343545661968.JPG
+1 13 0 101183 0 0 0 0
+/branch/location/ajaxs/debit-note/ajax-gl.php
+0 1 0 1013 0 0 0 0
+/public/storage/icons/GSTR.png
+1 8 0 817800 0 0 0 0
+/branch/location/manage-fg-stock-p.php
+0 2 0 56286 0 0 0 0
+/branch/location/warehouse-p.php
+0 148 0 3803193 0 1 0 0
+/branch/location/ajaxs/ajax-credit-notes.php
+0 206 0 657371 0 4 0 0
+/branch/location/manage-job-order-pending-list.php
+0 19 0 2490395 1 1 0 0
+/uploads/1/grn-invoice/171024245629203.pdf
+0 13 0 3085317 0 0 0 0
+/branch/location/manage-sales-orders-delivery-p.php
+0 9 0 273481 0 0 0 0
+/public/assets/img/icons/MMicon/pending-po.svg
+0 265 0 517682 0 0 0 0
+/uploads/1/grn-invoice/170721656966049.pdf
+0 4 0 1560828 0 0 0 0
+/public/assets/plugins/js-barcode/JsBarcode.all.min.js
+0 245 0 2661030 0 0 0 0
+/branch/location/ajaxs/debit-note/ajax-bill-details.php
+0 1 0 13563 0 0 0 0
+/public/assets/img/icons/MMicon/grn-invoice.svg
+0 265 0 425737 0 0 0 0
+/api/v2/vendor/account-reconcilliation.php
+0 2 0 1378 0 0 0 0
+/uploads/1/grn-invoice/170670977052774.jpeg
+0 1 0 123215 0 0 0 0
+/branch/location/ajaxs/ajax-manage-so-delivery.php
+0 14 0 47762 0 0 0 0
+/branch/location/ajaxs/vendor/ajax-map-vendor-item-to-internal-code.php
+0 4 0 3715 0 0 0 0
+/branch/location/accountingreports/sales-register-so-wise.php
+0 4 0 94938 0 0 0 0
+/branch/location/ajaxs/credit-note/ajax-gl.php
+0 22 0 19468 0 1 0 0
+/public/assets/plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css
+0 313 0 838484 0 0 0 0
+/uploads/1/grn-invoice/170841823227135.pdf
+0 13 0 3304772 0 0 0 0
+/public/assets/img/card-balance.png
+1 1 0 1842 0 0 0 0
+/branch/location/ajaxs/modals/so/ajax-manage-so-exceptional-modal.php
+0 11 0 26023 0 0 0 0
+/uploads/1/grn-invoice/170107406541129.pdf
+0 1 0 234776 0 0 0 0
+/branch/location/ajaxs/ajax-manage-grn-posted.php
+0 44 0 176968 0 2 0 0
+/uploads/1/grn-invoice/171266012490632.pdf
+0 15 0 1070010 0 0 0 0
+/branch/location/ajaxs/so/ajax-config-invoice.php
+0 45 0 70618 0 0 0 0
+/uploads/1/others/171342349066141.jpeg
+0 5 0 919545 0 0 0 0
+/branch/location/ajaxs/modals/fa/ajax-debit-note-modal.php
+0 25 0 42535 0 0 0 0
+/uploads/1/profile/170175765511614.png
+1 32 0 3620021 0 0 0 0
+/branch/location/manage-credit-notes.php
+0 141 0 11015330 0 2 0 0
+/branch/location/ajaxs/so/ajax-items-list.php
+0 15 0 4767 0 0 0 0
+/branch/location/bom/list-p.php
+0 74 0 1535687 1 3 0 0
+/public/assets/filepond/filepond-plugin-image-exif-orientation.min.js
+0 12 0 23474 0 0 0 0
+/branch/location/ajaxs/ajax-goods-service.php
+0 1 0 2796 0 0 0 0
+/branch/location/manage-daybook.php
+0 39 0 1343452 0 1 0 0
+/uploads/1/grn-invoice/171238476636991.pdf
+0 13 0 3967188 0 0 0 0
+/uploads/1/grn-invoice/169770267317074.jpeg
+0 1 0 144007 0 0 0 0
+/branch/location/ajaxs/ajax-manage-po-service.php
+0 3 0 10689 0 1 0 0
+/branch/location/ajaxs/modals/wms/ajax-warehouse-modal.php
+0 47 0 41323 0 1 0 0
+/branch/location/manage-sales-orders-p.php
+0 85 0 2314277 2 2 0 0
+/public/assets/plugins/jqvmap/select2.css
+0 307 0 1318606 0 0 0 0
+/branch/location/manage-inventory.php
+0 113 0 3025083 0 5 0 0
+/branch/location/bom/ajax/get-mrp-preview.php
+0 49 0 247868 4 0 0 0
+/branch/location/ajaxs/transfer/ajax-items-stock-check.php
+0 1 0 422 0 0 0 0
+/public/assets/xlsx.full.min.js
+0 247 0 91048062 0 0 0 0
+/branch/location/ajaxs/ajax_cancelled_cheque_upload.php
+0 3 0 4503 1 0 0 0
+/uploads/1/grn-invoice/171437217142413.pdf
+0 19 0 1768151 0 0 0 0
+/branch/location/ajaxs/ajax-vendor-verify-gstin.php
+0 8 0 38646 0 1 0 0
+/branch/location/ajaxs/customer/ajax-statement.php
+0 4 0 2904 0 0 0 0
+/public/assets/ion-icon/chevron-up-outline.svg
+0 14 0 16959 0 0 0 0
+/uploads/1/grn-invoice/170687156040727.pdf
+0 1 0 19583 0 0 0 0
+/public/assets/img/sidebar/compliance.png
+1 8 0 262555 0 0 0 0
+/uploads/1/grn-invoice/171506243436092.pdf
+0 1 0 385447 0 0 0 0
+/public/assets/plugins/fontawesome-free/css/all.min.css
+0 338 0 4617367 0 0 0 0
+/api/v2/vendor/account-reconcilliation-list.php
+0 2 0 1930 0 0 0 0
+/branch/location/salary-p.php
+0 1 0 25707 0 0 0 0
+# End Of Table - urls
+# -sites- (monthly)
+49.44.122.7
+0 23 23 6662992 1 1715151197 0 0
+/branch/login.php
+54.171.233.99
+0 1 1 299 1 1714531555 0 0
+/
+103.170.183.106
+0 2 2 24899 1 1714746021 0 0
+/branch/login.php
+42.110.233.164
+0 3 1 30027 1 1715434119 0 0
+/branch/location/manage-storage-location-p.php
+165.22.253.218
+0 68 4 58356 1 1714989270 0 0
+-
+42.110.234.159
+0 9 5 96328 1 1715433831 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+40.77.190.200
+0 1 1 4756 0 0 0 0
+-
+47.11.207.79
+0 253 152 3126895 4 1715527845 0 0
+/branch/location/ajaxs/modals/fa/ajax-credit-note-modal.php
+40.77.167.14
+0 1 1 14765 1 1715701436 0 0
+/company/manage-kam.php
+47.128.43.151
+0 1 0 3747 0 0 0 0
+-
+152.42.129.156
+0 2 2 8809 1 1714535880 0 0
+/
+66.249.84.96
+0 3 3 29516 0 0 0 0
+-
+66.102.6.69
+0 5 5 412635 1 1714734492 0 0
+/branch/location/ajaxs/modals/so/ajax-manage-job-order-pending-modal.php
+52.167.144.181
+0 1 0 341 0 0 0 0
+-
+103.131.71.19
+0 1 0 360 0 0 0 0
+-
+42.110.232.128
+0 4 1 32117 1 1715435712 0 0
+/branch/location/manage-storage-location.php
+192.178.8.2
+0 4 4 3294503 0 0 0 0
+-
+66.249.84.70
+0 9 9 64956 3 1715597102 0 0
+/public/mailstatus/mail-status.php
+103.131.71.47
+0 1 0 130 0 0 0 0
+-
+115.96.141.216
+0 108 57 700980 1 1714548993 0 0
+/branch/ajaxs/reports/ajax-charts.php
+42.110.234.73
+0 3 1 33405 1 1715436527 0 0
+/branch/location/manage-storage-location-p.php
+42.105.192.153
+0 160 85 4311676 1 1715446980 0 0
+/branch/location/ajaxs/ajax-save-cookies.php
+157.40.76.86
+0 1 1 18843 1 1715178829 0 0
+/branch/location/
+52.167.144.237
+0 1 1 142775 0 0 0 0
+-
+74.125.212.71
+0 2 2 8194 1 1714634331 0 0
+/branch/location/accountingreports/sales-register-customer-wise.php
+157.40.121.94
+0 122 63 1458304 1 1715657550 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-pr-modal.php
+42.110.233.96
+0 17 9 172921 1 1715435608 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+40.77.189.67
+0 1 1 84687 0 0 0 0
+-
+66.249.71.44
+0 7 3 25864 1 1715743817 0 0
+/branch/login.php
+40.77.189.48
+0 1 1 211114 0 0 0 0
+-
+207.47.194.173
+0 1 0 3747 0 0 0 0
+-
+103.131.71.150
+0 1 0 360 0 0 0 0
+-
+20.192.174.135
+0 1 1 114944 0 0 0 0
+-
+142.44.157.2
+0 1 1 12103 1 1714952134 0 0
+/
+47.11.206.196
+0 37 33 190237 1 1714790747 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+66.249.84.226
+0 2 2 26939 0 0 0 0
+-
+66.249.84.3
+0 2 2 17571 0 0 0 0
+-
+74.125.214.37
+0 6 5 32958 4 1714879104 0 0
+/branch/location/manage-payments.php
+223.190.108.48
+0 45 27 1395777 1 1715748104 0 0
+/
+42.110.232.30
+0 1 1 5672 1 1715433261 0 0
+/branch/location/manage-storage-location-p.php
+103.131.71.29
+0 2 0 490 0 0 0 0
+-
+42.110.234.140
+0 4 2 36961 1 1715435788 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+42.110.232.18
+0 4 2 40080 1 1715435748 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+49.37.39.197
+0 6 6 87254 3 1715393047 0 0
+/branch/login.php
+47.11.207.203
+0 3 3 5247 1 1714801724 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+198.12.243.17
+0 1 0 360 1 1715283955 0 0
+-
+54.255.235.223
+0 1 1 294 0 0 0 0
+-
+54.88.179.33
+0 1 1 16115 1 1715001386 0 0
+/
+64.233.173.18
+0 9 9 2142853 0 0 0 0
+-
+42.105.192.249
+0 5 3 213693 1 1715437301 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+64.233.173.72
+0 2 2 575816 0 0 0 0
+-
+40.77.189.143
+0 1 0 3718 0 0 0 0
+-
+40.77.167.63
+0 1 1 1629 1 1715784597 0 0
+/customer/login.php
+35.95.50.34
+0 2 1 2837 1 1715480282 0 0
+/
+85.208.96.202
+0 1 1 319 1 1715330395 0 0
+/branch/location/my-tickets.php
+74.125.214.36
+0 2 2 21981 1 1714716270 0 0
+/app/v1/functions/common/templates/template-collection-advise.php
+157.55.39.204
+0 11 11 223461 1 1715061721 0 0
+/branch/login.php
+185.191.171.17
+0 2 0 720 0 0 0 0
+-
+103.131.71.48
+0 2 0 720 0 0 0 0
+-
+42.110.232.20
+0 4 2 47843 1 1715433785 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+40.77.190.95
+0 1 1 15700 0 0 0 0
+-
+66.249.66.160
+0 8 7 1085768 1 1715263382 0 0
+/branch/
+47.11.207.52
+0 620 121 1692970 3 1714807927 0 0
+/branch/location/manage-purchases-orders.php
+20.192.174.131
+0 2 2 659208 0 0 0 0
+-
+47.11.204.227
+0 16 16 29967 1 1714797087 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+213.65.160.226
+0 1 0 360 1 1714810953 0 0
+-
+52.167.144.24
+0 2 2 30493 2 1715812609 0 0
+/branch/location/
+66.249.88.137
+0 3 3 16086 1 1714652533 0 0
+/app/v1/functions/common/templates/template-cash-voucher.php
+66.249.66.32
+0 60 44 1265064 6 1715728997 0 0
+/branch/login.php
+123.176.33.73
+0 25 25 6591542 1 1715334486 0 0
+/branch/login.php
+50.62.180.145
+0 1 0 360 1 1715029001 0 0
+-
+42.110.232.6
+0 17 12 713927 1 1715433305 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+103.131.71.44
+0 1 0 130 0 0 0 0
+-
+42.105.192.87
+0 278 85 10267005 1 1715447527 0 0
+/branch/location/ajaxs/transfer/ajax-items.php
+207.46.13.128
+0 1 1 1625 1 1714681336 0 0
+/admin/login.php
+42.110.232.22
+0 13 9 75520 1 1715433284 0 0
+/branch/location/manage-storage-location-p.php
+66.249.66.169
+0 17 14 377530 0 0 0 0
+-
+42.110.233.252
+0 3 1 26328 1 1715433994 0 0
+/branch/location/manage-storage-location-p.php
+40.77.190.228
+0 1 1 20314 0 0 0 0
+-
+40.77.188.130
+0 1 0 3718 0 0 0 0
+-
+3.14.3.69
+0 1 1 292 0 0 0 0
+-
+66.249.88.192
+0 2 2 17957 1 1714982464 0 0
+/branch/location/collect-payment.php
+52.167.144.145
+0 10 10 193125 1 1715266191 0 0
+/branch/login.php
+42.110.253.43
+0 77 43 809965 1 1715435598 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+20.192.174.132
+0 1 1 418949 0 0 0 0
+-
+35.94.165.129
+0 2 1 2829 1 1715409802 0 0
+/
+20.15.133.173
+0 2 0 4685 0 0 0 0
+-
+42.110.232.8
+0 1 1 1177 1 1715433794 0 0
+/branch/location/ajaxs/ajax-save-cookies.php
+66.249.84.227
+0 3 3 10429 1 1714631684 0 0
+/public/mailstatus/mail-status.php
+42.110.233.178
+0 4 2 32025 1 1715433502 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+103.131.71.21
+0 1 0 130 0 0 0 0
+-
+20.15.133.169
+0 1 1 18876 1 1715061697 0 0
+/branch/location/
+40.77.167.143
+0 17 12 79389 1 1715316879 0 0
+/branch/location/manage-grn-invoice.php
+74.125.214.34
+0 5 5 610131 2 1715759714 0 0
+/branch/location/manage-sales-orders-approved-p.php
+42.105.192.88
+0 2 2 30004 1 1715420811 0 0
+/branch/location/
+16.171.242.109
+0 1 1 292 0 0 0 0
+-
+66.249.69.140
+0 2 1 1832 0 0 0 0
+-
+40.77.167.79
+0 11 5 60258 1 1714652496 0 0
+/
+103.102.228.23
+0 1 0 4086 0 0 0 0
+-
+42.110.224.70
+0 18 8 3774034 2 1715430884 0 0
+/branch/location/recieved-item.php
+207.46.13.111
+0 6 6 17519 0 0 0 0
+-
+66.249.84.5
+0 3 3 14487 2 1715149154 0 0
+/public/mailstatus/mail-status.php
+42.110.234.70
+0 5 3 49112 1 1715436634 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+66.249.84.4
+0 1 1 11246 0 0 0 0
+-
+40.77.189.6
+0 1 1 39164 1 1715317879 0 0
+/branch/login.php
+66.249.66.161
+0 7 5 576175 1 1715263384 0 0
+/branch/login.php
+20.192.174.133
+0 1 1 347807 0 0 0 0
+-
+66.249.66.45
+0 165 86 924967 7 1715682222 0 0
+/
+103.131.71.49
+0 2 0 720 0 0 0 0
+-
+40.77.167.44
+0 1 1 6441 1 1715720796 0 0
+/
+66.249.72.69
+0 1 0 4123 0 0 0 0
+-
+16.16.58.44
+0 1 1 292 0 0 0 0
+-
+103.211.20.9
+0 12 6 126547 1 1714819483 0 0
+/branch/location/manage-reports.php
+40.77.189.225
+0 2 2 154011 0 0 0 0
+-
+157.40.67.169
+0 872 721 17532360 1 1714844893 0 0
+/branch/location/classic-view/invoice-preview-print.php
+20.192.174.130
+0 4 4 1050082 0 0 0 0
+-
+47.11.204.25
+0 122 82 796543 1 1714787528 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+52.167.144.137
+0 1 1 665 1 1715736000 0 0
+/branch/ajaxs/reports/ajax-charts.php
+52.167.144.204
+0 1 1 12040 1 1715741366 0 0
+/company/manage-invoice-mapping.php
+103.131.71.28
+0 2 0 260 0 0 0 0
+-
+47.11.204.79
+0 83 58 498319 1 1714760651 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+52.167.144.230
+0 4 4 44325 0 0 0 0
+-
+49.37.37.75
+0 310 157 14802551 1 1715280651 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-grn-invoice.php
+66.249.74.43
+0 8 1 11079 0 0 0 0
+-
+202.142.106.98
+0 245 208 17855689 1 1715264489 0 0
+/branch/login.php
+40.77.190.231
+0 1 1 8362 0 0 0 0
+-
+103.131.71.129
+0 1 1 1644 1 1714805843 0 0
+/admin/login.php
+66.249.71.99
+0 1 0 4123 0 0 0 0
+-
+66.249.71.45
+0 1 1 13192 0 0 0 0
+-
+40.77.188.91
+0 2 2 13045 0 0 0 0
+-
+40.77.167.36
+0 1 1 6441 1 1714702375 0 0
+/
+192.178.8.3
+0 7 7 4413362 0 0 0 0
+-
+45.55.74.233
+0 2 2 8809 1 1715738744 0 0
+/
+157.55.39.61
+0 1 1 14832 1 1714697035 0 0
+/company/manage-cost-center.php
+52.167.144.209
+0 2 2 18506 2 1715197023 0 0
+/company/administrator-setting.php
+103.131.71.20
+0 2 0 490 0 0 0 0
+-
+74.125.214.39
+0 9 9 820940 2 1714982478 0 0
+/branch/location/manage-payments.php
+52.167.144.235
+0 1 1 765 1 1715786332 0 0
+/branch/ajaxs/reports/ajax-charts.php
+47.11.8.39
+0 196 81 1583602 1 1714879094 0 0
+/branch/location/manage-payments.php
+103.131.71.25
+0 1 0 130 0 0 0 0
+-
+64.225.21.95
+0 2 2 8809 1 1715760388 0 0
+/
+40.77.167.35
+0 1 1 9174 0 0 0 0
+-
+115.187.48.194
+0 586 230 5366179 13 1715542948 0 0
+-
+54.246.234.187
+0 1 1 15951 1 1714987358 0 0
+/
+103.131.71.68
+0 1 0 360 0 0 0 0
+-
+37.228.209.116
+0 1 0 3747 0 0 0 0
+-
+66.249.84.71
+0 8 8 53710 2 1715581045 0 0
+/public/mailstatus/mail-status-so-invoice.php
+66.249.88.198
+0 1 1 12844 0 0 0 0
+-
+52.167.144.222
+0 12 12 343902 0 0 0 0
+-
+47.128.55.27
+0 1 0 3747 0 0 0 0
+-
+103.131.71.34
+0 1 0 360 0 0 0 0
+-
+194.207.150.89
+0 1 0 3747 0 0 0 0
+-
+74.125.212.69
+0 2 2 8194 1 1714634260 0 0
+/branch/location/accountingreports/sales-register-product-wise.php
+40.77.167.26
+0 1 1 142775 0 0 0 0
+-
+34.222.119.160
+0 2 2 586 0 0 0 0
+-
+193.105.234.217
+0 1 0 360 1 1714835919 0 0
+-
+157.40.66.157
+0 3 0 1914 1 1714647751 0 0
+/api/v2/customer/order-list-items.php
+185.191.171.9
+0 2 0 720 0 0 0 0
+-
+157.55.39.58
+0 1 1 10474 0 0 0 0
+-
+202.8.113.111
+0 205 51 687985 1 1714961963 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-purchases-orders-modal.php
+66.249.79.96
+0 2 1 503260 0 0 0 0
+-
+185.191.171.8
+0 1 1 14926 1 1715771880 0 0
+/branch/
+122.160.53.68
+0 197939 144588 5486585186 1278 1715782034 0 0
+/branch/location/ajaxs/so/ajax-items.php
+52.167.144.236
+0 1 1 6441 1 1715360847 0 0
+/
+184.168.126.97
+0 1 0 360 1 1715459157 0 0
+-
+74.125.214.38
+0 4 4 388224 2 1714806028 0 0
+/branch/location/ajaxs/modals/so/ajax-collect-payment-modal.php
+40.77.167.181
+0 11 0 31637 0 0 0 0
+-
+47.11.233.24
+0 724 497 10764513 1 1715430751 0 0
+/branch/location/manage-bin.php
+157.55.39.49
+0 10 6 86992 1 1715703370 0 0
+/company/manage-functionalities.php
+52.167.144.182
+0 1 1 18436 1 1714943406 0 0
+/company/
+40.77.167.5
+0 12 6 69432 1 1715343464 0 0
+/
+66.249.72.68
+0 1 1 502842 0 0 0 0
+-
+40.77.188.20
+0 3 3 39072 0 0 0 0
+-
+202.8.113.43
+0 373 242 2744433 2 1715516497 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-goods-modal.php
+66.249.84.228
+0 4 4 22728 2 1715079996 0 0
+/public/mailstatus/mail-status.php
+207.46.13.126
+0 8 5 72565 0 0 0 0
+-
+157.40.65.97
+0 3 1 20216 1 1715240315 0 0
+-
+103.216.57.104
+0 13 13 482829 1 1714673732 0 0
+/admin/login.php
+157.40.82.29
+0 27 0 17226 1 1714732132 0 0
+/api/v2/customer/order-list-items.php
+202.8.113.40
+0 885 527 17179730 2 1714815724 0 0
+/branch/location/classic-view/invoice-preview-print.php
+66.249.74.45
+0 4 0 1581 1 1715446417 0 0
+/
+42.110.232.47
+0 1 1 8880 1 1715433243 0 0
+/branch/location/manage-storage-location-p.php
+202.8.113.127
+0 139 70 825807 1 1715566077 0 0
+/branch/location/ajaxs/ajax-manage-vm-quotation.php
+34.244.223.63
+0 1 1 12055 1 1714681313 0 0
+/
+49.37.36.195
+0 1960 904 24133925 2 1714892667 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+42.110.234.92
+0 4 2 28807 1 1715433365 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+40.77.167.30
+0 5 5 53220 0 0 0 0
+-
+66.249.74.44
+0 5 0 1980 1 1715446415 0 0
+/
+185.191.171.10
+0 1 1 14334 1 1714918387 0 0
+/branch/location/manage-manual-grn.php
+23.178.112.108
+0 1 1 292 0 0 0 0
+-
+103.131.71.42
+0 1 0 130 0 0 0 0
+-
+208.109.188.30
+0 1 0 360 1 1715302538 0 0
+-
+40.77.190.41
+0 1 1 44552 0 0 0 0
+-
+103.135.228.12
+0 24 12 216614 1 1714671128 0 0
+/branch/location/manage-journal.php
+40.77.167.25
+0 1 1 6441 1 1714868940 0 0
+/
+52.167.144.8
+0 1 1 8122 0 0 0 0
+-
+157.40.249.94
+0 29 29 498416 2 1714978063 0 0
+/api/v2/customer/all-products.php
+66.249.71.98
+0 1 1 502842 0 0 0 0
+-
+3.16.55.183
+0 1 1 294 0 0 0 0
+-
+64.233.173.16
+0 8 8 2446908 0 0 0 0
+-
+47.11.204.185
+0 31 27 158682 1 1714799837 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+85.208.96.194
+0 1 1 14926 1 1715396518 0 0
+/branch/
+66.249.66.33
+0 12 9 218320 5 1715089146 0 0
+/branch/location/
+172.225.186.24
+0 3 3 21793 1 1715761585 0 0
+/public/mailstatus/mail-status.php
+40.77.167.59
+0 1 1 6441 1 1715195073 0 0
+/
+40.77.189.218
+0 1 0 3718 0 0 0 0
+-
+103.131.71.53
+0 1 0 360 0 0 0 0
+-
+47.11.207.36
+0 29 20 227906 2 1714811217 0 0
+/branch/location/ajaxs/so/ajax-invoice-customer-list.php
+54.255.246.176
+0 1 1 292 0 0 0 0
+-
+64.233.173.17
+0 6 6 1922490 0 0 0 0
+-
+52.167.144.198
+0 1 1 14946 1 1715355594 0 0
+/branch/location/
+103.75.60.123
+0 60 27 1401716 1 1714989503 0 0
+/
+207.46.13.54
+0 1 1 2488 1 1714876311 0 0
+/
+52.167.144.15
+0 1 1 31185 0 0 0 0
+-
+20.192.174.134
+0 3 3 619258 0 0 0 0
+-
+66.249.92.169
+0 2 2 6701 1 1715756246 0 0
+/public/mailstatus/mail-status.php
+74.125.214.35
+0 2 2 20689 1 1714634333 0 0
+/branch/location/accountingreports/sales-register-customer-wise.php
+23.178.112.109
+0 1 1 292 0 0 0 0
+-
+103.131.71.37
+0 1 0 130 0 0 0 0
+-
+157.55.39.222
+0 1 0 397 0 0 0 0
+-
+66.249.84.69
+0 9 9 91563 4 1715756387 0 0
+/public/mailstatus/mail-status.php
+47.11.204.105
+0 846 569 27116817 4 1715516266 0 0
+/branch/location/manage-credit-notes.php
+103.131.71.227
+0 1 1 1644 1 1715446410 0 0
+/admin/login.php
+110.224.104.177
+0 17 1 8824 1 1714551766 0 0
+/
+40.77.188.157
+0 2 2 61071 0 0 0 0
+-
+47.11.205.114
+0 17 15 85708 1 1714788639 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+40.77.189.197
+0 1 1 85415 0 0 0 0
+-
+164.92.151.57
+0 2 2 8793 1 1714822073 0 0
+/
+66.249.88.135
+0 1 1 206875 0 0 0 0
+-
+66.249.88.199
+0 2 2 385993 0 0 0 0
+-
+49.37.34.26
+0 25 19 5780705 1 1715626198 0 0
+/branch/location/ajaxs/reports/ajax-charts.php
+47.128.127.89
+0 1 0 3747 0 0 0 0
+-
+66.102.6.71
+0 3 3 6874 3 1714879077 0 0
+/branch/location/collect-payment.php
+207.46.13.64
+0 2 1 2829 1 1714569053 0 0
+/
+20.192.174.128
+0 2 2 537444 0 0 0 0
+-
+27.109.0.6
+0 23 23 6662992 1 1715151201 0 0
+/branch/login.php
+47.11.27.67
+0 571 398 8582088 2 1714893225 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+207.46.13.230
+0 1 0 397 0 0 0 0
+-
+202.8.113.251
+0 104 65 698266 1 1715428317 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-goods-modal.php
+40.77.188.76
+0 1 1 78444 0 0 0 0
+-
+40.77.190.184
+0 1 0 3718 0 0 0 0
+-
+40.77.167.68
+0 1 0 341 0 0 0 0
+-
+40.77.189.45
+0 1 0 3718 0 0 0 0
+-
+40.77.189.133
+0 1 1 13523 0 0 0 0
+-
+47.11.206.119
+0 52 35 370649 2 1714793981 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+66.249.84.108
+0 1 1 355 1 1715169767 0 0
+/public/mailstatus/mail-status.php
+66.249.71.43
+0 13 3 129270 1 1715665138 0 0
+/
+40.77.167.54
+0 1 1 14907 1 1715381420 0 0
+/branch/
+64.233.173.15
+0 1 1 377185 0 0 0 0
+-
+35.171.144.152
+0 1 1 12084 1 1715001387 0 0
+/
+3.255.231.40
+0 1 1 15727 1 1714986406 0 0
+/
+42.110.234.118
+0 4 2 28807 1 1715433345 0 0
+/branch/location/ajaxs/ajax-mange-storage-loc.php
+150.129.109.38
+0 193 20 240718 1 1714813181 0 0
+/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+52.167.144.11
+0 1 0 3662 0 0 0 0
+-
+47.128.111.10
+0 1 0 3747 0 0 0 0
+-
+157.40.206.3
+0 330 123 1493049 1 1714664902 0 0
+/app/v1/functions/common/templates/template-collect-payment.php
+84.54.72.187
+0 1 0 3747 0 0 0 0
+-
+207.46.13.14
+0 7 7 36395 1 1715266133 0 0
+/branch/location/
+103.131.71.43
+0 1 0 130 0 0 0 0
+-
+42.110.229.173
+0 1 0 4170 0 0 0 0
+-
+47.11.207.44
+0 573 333 53975621 3 1715492844 0 0
+/branch/location/ajaxs/ajax-manage-goods-stock.php
+40.77.167.76
+0 1 1 6441 1 1715550353 0 0
+/
+52.167.144.55
+0 3 0 1191 0 0 0 0
+-
+192.178.8.1
+0 3 3 2921550 0 0 0 0
+-
+103.240.98.245
+0 3545 3368 106443657 4 1715238348 0 0
+/branch/login.php
+52.167.144.180
+0 1 1 5387 1 1715668609 0 0
+/company/forgotpass.php
+52.167.144.140
+0 1 1 13686 1 1715764535 0 0
+/company/manage-invoice-format.php
+103.131.71.50
+0 1 0 360 0 0 0 0
+-
+# End Of Table - sites (monthly)
+# -sites- (daily)
+66.249.84.70
+0 1 1 11246 0 0 0 0
+-
+103.131.71.47
+0 1 0 130 0 0 0 0
+-
+66.249.71.44
+0 3 3 24279 1 1715743817 0 0
+/branch/login.php
+223.190.108.48
+0 45 27 1395777 1 1715748104 0 0
+/
+64.233.173.18
+0 2 2 754370 0 0 0 0
+-
+40.77.167.63
+0 1 1 1629 1 1715784597 0 0
+/customer/login.php
+74.125.214.36
+0 1 1 16557 0 0 0 0
+-
+185.191.171.17
+0 1 0 360 0 0 0 0
+-
+103.131.71.48
+0 1 0 360 0 0 0 0
+-
+52.167.144.24
+0 1 1 14946 1 1715812609 0 0
+/branch/location/
+66.249.66.32
+0 3 3 42791 0 0 0 0
+-
+74.125.214.34
+0 3 3 399159 1 1715759714 0 0
+/branch/location/manage-sales-orders-approved-p.php
+66.249.66.45
+0 3 3 43442 0 0 0 0
+-
+52.167.144.137
+0 1 1 665 1 1715736000 0 0
+/branch/ajaxs/reports/ajax-charts.php
+52.167.144.204
+0 1 1 12040 1 1715741366 0 0
+/company/manage-invoice-mapping.php
+66.249.71.45
+0 1 1 13192 0 0 0 0
+-
+192.178.8.3
+0 1 1 372953 0 0 0 0
+-
+45.55.74.233
+0 2 2 8809 1 1715738744 0 0
+/
+52.167.144.235
+0 1 1 765 1 1715786332 0 0
+/branch/ajaxs/reports/ajax-charts.php
+64.225.21.95
+0 2 2 8809 1 1715760388 0 0
+/
+66.249.84.71
+0 1 1 6325 0 0 0 0
+-
+185.191.171.8
+0 1 1 14926 1 1715771880 0 0
+/branch/
+122.160.53.68
+0 17525 6826 177578395 85 1715782034 0 0
+/branch/location/ajaxs/so/ajax-items.php
+66.249.66.33
+0 1 1 122069 0 0 0 0
+-
+172.225.186.24
+0 3 3 21793 1 1715761585 0 0
+/public/mailstatus/mail-status.php
+66.249.92.169
+0 2 2 6701 1 1715756246 0 0
+/public/mailstatus/mail-status.php
+74.125.214.35
+0 1 1 16592 0 0 0 0
+-
+66.249.84.69
+0 1 1 4081 1 1715756387 0 0
+/public/mailstatus/mail-status.php
+192.178.8.1
+0 1 1 2345734 0 0 0 0
+-
+52.167.144.140
+0 1 1 13686 1 1715764535 0 0
+/company/manage-invoice-format.php
+# End Of Table - sites (daily)
+# -referrers- 
+https://www.devalpha.vitwo.ai/branch/location/accountingreports/stock-report-new.php
+0 357
+http://devalpha.vitwo.ai/branch/location/manage-assets.php
+0 239
+https://www.devalpha.vitwo.ai/branch/location/manage-cost-center.php
+0 16
+https://www.devalpha.vitwo.ai/branch/location/manage-credit-notes-p.php
+0 10
+http://devalpha.vitwo.ai/branch/location/recieved-item-rejected-p.php
+0 4
+https://www.devalpha.vitwo.ai/branch/location/manage-production-declaration.php
+0 113
+http://devalpha.vitwo.ai/branch/location/manage-sales-orders-pending.php
+0 71
+http://devalpha.vitwo.ai/branch/location/manage-rm-stock-p.php
+0 15
+http://devalpha.vitwo.ai/branch/location/manage-sfg-stock.php
+0 12
+https://www.devalpha.vitwo.ai/branch/location/goods-p.php
+0 1031
+https://www.devalpha.vitwo.ai/branch/location/manage-grn.php
+0 70
+https://www.devalpha.vitwo.ai/branch/location/advancePaymnetSettlement.php
+0 17
+https://www.devalpha.vitwo.ai/
+0 2034
+http://devalpha.vitwo.ai/branch/location/ajaxs/modals/mm/ajax-manage-location-items-modal.php
+0 7
+http://devalpha.vitwo.ai/branch/location/accountingreports/sales-register-customer-wise.php
+0 1963
+https://www.devalpha.vitwo.ai/branch/location/manage-territory.php
+0 15
+https://www.devalpha.vitwo.ai/app/v1/functions/common/templates/template-vendor-payout.php
+0 9
+https://www.devalpha.vitwo.ai/branch/location/manage-customer-discount-group.php
+0 45
+https://www.devalpha.vitwo.ai/branch/location/manage-pgi-p.php
+0 27
+http://devalpha.vitwo.ai/branch/login.php
+0 816
+https://www.devalpha.vitwo.ai/branch/location/template-vendor-voucher.php
+0 1
+https://www.devalpha.vitwo.ai/branch/location/manage-pending-grn.php
+0 371
+http://devalpha.vitwo.ai/branch/location/vendor-multipayments-test.php
+0 14
+https://www.devalpha.vitwo.ai/branch/location/payroll.php
+0 124
+http://devalpha.vitwo.ai/branch/location/manage-quotation-p.php
+0 117
+http://devalpha.vitwo.ai/public/assets/sales-order.css
+0 2
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-pending-p.php
+0 17
+http://devalpha.vitwo.ai/branch/location/warehouse-p.php
+0 373
+http://devalpha.vitwo.ai/branch/location/ptax-p.php
+0 4
+https://www.devalpha.vitwo.ai/branch/location/manage-manual-grn.php
+0 688
+http://devalpha.vitwo.ai/branch/location/
+0 3896
+http://devalpha.vitwo.ai/branch/location/manage-grn-pending-p.php
+0 2051
+http://devalpha.vitwo.ai/branch/location/manage-customers.php
+0 970
+https://www.devalpha.vitwo.ai/company/manage-customer-discount-group.php
+0 6
+http://devalpha.vitwo.ai/branch/location/accountingreports/receivable-analysis.php
+0 249
+https://www.devalpha.vitwo.ai/branch/location/manage-pr-p.php
+0 1254
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-p.php
+0 329
+https://www.devalpha.vitwo.ai/branch/location/manage-reports.php
+0 77
+https://www.devalpha.vitwo.ai/branch/location/manage-mrp-variant.php
+0 118
+https://www.devalpha.vitwo.ai/branch/location/sub-ledger-view-report.php
+0 450
+http://devalpha.vitwo.ai/branch/location//goods.php
+0 154
+http://devalpha.vitwo.ai/branch/location/accountingreports/sales-register-so-wise.php
+0 128
+https://www.devalpha.vitwo.ai/branch/location/warehouse.php
+0 12
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-item-wise.php
+0 5
+http://devalpha.vitwo.ai/branch/location/manage-bin.php
+0 4
+http://devalpha.vitwo.ai/branch/location/manage-pr-p.php
+0 4266
+http://devalpha.vitwo.ai/branch/location/manage-purchases-orders.php
+0 345
+http://devalpha.vitwo.ai/branch/location/manage-purchases-orders-pending-p.php
+0 7
+http://devalpha.vitwo.ai/branch/location/index.php
+0 28
+https://www.devalpha.vitwo.ai/app/v1/functions/common/templates/template-cash-voucher.php
+0 1
+https://www.devalpha.vitwo.ai/branch/location/recieved-item-p.php
+0 10
+https://www.devalpha.vitwo.ai/branch/location/payroll-p.php
+0 3
+https://www.devalpha.vitwo.ai/branch/
+0 315
+https://www.devalpha.vitwo.ai/branch/location/manage-purchases-orders.php
+0 519
+https://www.devalpha.vitwo.ai/branch/location/failed-accounting-invoices.php
+0 745
+https://www.devalpha.vitwo.ai/branch/location/manage-proforma-invoice.php
+0 43
+https://www.devalpha.vitwo.ai/branch/location/recieved-item.php
+0 73
+https://www.devalpha.vitwo.ai/branch/location/manage-pending-grn-p.php
+0 1
+http://devalpha.vitwo.ai/branch/location/debit-notes-creation.php
+0 5
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-item-wise-p.php
+0 11
+https://www.devalpha.vitwo.ai/branch/location/manage-rfq-p.php
+0 23
+http://devalpha.vitwo.ai/branch/location/manage-mrp.php
+0 18
+https://www.devalpha.vitwo.ai/branch/location/manage-storage-location.php
+0 29
+https://www.devalpha.vitwo.ai/branch/location/direct-create-invoice.php
+0 7861
+https://www.devalpha.vitwo.ai/branch/location/ajaxs/modals/mm/ajax-manage-pr-modal.php
+0 1
+https://www.devalpha.vitwo.ai/branch/location/manage-failed-account-view.php
+0 6410
+http://devalpha.vitwo.ai/public/main-assets/css/font-awesome.min.css
+0 6
+https://www.devalpha.vitwo.ai/branch/location/matrix.php
+0 8
+http://devalpha.vitwo.ai/branch/location/manage-production-declaration-p.php
+0 5
+https://www.devalpha.vitwo.ai/branch/location/accountingreports/sales-register-customer-wise.php
+0 184
+http://devalpha.vitwo.ai/branch/manage-charts.php
+0 62
+http://devalpha.vitwo.ai/branch/location/purchase-to-pay-creations.php
+0 613
+https://www.devalpha.vitwo.ai/branch/location/manage-quotations.php
+0 101
+https://www.devalpha.vitwo.ai/branch/location/accountingreports/sales-register-product-wise.php
+0 621
+http://devalpha.vitwo.ai/branch/location/manage-credit-notes-p.php
+0 912
+http://devalpha.vitwo.ai/branch/location//purchase-to-pay-creations.php
+0 64
+https://www.devalpha.vitwo.ai/company/manage-variant.php
+0 113
+http://devalpha.vitwo.ai/branch/location/manage-sales-orders-pending-p.php
+0 32
+http://devalpha.vitwo.ai/branch/location/manage-storage-location-actions.php
+0 19
+http://devalpha.vitwo.ai/branch/location/warehouse.php
+0 207
+https://www.devalpha.vitwo.ai//branch/login.php
+0 138
+https://www.devalpha.vitwo.ai/branch/manage-user-variant-access.php
+0 20
+https://www.devalpha.vitwo.ai/uploads/1/others/169738485478907.jpg
+0 3
+https://www.devalpha.vitwo.ai/branch/location/manage-debit-notes-p.php
+0 6
+https://www.devalpha.vitwo.ai/public/main-assets/css/font-awesome.min.css
+0 7
+https://www.devalpha.vitwo.ai/branch/location/manage-debit-notes.php
+0 51
+http://devalpha.vitwo.ai/branch/location/manage-pgi-p.php
+0 8
+http://devalpha.vitwo.ai/branch/location/advance-payments-p.php
+0 1
+https://www.devalpha.vitwo.ai/branch/location/manage-party-orders.php
+0 39
+http://devalpha.vitwo.ai/branch/location/manage-production-declaration.php
+0 106
+http://devalpha.vitwo.ai/branch/location/manage-pr.php
+0 1065
+http://devalpha.vitwo.ai/branch/location/recieved-item-fg-p.php
+0 8
+http://devalpha.vitwo.ai/branch/location/manage-assets-p.php
+0 175
+https://www.devalpha.vitwo.ai/branch/location/bom/bom-p.php
+0 62
+https://www.devalpha.vitwo.ai/branch/location/bom/bom.php
+0 1249
+http://devalpha.vitwo.ai/branch/location/manage-sales-orders-delivery-p.php
+0 40
+http://devalpha.vitwo.ai/branch/location/pending-po.php
+0 138
+https://www.devalpha.vitwo.ai/branch/location/manage-credit-notes.php
+0 551
+http://devalpha.vitwo.ai/branch/location/manage-rm-stock.php
+0 73
+http://devalpha.vitwo.ai/branch/location/direct-create-invoice.php
+0 1564
+https://www.devalpha.vitwo.ai/branch/location/manage-job-order-pending-list-p.php
+0 876
+http://devalpha.vitwo.ai/branch/location/report-profit-and-loss.php
+0 8
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-delivery.php
+0 971
+http://devalpha.vitwo.ai/branch/location/manage-rfq-p.php
+0 308
+http://devalpha.vitwo.ai/branch/location/goods-service-p.php
+0 4
+http://devalpha.vitwo.ai/branch/location/manage-grn-pending.php
+0 2
+http://devalpha.vitwo.ai/branch/location/goods-fg-p.php
+0 8
+https://www.devalpha.vitwo.ai/branch/location/manage-vendor-payment.php
+0 4
+https://www.devalpha.vitwo.ai/branch/location/manage-vendor-invoice.php
+0 7
+https://www.devalpha.vitwo.ai/branch/location/manage-pr-creation.php
+0 51
+https://www.devalpha.vitwo.ai/app/v1/functions/common/templates/template-vendor-voucher.php
+0 24
+http://devalpha.vitwo.ai/style.css
+0 59
+http://devalpha.vitwo.ai/branch/location/accountingreports/stock-report-new.php
+0 67
+https://www.devalpha.vitwo.ai/branch/location/manage-location-items-p.php
+0 4
+http://devalpha.vitwo.ai/branch/location/manage-territory.php
+0 4
+http://devalpha.vitwo.ai/branch/location/manage-inventory.php
+0 410
+http://devalpha.vitwo.ai/branch/location/ajaxs/modals/mm/ajax-manage-pr-modal.php
+0 21
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders.php
+0 1275
+http://devalpha.vitwo.ai/branch/location/ajaxs/modals/so/ajax-collect-payment-modal.php
+0 2
+http://devalpha.vitwo.ai/branch/location/accountingreports/purchase-register-product-wise.php
+0 248
+http://devalpha.vitwo.ai/branch/location/manage-fg-stock.php
+0 47
+http://devalpha.vitwo.ai/branch/location/manage-job-order-list-p.php
+0 64
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-approved.php
+0 35
+http://devalpha.vitwo.ai/branch/location/manage-proforma-invoice.php
+0 22
+https://www.devalpha.vitwo.ai/branch/location/manage-pr.php
+0 727
+https://www.devalpha.vitwo.ai/branch/location/collectpaymentsettelment.php
+0 14
+https://www.devalpha.vitwo.ai/branch/location/warehouse-p.php
+0 196
+https://www.devalpha.vitwo.ai/branch/location/ajaxs/ledger/ajax-gl-value.php
+0 1
+https://www.devalpha.vitwo.ai/branch/location/recieved-item-rejected-p.php
+0 4
+https://www.google.com/
+0 38
+- (Direct Request)
+0 78773
+https://www.devalpha.vitwo.ai/branch/location/manage-rfq.php
+0 241
+http://devalpha.vitwo.ai/branch/location/manage-purchases-orders-service-p.php
+0 13
+https://devalpha.vitwo.ai/public/main-assets/css/font-awesome.min.css
+0 1
+https://www.devalpha.vitwo.ai/branch/location/manage-customers.php
+0 3368
+https://www.devalpha.vitwo.ai/branch/location/accountingreports/stock-report.php
+0 941
+https://www.devalpha.vitwo.ai/app/v1/functions/common/templates/template-collection-advise.php
+0 11
+https://www.devalpha.vitwo.ai/branch/location/manage-purchases-orders-p.php
+0 15
+http://devalpha.vitwo.ai/branch/
+0 81
+https://www.devalpha.vitwo.ai/company/login.php
+0 198
+https://www.devalpha.vitwo.ai/branch/location/pr.php
+0 1
+http://devalpha.vitwo.ai/branch/location/manage-debit-notes.php
+0 23
+http://devalpha.vitwo.ai/branch/location/manage-journal.php
+0 20
+http://devalpha.vitwo.ai/branch/location/payroll-p.php
+0 5
+http://devalpha.vitwo.ai/branch/location/manage-production-order.php
+0 421
+https://www.devalpha.vitwo.ai/branch/location/manage-job-order-list.php
+0 26
+http://devalpha.vitwo.ai/branch/location/payroll.php
+0 121
+http://devalpha.vitwo.ai/branch/location/recieved-item-sfg-p.php
+0 4
+https://www.devalpha.vitwo.ai/branch/location/manage-opening-close-balance.php
+0 9
+https://www.devalpha.vitwo.ai/branch/location/manage-vendors-p.php
+0 5
+https://www.devalpha.vitwo.ai/branch/location/manage-item-discount-group.php
+0 37
+http://devalpha.vitwo.ai/branch/location/salary-p.php
+0 4
+http://devalpha.vitwo.ai/branch/location/pr-list.php
+0 129
+https://www.devalpha.vitwo.ai/branch/location/stock-count.php
+0 17
+http://devalpha.vitwo.ai/branch/location/components/grn/pending-grn2-p.php
+0 175
+https://www.devalpha.vitwo.ai/branch/location/pending-po.php
+0 100
+https://www.devalpha.vitwo.ai/branch/location/manage-fg-stock.php
+0 4
+https://www.devalpha.vitwo.ai/company/manage-reports.php
+0 4
+https://www.devalpha.vitwo.ai/branch/location/pos/pos.php
+0 404
+http://devalpha.vitwo.ai/branch/location/manage-sales-orders.php
+0 606
+http://devalpha.vitwo.ai/branch/location/credit-notes-creation.php
+0 32
+https://www.devalpha.vitwo.ai/branch/location/manage-charts.php
+0 29
+http://devalpha.vitwo.ai/branch/location/classic-view/preview-print.php
+0 4
+http://devalpha.vitwo.ai/branch/location/manage-grn-p.php
+0 1
+https://www.devalpha.vitwo.ai/branch/location/manage-stock-transfer.php
+0 142
+http://devalpha.vitwo.ai/branch/location/manage-sales-orders-approved-p.php
+0 19
+http://devalpha.vitwo.ai/company/
+0 39
+http://devalpha.vitwo.ai/branch/location/manage-credit-notes.php
+0 123
+https://www.devalpha.vitwo.ai/branch/location/warehouse-actions
+0 1
+http://devalpha.vitwo.ai/branch/location/warehouse-actions.php
+0 34
+http://devalpha.vitwo.ai/branch/location/manage-sales-orders-delivery.php
+0 90
+http://devalpha.vitwo.ai/branch/location/goods.php
+0 1703
+http://devalpha.vitwo.ai/branch/location/ajaxs/modals/mm/ajax-manage-asset-modal.php
+0 1
+http://devalpha.vitwo.ai/branch/location/manage-grn-invoice.php
+0 99
+http://devalpha.vitwo.ai/branch/location/manage-grn.php
+0 414
+http://devalpha.vitwo.ai/branch/location/manage-pending-grn-p.php
+0 20
+http://devalpha.vitwo.ai/branch/location/bom/list-p.php
+0 2886
+http://devalpha.vitwo.ai/branch/location/manage-party-orders.php
+0 10
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-approved-p.php
+0 143
+http://devalpha.vitwo.ai/branch/location/ajaxs/pr/ajax-items-list.php
+0 1
+http://devalpha.vitwo.ai/branch/location/ajaxs/modals/mm/ajax-manage-purchases-orders-modal.php
+0 14
+http://devalpha.vitwo.ai/branch/location/collect-payment.php
+0 2259
+https://www.devalpha.vitwo.ai/branch/location//manage-pr-p.php
+0 188
+https://www.devalpha.vitwo.ai/branch/location/recieved-item-sfg-p.php
+0 4
+https://www.devalpha.vitwo.ai/public/assets/sales-order.css
+0 1
+http://devalpha.vitwo.ai/branch/location/recieved-item-rm-p.php
+0 4
+http://devalpha.vitwo.ai/branch/location/manage-goods-stock.php
+0 425
+https://one.vitwo.ai/
+0 1
+https://www.devalpha.vitwo.ai/branch/location/manage-rm-stock.php
+0 4
+https://www.devalpha.vitwo.ai/branch/location/ajaxs/so/ajax-invoice-templates.php
+0 1
+http://devalpha.vitwo.ai/branch/location/pr-list-p.php
+0 61
+https://www.devalpha.vitwo.ai/branch/location/manage-job-order-pending-list.php
+0 76
+http://devalpha.vitwo.ai/branch/location/manage-pending-grn.php
+0 682
+http://devalpha.vitwo.ai/branch/location/manage-daybook.php
+0 26
+http://devalpha.vitwo.ai/branch/location/manage-storage-location-p.php
+0 479
+http://devalpha.vitwo.ai/branch/location/manage-purchases-orders-closed-p.php
+0 4
+http://devalpha.vitwo.ai/
+0 1588
+http://devalpha.vitwo.ai/branch/location/manage-job-order-list.php
+0 20
+http://devalpha.vitwo.ai/branch/location/manage-vendor-invoice-p.php
+0 1
+http://devalpha.vitwo.ai/branch/location/collect-payment-p.php
+0 850
+http://devalpha.vitwo.ai/branch/location/rfq-actions.php
+0 14
+https://www.devalpha.vitwo.ai/branch/location/manage-discount-variation.php
+0 737
+https://www.devalpha.vitwo.ai/branch/location/manage-grn-pending.php
+0 2
+https://www.devalpha.vitwo.ai/branch/location/manage-journal.php
+0 35
+http://devalpha.vitwo.ai/branch/location/po-items-p.php
+0 11
+http://devalpha.vitwo.ai/branch/location/banking-visualize-chart.php
+0 8
+https://www.devalpha.vitwo.ai/branch/location/manage-job-order-list-p.php
+0 6
+https://www.devalpha.vitwo.ai/branch/location/
+0 8274
+http://devalpha.vitwo.ai/branch/location/manage-job-order-pending-list.php
+0 64
+http://devalpha.vitwo.ai/branch/location/goods-type-items-p.php
+0 8
+https://devalpha.vitwo.ai/style.css
+0 1
+https://www.devalpha.vitwo.ai/branch/location/classic-view/invoice-preview-print.php
+0 4391
+http://devalpha.vitwo.ai/branch/location/sub-ledger-view-report.php
+0 9
+https://www.devalpha.vitwo.ai/branch/location/collect-payment.php
+0 162
+http://devalpha.vitwo.ai/branch/location/pos/pos.php
+0 68
+https://www.devalpha.vitwo.ai/company/manage-acc-functional-mapping.php
+0 6
+https://www.devalpha.vitwo.ai/branch/location/report-balance-sheet.php
+0 138
+http://devalpha.vitwo.ai/branch/location/manage-vendor-payment.php
+0 53
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-exceptional.php
+0 98
+http://devalpha.vitwo.ai/branch/location/manage-payments-old_04.05.2024.php
+0 16
+http://devalpha.vitwo.ai/branch/location/goods-sfg-p.php
+0 8
+https://www.devalpha.vitwo.ai/branch/location/manage-daybook.php
+0 116
+http://devalpha.vitwo.ai/uploads/1/acc-statement/171498014365150.pdf
+0 1
+https://www.devalpha.vitwo.ai/branch/location/manage-payments.php
+0 360
+http://devalpha.vitwo.ai/branch/location/manage-debit-notes-p.php
+0 405
+http://devalpha.vitwo.ai/branch/location/pr-list-closed-p.php
+0 9
+http://devalpha.vitwo.ai/branch/location/bom/bom.php
+0 4252
+http://devalpha.vitwo.ai/branch/location/manage-sales-orders-approved.php
+0 51
+https://www.devalpha.vitwo.ai/branch/location/rfq-actions.php
+0 16
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-po.php
+0 1
+http://devalpha.vitwo.ai/branch/location/manage-invoices.php
+0 639
+https://www.devalpha.vitwo.ai/branch/location/ajaxs/modals/mm/ajax-manage-payments-classicview.php
+0 1
+http://devalpha.vitwo.ai/branch/location/recieved-item.php
+0 149
+https://www.devalpha.vitwo.ai/branch/location/manage-failed-accounting.php
+0 1
+http://devalpha.vitwo.ai/branch/location/matrix.php
+0 255
+http://devalpha.vitwo.ai/branch/location/ajaxs/modals/mm/ajax-manage-goods-modal.php
+0 35
+http://devalpha.vitwo.ai/branch/location/accountingreports/stock-report.php
+0 435
+https://www.devalpha.vitwo.ai/vendor-rfq.php
+0 8
+http://devalpha.vitwo.ai/branch/location/manage-reports.php
+0 230
+https://www.devalpha.vitwo.ai/branch/location/purchase-to-pay-creations.php
+0 236
+http://devalpha.vitwo.ai/branch/location/ajaxs/modals/so/ajax-manage-job-order-pending-modal.php
+0 2
+https://www.devalpha.vitwo.ai/branch/location/warehouse-actions.php
+0 6
+http://devalpha.vitwo.ai/branch/location/manage-job-order-pending-list-p.php
+0 766
+http://mail.google.com/
+0 2
+http://devalpha.vitwo.ai/branch/manage-locations.php
+0 9
+http://devalpha.vitwo.ai/branch/location/manage-pr-creation.php
+0 96
+https://www.devalpha.vitwo.ai/branch/location/manage-production-order.php
+0 719
+https://www.google.co.in/
+0 1
+https://www.devalpha.vitwo.ai/branch/location/manage-grn-pending-p.php
+0 1070
+https://www.devalpha.vitwo.ai/public/assets/plugins/fontawesome-free/css/all.min.css
+0 413
+http://devalpha.vitwo.ai/branch/location/app/v1/functions/common/templates/template-collect-payment.php
+0 1
+https://www.devalpha.vitwo.ai/branch/location/manage-invoices.php
+0 3844
+https://www.devalpha.vitwo.ai/branch/login.php
+0 1606
+http://devalpha.vitwo.ai/branch/location/recieved-item-p.php
+0 20
+https://www.devalpha.vitwo.ai/branch/location/accountingreports/receivable-analysis.php
+0 682
+http://devalpha.vitwo.ai/branch/location/manage-discount-variation.php
+0 251
+http://devalpha.vitwo.ai/branch/location/asset-under-construction.php
+0 1
+http://devalpha.vitwo.ai/branch/location/manage-storage-location.php
+0 96
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-exceptional-p.php
+0 199
+http://devalpha.vitwo.ai/branch/location/goods-p.php
+0 1553
+https://www.netcraft.com/survey/
+0 1
+https://www.devalpha.vitwo.ai/branch/location/manage-pgi.php
+0 1885
+http://devalpha.vitwo.ai/branch/location/manage-sales-orders-item-wise-p.php
+0 38
+http://devalpha.vitwo.ai/branch/location/goods-type-items.php
+0 29
+http://devalpha.vitwo.ai/branch/location/manage-item-discount-group.php
+0 4
+http://devalpha.vitwo.ai/branch/location/stock-count.php
+0 18
+http://devalpha.vitwo.ai/branch/location/manage-sales-orders-item-wise.php
+0 5
+http://devalpha.vitwo.ai/branch/location/assets-under-construction.php
+0 4
+https://www.devalpha.vitwo.ai/branch/location/manage-storage-location-p.php
+0 136
+http://devalpha.vitwo.ai/branch/location/manage-stock-transfer.php
+0 298
+http://devalpha.vitwo.ai/branch/location/collectpaymentsettelment.php
+0 152
+http://devalpha.vitwo.ai/public/assets/plugins/fontawesome-free/css/all.min.css
+0 162
+http://devalpha.vitwo.ai/branch/location/accountingreports/payable-analysis.php
+0 188
+https://www.devalpha.vitwo.ai/branch/location/manage-fg-stock-p.php
+0 9
+http://devalpha.vitwo.ai/branch/location/bom/bom-p.php
+0 1607
+https://www.devalpha.vitwo.ai/branch/location/index.php
+0 36
+https://www.devalpha.vitwo.ai/branch/location/manage-bin.php
+0 14
+http://devalpha.vitwo.ai/branch/location/advancePaymnetSettlement.php
+0 155
+https://www.devalpha.vitwo.ai/branch/location/po-items.php
+0 6
+https://www.devalpha.vitwo.ai/branch/location/goods.php
+0 689
+http://devalpha.vitwo.ai/company/login.php
+0 27
+http://devalpha.vitwo.ai/branch/location/ajaxs/modals/mm/ajax-manage-grn-pending-modal.php
+0 8
+https://www.devalpha.vitwo.ai/company/
+0 349
+http://devalpha.vitwo.ai/branch/location/manage-quotation.php
+0 174
+https://www.devalpha.vitwo.ai/branch/manage-locations.php
+0 10
+https://www.devalpha.vitwo.ai/branch/location/manage-grn-invoice.php
+0 208
+https://www.devalpha.vitwo.ai/branch/location/ledger-view-report.php
+0 159
+http://devalpha.vitwo.ai/branch/location/manage-location-items.php
+0 349
+http://devalpha.vitwo.ai/branch/location/manage-pgi.php
+0 82
+http://devalpha.vitwo.ai/admin/login.php
+0 11
+https://www.devalpha.vitwo.ai/branch/location/manage-mrp.php
+0 22
+http://devalpha.vitwo.ai/branch/location/manage-location-items-p.php
+0 210
+https://www.devalpha.vitwo.ai/branch/location/accountingreports/payable-analysis.php
+0 62
+http://devalpha.vitwo.ai/branch/location/goods-action.php
+0 1
+https://www.devalpha.vitwo.ai//public/assets/plugins/fontawesome-free/css/all.min.css
+0 12
+http://devalpha.vitwo.ai/branch/location/goods-actions.php
+0 81
+http://devalpha.vitwo.ai/branch/location/manage-sales-orders-p.php
+0 178
+http://devalpha.vitwo.ai/branch/location/manage-vendors.php
+0 393
+http://devalpha.vitwo.ai/branch/location/manage-quotations.php
+0 39
+https://www.devalpha.vitwo.ai/company/manage-branches.php
+0 31
+https://www.devalpha.vitwo.ai/style.css
+0 87
+http://devalpha.vitwo.ai/branch/location/ajaxs/modals/mm/ajax-manage-location-item-modal.php
+0 1
+https://www.devalpha.vitwo.ai/branch/location/manage-inventory.php
+0 3939
+https://www.devalpha.vitwo.ai/branch/location/manage-location-items.php
+0 188
+https://www.devalpha.vitwo.ai/branch/location/manage-vendors.php
+0 2961
+http://devalpha.vitwo.ai/branch/location/esi-p.php
+0 5
+https://www.devalpha.vitwo.ai/branch/location/manage-customer-mrp-group.php
+0 35
+https://www.devalpha.vitwo.ai/branch/location/stock-count-p.php
+0 5
+http://devalpha.vitwo.ai/branch/location/manage-vendor-invoice.php
+0 44
+http://devalpha.vitwo.ai/branch/location/manage-payments-p.php
+0 2442
+http://devalpha.vitwo.ai/branch/location/manage-payments.php
+0 1515
+https://www.devalpha.vitwo.ai/branch/location/recieved-item-fg-p.php
+0 4
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-pending.php
+0 61
+http://devalpha.vitwo.ai/branch/location/manage-grn-posted-p.php
+0 186
+http://devalpha.vitwo.ai/branch/location/accountingreports/sales-register-product-wise.php
+0 1117
+https://www.devalpha.vitwo.ai/branch/location/manage-sales-orders-delivery-p.php
+0 26
+http://devalpha.vitwo.ai/branch/location/classic-view/invoice-preview-print.php
+0 7096
+http://devalpha.vitwo.ai/branch/location/tds-p.php
+0 4
+http://devalpha.vitwo.ai/branch/location/manage-rfq.php
+0 485
+http://devalpha.vitwo.ai/branch/location/po-items.php
+0 12
+https://devalpha.vitwo.ai/
+0 43
+https://www.devalpha.vitwo.ai/company/manage-user-variant-access.php
+0 4
+http://devalpha.vitwo.ai/branch/location/boq/boq.php
+0 125
+http://devalpha.vitwo.ai/branch/location/manage-sales-orders-exceptional-p.php
+0 8
+https://www.devalpha.vitwo.ai/branch/location/boq/boq.php
+0 321
+http://devalpha.vitwo.ai/branch/location/manage-purchases-orders-p.php
+0 1676
+http://devalpha.vitwo.ai/branch/location/manage-cost-center.php
+0 8
+# End Of Table - referrers
+# -agents- 
+Mozilla/5.0 (Linux; Android 8.0; Pixel 2 Build/OPD3.170816.012) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.1835.1725 
+0 1
+Mozilla/5.0
+0 3
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+0 475
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/100.0.48
+0 25
+Apache-HttpClient/4.5.12 (Java/17.0.7)
+0 58787
+Mozilla/5.0 (iPhone; CPU iPhone OS 17_1 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) CriOS/124.0.6367.111 Mobile/1
+0 10
+fasthttp
+0 1
+Dart/3.1 (dart:io)
+0 497
+Mozilla/5.0 (compatible; NetcraftSurveyAgent/1.0; +info@netcraft.com)
+0 3
+Mozilla/4.0 (compatible; Netcraft Web Server Survey)
+0 1
+Mozilla/5.0 (Linux; Android 4.4.2; LG-V410 Build/KOT49I.V41010d) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/30.0.1599.103 
+0 1
+Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.3809.1234 Mobile Sa
+0 1
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.118 Mobile
+0 84
+Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.4052.1608 Mobile S
+0 1
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36 Google-PageRenderer 
+0 49
+Mozilla/5.0 (X11; Fedora; Linux x86_64; rv:94.0) Gecko/20100101 Firefox/95.0
+0 6
+Mozilla/5.0 (compatible; Let's Encrypt validation server; +https://www.letsencrypt.org)
+0 10
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.84 Mobile S
+0 2
+Mozilla/5.0 (iPhone; CPU iPhone OS 16_3 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.3 Mobile/15E148 Sa
+0 60
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.6261.94 Mobile 
+0 160
+Mozilla/5.0 (compatible; wpbot/1.1; +https://forms.gle/ajBaxygz9jSR8p8G9)
+0 4
+Dart/3.0 (dart:io)
+0 1650
+Mozilla/5.0 (iPhone; CPU iPhone OS 16_6 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Mobile/15E148 Sa
+0 26
+Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)
+0 19
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4859.172 Safari/537.36
+0 66
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/123.0.0.0 Safari/537.36
+0 567
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 Edge/12.2
+0 2
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.155 Mobile
+0 4
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36
+0 5
+PostmanRuntime/7.38.0
+0 24
+Googlebot-Image/1.0
+0 21
+Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.53 Safari/537.36
+0 1
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; bingbot/2.0; +http://www.bing.com/bingbot.htm) Chrome/116.0.19
+0 166
+Mozilla/5.0 (compatible; SemrushBot/7~bl; +http://www.semrush.com/bot.html)
+0 8
+Mozilla/5.0 (compatible; coccocbot-web/1.0; +http://help.coccoc.com/searchengine)
+0 4
+curl/7.88.1
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0
+0 2
+Mozilla/5.0 (Windows NT 6.2; WOW64; Trident/7.0; rv:11.0) like Gecko
+0 27
+Mozilla/5.0 (compatible; coccocbot-image/1.0; +http://help.coccoc.com/searchengine)
+0 20
+Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko Firefox/11.0 (via ggpht.com GoogleImageProxy)
+0 85
+Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/121.0.0.0 Safari/537.36
+0 8
+Mozilla/5.0 (Linux; Android 5.0) AppleWebKit/537.36 (KHTML, like Gecko) Mobile Safari/537.36 (compatible; Bytespider; spider-
+0 4
+Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Mobile Safari/537.36
+0 479
+Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36
+0 150188
+Mozilla/5.0 \\(Windows NT 10.0\\; Win64\\; x64\\) AppleWebKit/537.36 \\(KHTML, like Gecko\\) Chrome/100.0.4896.60 Safari/537.
+0 2
+Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:125.0) Gecko/20100101 Firefox/125.0
+0 258
+WinHTTP Example/1.0
+0 2
+Mozilla/5.0 AppleWebKit/537.36 (KHTML, like Gecko; compatible; Googlebot/2.1; +http://www.google.com/bot.html) Chrome/122.0.6
+0 23
+Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Mobile Safari/
+0 12
+Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5X Build/MMB29P) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.6367.91 Mobile 
+0 2
+Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.1804.1873 Mobile Sa
+0 1
+# End Of Table - agents
+# -search strings- 
+# End Of Table - search strings
+# -usernames- 
+# End Of Table - usernames
