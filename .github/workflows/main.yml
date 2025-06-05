@@ -11,24 +11,25 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Upload to EC2 (Backup q1 and create tar)
+    - name: Backup q1 folder and upload to S3
       uses: appleboy/ssh-action@v1.0.0
       with:
         host: ${{ secrets.EC2_HOST }}
         username: ec2-user
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          # Save time
           timestamp=$(date +'%Y-%m-%d_%H-%M-%S')
-          
-          # Backup current q1 folder to tar
           tar -czf /home/ec2-user/q1-backup-$timestamp.tar.gz -C /var/www/html q1
-
-          # Move the backup to S3 (make sure you have AWS CLI installed and configured)
           aws s3 cp /home/ec2-user/q1-backup-$timestamp.tar.gz s3://vitwodeploybackup/q1-backups/
 
-          # Stash the current q1 folder (create a backup zip)
-          mv /var/www/html/q1 /var/www/html/q1-stash
+    - name: Stash old q1 folder on EC2
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ec2-user
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          sudo mv /var/www/html/q1 /var/www/html/q1-stash-$timestamp || echo "No existing q1 folder to stash"
 
     - name: Upload new code to EC2
       uses: appleboy/scp-action@v0.1.4
@@ -39,19 +40,15 @@ jobs:
         source: "."
         target: "/home/ec2-user/app"
 
-    - name: Run deployment script
+    - name: Deploy new code on EC2
       uses: appleboy/ssh-action@v1.0.0
       with:
         host: ${{ secrets.EC2_HOST }}
         username: ec2-user
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
-          # Move new code to the target folder
+          sudo mkdir -p /var/www/html/q1
           sudo cp -r /home/ec2-user/app/* /var/www/html/q1
 
-          # Restart Apache server
-          sudo systemctl restart apache2 || sudo service httpd restart
-
-          # Optionally, clean up the stash folder if everything is fine
-          sudo rm -rf /var/www/html/q1-stash
-
+          # Restart Apache (try both variants)
+          sudo systemctl restart apache2 || sudo systemctl restart httpd || sudo service httpd restart || sudo service apache2 restart
