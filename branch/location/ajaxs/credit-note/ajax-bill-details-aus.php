@@ -1,0 +1,752 @@
+<?php
+include_once("../../../../app/v1/connection-branch-admin.php");
+include("../../../../app/v1/functions/branch/func-items-controller.php");
+$headerData = array('Content-Type: application/json');
+$responseData = [];
+$qrysrui = queryGet("SELECT loc.storage_location_id, loc.storage_location_code, loc.storage_location_name, loc.storage_location_type, loc.storageLocationTypeSlug, warh.warehouse_id, warh.warehouse_code, warh.warehouse_name FROM erp_storage_location AS loc LEFT JOIN erp_storage_warehouse AS warh ON loc.warehouse_id = warh.warehouse_id WHERE loc.storage_location_storage_type!='Reserve' AND loc.company_id=$company_id", true);
+$sldattaqe = $qrysrui['data'];
+$lable = (getLebels($companyCountry)['data']);
+$lable = json_decode($lable, true);
+$tdslable = ($lable['source_taxation']);
+$tcslable = $lable['transaction_taxation'];
+function checkBatchStatus($batchno, $company_id, $branch_id, $location_id,$refActivityName="not required")
+{
+   if ($refActivityName != "not required") {
+            $refActivityName = strtolower($refActivityName);
+            if (in_array($refActivityName,['migration','consumption(book-physical)'])) {
+                $isValid = 1;
+                return [
+                    'disabled' => $isValid ? '' : 'disabled',
+                    'status' => !$isValid,
+                    'placeholderText' => $isValid ? '' : 'Acc. doc. not found',
+                    'placeholderClass' => $isValid ? '' : 'red-placeholder'
+                ];
+            }
+        }
+  $prodResult = queryGet("SELECT `prod_declaration_journal_id`, `fgsfg_declaration_journal_id`
+                            FROM erp_production_declarations
+                            WHERE `company_id` = '$company_id' AND `branch_id` = '$branch_id'
+                            AND `location_id` = '$location_id' AND `code` = '$batchno'");
+
+  $grnResult = queryGet("SELECT `grnCode`, `grnPostingJournalId`
+                           FROM erp_grn
+                           WHERE `companyId` = '$company_id' AND `branchId` = '$branch_id'
+                           AND `locationId` = '$location_id' AND `grnCode` = '$batchno'");
+
+  $isProdValid = $prodResult['status'] == 'success' &&
+    !empty($prodResult['data']['prod_declaration_journal_id']) &&
+    !empty($prodResult['data']['fgsfg_declaration_journal_id']);
+
+  $isGrnValid = $grnResult['status'] == 'success' &&
+    !empty($grnResult['data']['grnCode']) &&
+    !empty($grnResult['data']['grnPostingJournalId']);
+
+  $isValid = $isProdValid || $isGrnValid;
+
+  return [
+    'disabled' => $isValid ? '' : 'disabled',
+    'status' => !$isValid,
+    'placeholderText' => $isValid ? '' : 'Acc. doc. not found',
+    'placeholderClass' => $isValid ? '' : 'red-placeholder'
+  ];
+}
+?>
+<thead>
+  <tr>
+    <th>Item Details</th>
+    <th>Account</th>
+    <th>Bill Qty</th>
+    <th>Quantity</th>
+    <th>Rate</th>
+    <th style="width: 15%;">Tax</th>
+    <th style="width: 10%;">Amount</th>
+    <th>Action</th>
+  </tr>
+</thead>
+
+<?php
+if ($_GET['act'] === "bill") {
+
+  $bill_id = $_GET['bill_id'];
+  $attr = $_GET['attr'];
+  if ($attr == 'inv') {
+    $cuinv = queryGet("SELECT * FROM `erp_branch_sales_order_invoices` WHERE `so_invoice_id` = $bill_id");
+
+    $inv = queryGet("SELECT * FROM `erp_branch_sales_order_invoice_items` WHERE `so_invoice_id` = $bill_id", true);
+    // console($inv);
+    $total = 0;
+
+?>
+
+
+    <tbody class="add-row inv_items">
+      <?php
+      foreach ($inv['data'] as $keyss => $data) {
+        $rand = rand(100, 1000);
+        // $tax_amount = ($data['tax'] / 100 * $data['unitPrice']) * $data['qty'];
+        $discountamt = $data['unitPrice'] * ($data['cashDiscount'] / 100);
+        $discountamt = $discountamt * $data['qty'];
+        $amount = ($data['qty'] * $data['unitPrice']) + $data['totalTax'];
+        $amount = $amount - $discountamt;
+        $total += $amount;
+        // $num = decimalValuePreview()
+
+        $itemgl = queryGet("SELECT parentGlId,goodsType FROM `" . ERP_INVENTORY_ITEMS . "` WHERE itemId='" . $data['inventory_item_id'] . "' AND company_id = '" . $company_id . "' ");
+
+        $parentGlId = $itemgl['data']['parentGlId'];
+        $goodsType = $itemgl['data']['goodsType'];
+
+        $gl_sql = queryGet("SELECT * FROM `" . ERP_ACC_CHART_OF_ACCOUNTS . "` WHERE `id` = $parentGlId");
+
+      ?>
+
+        <tr class="items_row" id="<?= $rand ?>">
+          <td>
+            <p class="pre-normal"><?= $data['itemCode'] . '[' . $data['itemName'] . ']' ?></p>
+            <input type="hidden" value="<?= $data['itemCode'] ?>" name="item[<?= $rand ?>][item_code]">
+            <input type="hidden" class="item_select  item_select_<?= $rand ?>" value="<?= $data['inventory_item_id'] . '_' . $goodsType  ?>" name="item[<?= $rand ?>][item_id]">
+          </td>
+          <td><?= $gl_sql['data']['gl_code'] ?> | <?= $gl_sql['data']['gl_label'] ?>
+            <input type="hidden" value="<?= $parentGlId ?>" name="item[<?= $rand ?>][account]" class="form-control account_<?= $rand ?>">
+          </td>
+
+          <td class="text-right"><?= decimalQuantityPreview($data['qty']) ?></td>
+
+          <td class="text-right">
+            <div class="d-flex gap-2">
+
+              <span class="custom_batch_<?= $rand ?> <?php if ($goodsType == 5 || $goodsType == 7) {
+                                                        echo 'd-none';
+                                                      } ?> ">
+                <?php
+                $itemId = $data['inventory_item_id'];
+                $partyDebitDate = $_GET['partyDebitDate'] ?? date('Y-m-d');
+                $randCode = $rand;
+
+                // console($_GET);
+
+
+                // $qtyObj = $BranchSoObj->deliveryCreateItemQty($getItemObj['data']['itemId']);
+                $qtyObj = itemQtyStockChecking($itemId, "'rmWhOpen', 'fgWhOpen'", "DESC", '', $partyDebitDate, 1);
+
+                // console($qtyObj);
+                $sumOfBatches = decimalQuantityPreview($qtyObj['sumOfBatches']);
+                $batchesDetails = convertToWHSLBatchArrayCommon($qtyObj['data']);
+                // console($itemQtyStockCheck);
+
+                // console($qtyObj);
+                // console($batchesDetails);
+                ?>
+
+                <input type="hidden" name="item[<?= $rand ?>][stockQty]" class="form-control checkQty" id="checkQty_<?= $rand ?>" value="<?= $sumOfBatches; ?>">
+
+                <!-- Button to Open the Modal -->
+                <div class="qty-modal py-2">
+                  <p class="font-bold text-center checkQtySpan" id="checkQtySpan_<?= $rand ?>"><?= $sumOfBatches; ?></p>
+                  <hr class="my-2 w-50 mx-auto">
+                  <div class="text-xs d-flex align-items-center gap-2 justify-content-center">
+                    <p class="itemSellType" id="itemSellType_<?= $rand ?>">CUSTOM</p>
+                    <ion-icon name="create-outline" class="stockBtn" id="stockBtn_<?= $rand ?>" data-bs-toggle="modal" data-bs-target="#stockSetup<?= $rand ?>" style="cursor: pointer;"></ion-icon>
+                  </div>
+                </div>
+                <input type="hidden" class="itemSellTypeHidden" id="itemSellTypeHidden_<?= $rand ?>" name="item[<?= $rand ?>][itemSellType]" value="CUSTOM">
+
+                <!-- The Modal -->
+                <div class="modal fade stock-setup-modal" id="stockSetup<?= $rand ?>">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+
+                      <!-- Modal Header -->
+                      <div class="modal-header" style="background: #003060; color: #fff;">
+                        <h4 class="modal-title text-sm text-white">Stock Setup (CUSTOM)</h4>
+                        <p class="text-xs my-2 ml-5">Total Picked Qty :
+                          <span class="font-bold itemSelectTotalQty" id="itemSelectTotalQty_<?= $rand ?>"><?= decimalQuantityPreview(0) ?></span>
+                        </p>
+
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+
+                        <!-- start warehouse accordion -->
+                        <div class="modal-select-type my-3">
+                          <div class="type type-three">
+                            <input type="radio" name="item[<?= $rand ?>][itemreleasetype]" class="itemreleasetypeclass custom" data-rdcode="<?= $rand ?>" value="CUSTOM" id="custom_<?= $rand ?>" checked>
+                            <label for="custom" class="text-xs mb-0 text-muted">Custom</label>
+                          </div>
+                        </div>
+
+                        <div class="customitemreleaseDiv<?= $rand ?>">
+                          <?php
+                          foreach ($batchesDetails as $whKey => $wareHouse) {
+                          ?>
+                            <style>
+                              input.red-placeholder {
+                                color: red;
+                                /* Text color */
+                                border: 1px solid red;
+                                /* Border color */
+                              }
+                            </style>
+                            <div class="accordion accordion-flush warehouse-accordion p-0" id="accordionFlushExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header w-100" id="flush-headingOne">
+                                  <button class="accordion-button btn btn-primary warehouse-header waves-effect waves-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $whKey ?>" aria-expanded="true" aria-controls="flush-collapseOne">
+                                    <?= $wareHouse['warehouse_code'] ?> | <?= $wareHouse['warehouse_name'] ?>
+                                  </button>
+                                </h2>
+                                <div id="collapse<?= $whKey ?>" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
+                                  <div class="accordion-body p-0">
+                                    <h1></h1>
+                                    <div class="card bg-transparent">
+                                      <div class="card-body px-2 mx-3" style="background-color: #f9f9f9;">
+                                        <!-- start location accordion -->
+                                        <?php foreach ($wareHouse['storage_locations'] as $locationKey => $location) {
+                                        ?>
+                                          <div id="locAccordion">
+                                            <div class="card bg-transparent">
+                                              <div class="card-header p-2 border rounded-0 bg-transparent border-0 border-bottom">
+                                                <a class="btn text-dark w-100 storage-after" data-bs-toggle="collapse" href="#collapse<?= $whKey ?><?= $locationKey ?>">
+                                                  <?= $location['storage_location_code'] ?> | <?= $location['storage_location_name'] ?>
+                                                </a>
+                                              </div>
+                                              <div id="collapse<?= $whKey ?><?= $locationKey ?>" class="collapse" data-bs-parent="#locAccordion">
+                                                <div class="card-body bg-light mx-3">
+                                                  <?php
+                                                  // console($location['batches']);
+                                                  foreach ($location['batches'] as $batchKey => $batch) {
+                                                    // $batchItemUom = $ItemsObj->getBaseUnitMeasureById($batch['itemUom'])['data']['uomName'];
+                                                    if (in_array($batch['refActivityName'], ['STRGE-LOC', 'PGI', 'REV-INVOICE', 'CN', 'DN', 'MAT-MAT-IN'])) {
+                                                      $batchno = $batch['logRef'];
+                                                    } else {
+                                                      $batchno = $batch['refNumber'];
+                                                    }
+                                                    $batchStatus = checkBatchStatus($batchno, $company_id, $branch_id, $location_id,$batch['refActivityName']);
+
+                                                    $disbaledstatus = $batchStatus['disabled'];
+                                                    $status = $batchStatus['status'];
+                                                    $placeholderText = $batchStatus['placeholderText'];
+                                                    $placeholderClass = $batchStatus['placeholderClass'];
+                                                    $uomName = getUomDetail($batch['itemUom'])['data']['uomName'];
+                                                  ?>
+                                                    <div class="storage-location mb-2">
+                                                      <div class="input-radio">
+                                                        <?php if ($batch['itemQty'] > 0) { ?>
+                                                          <input type="checkbox" <?= $disbaledstatus ?> name="item[<?= $randCode ?>][batchselectionchekbox][<?= $batch['logRef'] . '_' . $locationKey . '_' . $whKey . $batchKey; ?>]" class="batchCbox batchCheckbox<?= $batch['logRef'] ?>" id="batchCheckbox_<?= $whKey ?><?= $locationKey ?><?= $batchKey ?>">
+                                                        <?php } else { ?>
+                                                          <input type="checkbox" <?= $disbaledstatus ?> name="item[<?= $randCode ?>][batchselectionchekbox][<?= $batch['logRef'] . '_' . $locationKey . '_' . $whKey . $batchKey; ?>]" class="batchCbox batchCheckbox<?= $batch['logRef'] ?>" id="batchCheckbox_<?= $whKey ?><?= $locationKey ?><?= $batchKey ?>">
+                                                        <?php } ?>
+                                                      </div>
+                                                      <div class="d-grid">
+                                                        <p class="text-sm mb-2">
+                                                          <?= $batch['logRef'] ?>
+                                                        </p>
+                                                        <p class="text-xs mb-2 font-bold batchItemQty" id="batchItemQty_<?= $whKey ?><?= $locationKey ?><?= $batchKey ?>">
+                                                          <span class="text-xs font-italic d-block"><?= formatDateTime($batch['bornDate']) ?> || <?= decimalQuantityPreview($batch['itemQty']) ?> <?= $uomName ?> </span>
+                                                        </p>
+                                                      </div>
+                                                      <div class="input">
+                                                        <?php if ($batch['itemQty'] > 0) { ?>
+                                                          <input type="number" <?= $disbaledstatus ?> step="any" name="item[<?= $randCode ?>][batchselection][<?= $batch['logRef'] . '_' . $locationKey . '_' . $whKey . $batchKey; ?>]" data-maxval="<?= $batch['itemQty'] ?>" data-rdcode="<?= $randCode . '|' . $batch['logRef']; ?>" class="<?= $placeholderClass ?>form-control ml-auto inputQuantityClass enterQty batchqty<?= $batch['logRef']; ?> qty<?= $randCode; ?>" id="enterQty_<?= $batch['logRef']; ?>" placeholder="<?= $placeholderText ?>">
+                                                        <?php } else { ?>
+                                                          <input type="number" <?= $disbaledstatus ?> step="any" name="item[<?= $randCode ?>][batchselection][<?= $batch['logRef'] . '_' . $locationKey . '_' . $whKey . $batchKey; ?>]" data-maxval="<?= $batch['itemQty'] ?>" data-rdcode="<?= $randCode . '|' . $batch['logRef']; ?>" class="<?= $placeholderClass ?> form-control ml-auto inputQuantityClass enterQty batchqty<?= $batch['logRef']; ?> qty<?= $randCode; ?>" id="enterQty_<?= $batch['logRef']; ?>" placeholder="<?= $placeholderText ?>">
+                                                        <?php } ?>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+                                                  <?php } ?>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        <?php } ?>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          <?php } ?>
+
+                        </div>
+                        <!-- end warehouse accordion -->
+                      </div>
+
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Proceed >></button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <input class="form-control" type="hidden" id="checkQtyVal_<?= $rand ?>" name="item[<?= $rand ?>][sumOfBatches]" value="<?= $sumOfBatches ?>">
+              </span>
+
+              <?php if ($goodsType == 5 || $goodsType == 7) { ?>
+
+                <input type="number" step="any" name="item[<?= $rand ?>][qty]" class="form-control inputQuantityClass itemQty" id="itemQty_<?= $rand ?>" value="<?= inputQuantity($data['goodQty']) ?>">
+              <?php } else { ?>
+                <input type="number" step="any" name="item[<?= $rand ?>][qty]" class="form-control inputQuantityClass itemQty" id="itemQty_<?= $rand ?>" value="" <?php if (count($batchesDetails) > 0) {
+                                                                                                                                                                    echo 'readonly';
+                                                                                                                                                                  } ?>>
+              <?php } ?>
+            </div>
+
+          </td>
+
+          <input type="hidden" name="item[<?= $rand ?>][dis]" class="form-control itemDis" id="itemDis_<?= $rand ?>" value="<?= decimalValuePreview($data['cashDiscount']) ?>">
+          <input type="hidden" name="item[<?= $rand ?>][disval]" class="form-control itemDisVal" id="itemDisVal_<?= $rand ?>" value="<?= decimalValue($data['cashDiscountAmount']) ?>">
+          <input type="hidden" step="any" name="item[<?= $rand ?>][total_tds_per]" id="total_tds_per_<?= $rand ?>" value="<?= $data['tds']??'0' ?>">
+
+          <td class="text-right"><input type="number" step="any" name="item[<?= $rand ?>][rate]" class="form-control price inputAmountClass" id="price_<?= $rand ?>" value="<?= inputValue($data['itemTargetPrice']) ?>"></td>
+          <td>
+            <div class="d-flex gap-2">
+              <input type="number" step="any" class="form-control tax inputQuantityClass" name="item[<?= $rand ?>][tax]" id="tax_<?= $rand ?>" value="<?= inputQuantity($data['tax']) ?>">
+              <span class="d-inline-block">%</span>
+              <input type="hidden" class="form-control tax_amount" name="item[<?= $rand ?>][tax_amount]" id="tax_amount_<?= $rand ?>" value="<?= inputValue($data['totalTax']) ?>">
+            </div>
+
+
+            <!-- <select name="" id="" class="form-control">
+                                                            <option value="0">Select Account</option>
+                                                            <option value="0">Select Account</option>
+                                                            <option value="0">Select Account</option>
+                                                        </select> -->
+          </td>
+          <td class="text-right amount" id="amount_<?= $rand ?>"><?= decimalValuePreview($amount) ?>
+            <input type="hidden" value="<?= decimalValuePreview($amount) ?>" id="amountHidden_<?= $rand ?>" name="item[<?= $rand ?>][amount]">
+          </td>
+          <td>
+            <div class="btns-grp d-flex gap-2">
+              <a style="cursor: pointer" class="btn btn-danger add-btn-minus-bill">
+                <i class="fa fa-minus"></i>
+              </a>
+            </div>
+          </td>
+        </tr>
+
+
+
+
+
+      <?php
+      }
+
+      ?>
+
+    </tbody>
+    <!-- <tr>
+      <td colspan="5" class="text-right">SGST</td>
+      <td colspan="2" class="text-right" id="sgst_span"></td>
+      <input type="hidden" name="sgst" id="sgst" value='' />
+    </tr>
+    <tr>
+      <td colspan="5" class="text-right">CGST</td>
+      <td colspan="2" class="text-right" id="cgst_span"></td>
+      <input type="hidden" name="cgst" id="cgst" value='' />
+    </tr>
+    <tr>
+      <td colspan="5" class="text-right">IGST</td>
+      <td colspan="2" class="text-right" id="igst_span"></td>
+      <input type="hidden" name="igst" id="igst" value='' />
+    </tr> -->
+    <tr id="subtotalTr">
+      <td colspan="5" class="text-right">Total Discount</td>
+      <td colspan="2" class="text-right" id="total_discount_c"><?= decimalValuePreview($cuinv['data']['totalCashDiscount']) ?>
+      </td>
+      <input t type="hidden" step="any" id="total_discount" style="float: right;" class="form-control text-right" name="total_discount" value="<?= decimalValuePreview($cuinv['data']['totalCashDiscount']) ?>">
+
+    </tr>
+    <tr id="subtotalTr">
+      <td colspan="5" class="text-right">Sub Total</td>
+      <td colspan="2" class="text-right" id="subTotal"><?= decimalValuePreview($total) ?>
+        <input type="hidden" id="subTotal" name="subTotal" value="<?= decimalValuePreview($total) ?>">
+
+      </td>
+    </tr>
+
+    <tr id="subtotalTr">
+      <td colspan="5" class="text-right">Total <?= $tcslable ?></td>
+      <td colspan="2" class="text-right" id="total_tcs_c">
+        <input type="number" step="any" id="total_tcs" style="float: right;" class="form-control inputAmountClass text-right" name="total_tcs" value="<?= inputValue($cuinv['data']['tcs_amount']) ?>">
+
+      </td>
+    </tr>
+    <tr id="subtotalTr">
+      <?php
+      $selc = 0;
+      $rounva = 0;
+      if ($cuinv['data']['adjusted_amount'] > 0) {
+        $selc = 1;
+        $rounva = $cuinv['data']['adjusted_amount'];
+      } else {
+        $selc = 0;
+        $rounva = $cuinv['data']['adjusted_amount'] * -1;
+      } ?>
+      <td colspan="5" class="text-right">Round Off</td>
+      <td colspan="2" class="text-right" id="total_round_off_c">
+        <div class="adjust-currency d-flex gap-2 " style="float: right;">
+          <select id="round_sign" name="round_sign" class="form-control text-center">
+            <option value="+" <?php if ($selc == 1) {
+                                echo "selected";
+                              } ?>>+</option>
+            <option value="-" <?php if ($selc == 0) {
+                                echo "selected";
+                              } ?>>-</option>
+          </select>
+          <input type="number" step="any" name="round_value" step="any" id="round_value" value="<?= inputValue($rounva) ?>" class="form-control inputAmountClass text-right">
+        </div>
+
+      </td>
+    </tr>
+
+
+    <?php
+    $tcs = $cuinv['data']['tcs_amount'];
+    $round = $cuinv['data']['adjusted_amount'];
+    $dis = $cuinv['data']['totalCashDiscount'];
+    $total = $total + $tcs + ($round); ?>
+    <tr>
+      <td colspan="5" class="text-right font-bold"> Total</td>
+      <td colspan="2" class="text-right font-bold" id="grandTotal"> <?= decimalValuePreview($total) ?>
+      </td>
+    </tr>
+    <tr>
+      <td><input type="hidden" id="grandTotalHidden" name="grandTotal" value="<?= decimalValuePreview($total) ?>"></td>
+      <td> <input type="hidden" name="discountAmount" id="discountAmountHidden" class="form-control" value="0"></td>
+      <td><input type="hidden" class="form-control" name="subTotal" id="subTotalHidden" value="<?= decimalValuePreview($total) ?>"></td>
+    </tr>
+
+  <?php
+  } else {
+    $grninv = queryGet("SELECT * FROM `erp_grninvoice` WHERE `grnIvId` = $bill_id");
+
+    // console($grninv);
+    $inv = queryGet("SELECT * FROM `erp_grninvoice_goods` as goods, `erp_hsn_code` as hsn WHERE hsn.`hsnCode` = goods.`goodHsn` AND goods.`grnIvId` = $bill_id", true);
+    //console($inv);
+    $total = 0;
+  ?>
+
+    <tbody class="add-row inv_items">
+      <?php
+      foreach ($inv['data'] as $keyss => $data) {
+        $rand = rand(100, 1000);
+        $tax_amount = ($data['taxPercentage'] / 100 * $data['unitPrice']) * $data['goodQty'];
+        $amount = ($data['goodQty'] * $data['unitPrice']) + $tax_amount;
+
+        $total += $amount;
+
+
+        $itemgl = queryGet("SELECT parentGlId,goodsType,baseUnitMeasure FROM `" . ERP_INVENTORY_ITEMS . "` WHERE itemId='" . $data['goodId'] . "' AND company_id = '" . $company_id . "' ");
+
+        $parentGlId = $itemgl['data']['parentGlId'];
+        $goodsType = $itemgl['data']['goodsType'];
+        $goodsUom = $itemgl['data']['baseUnitMeasure'];
+
+        $gl_sql = queryGet("SELECT * FROM `" . ERP_ACC_CHART_OF_ACCOUNTS . "` WHERE `id` = $parentGlId");
+
+      ?>
+
+        <tr class="items_row" id="<?= $rand ?>">
+          <td><?= $data['goodCode'] . '[' . $data['goodName'] . ']' ?>
+            <input type="hidden" value="<?= $data['goodCode'] ?>" name="item[<?= $rand ?>][item_code]">
+            <input type="hidden" class="item_select  item_select_<?= $rand ?>" value="<?= $data['goodId'] . '_' . $goodsType ?>" name="item[<?= $rand ?>][item_id]">
+
+          </td>
+
+          <td><?= $gl_sql['data']['gl_code'] ?> | <?= $gl_sql['data']['gl_label'] ?>
+            <input type="hidden" value="<?= $parentGlId ?>" name="item[<?= $rand ?>][account]" class="form-control account_<?= $rand ?>">
+          </td>
+
+          <td class="text-right"><?= decimalQuantityPreview($data['receivedQty']) ?></td>
+
+          <td class="text-right">
+            <div class="d-flex">
+              <span class="custom_batch_<?= $rand ?> <?php if ($goodsType == 5 || $goodsType == 7) {
+                                                        echo 'd-none';
+                                                      } ?> ">
+                <?php
+                $itemId = $data['goodId'];
+                $partyDebitDate = $_GET['partyDebitDate'] ?? date('Y-m-d');
+                $randCode = $rand;
+
+                // console($_GET);
+
+
+                // $qtyObj = $BranchSoObj->deliveryCreateItemQty($getItemObj['data']['itemId']);
+                $qtyObj = itemQtyStockChecking($itemId, "'rmWhOpen', 'fgWhOpen'", "DESC", "'" . $grninv['data']['grnCode'] . $data['itemStorageLocation'] . "'", $partyDebitDate);
+
+                // console($qtyObj);
+                $sumOfBatches = decimalQuantityPreview($qtyObj['sumOfBatches']);
+                $batchesDetails = convertToWHSLBatchArrayCommon($qtyObj['data']);
+                // console($itemQtyStockCheck);
+
+                // console($qtyObj);
+                // console($batchesDetails);
+                ?>
+
+                <input type="hidden" name="item[<?= $rand ?>][stockQty]" class="form-control checkQty" id="checkQty_<?= $rand ?>" value="<?= $sumOfBatches; ?>">
+
+                <!-- Button to Open the Modal -->
+                <div class="qty-modal py-2">
+                  <p class="font-bold text-center checkQtySpan" id="checkQtySpan_<?= $rand ?>"><?= $sumOfBatches; ?></p>
+                  <hr class="my-2 w-50 mx-auto">
+                  <div class="text-xs d-flex align-items-center gap-2 justify-content-center">
+                    <p class="itemSellType" id="itemSellType_<?= $rand ?>">CUSTOM</p>
+                    <ion-icon name="create-outline" class="stockBtn" id="stockBtn_<?= $rand ?>" data-bs-toggle="modal" data-bs-target="#stockSetup<?= $rand ?>" style="cursor: pointer;"></ion-icon>
+                  </div>
+                </div>
+                <input type="hidden" class="itemSellTypeHidden" id="itemSellTypeHidden_<?= $rand ?>" name="item[<?= $rand ?>][itemSellType]" value="CUSTOM">
+
+                <!-- The Modal -->
+                <div class="modal fade stock-setup-modal" id="stockSetup<?= $rand ?>">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+
+                      <!-- Modal Header -->
+                      <div class="modal-header" style="background: #003060; color: #fff;">
+                        <h4 class="modal-title text-sm text-white">Stock Setup (CUSTOM)</h4>
+                        <p class="text-xs my-2 ml-5">Total Picked Qty :
+                          <span class="font-bold itemSelectTotalQty" id="itemSelectTotalQty_<?= $rand ?>"><?= decimalQuantityPreview(0) ?></span>
+                        </p>
+
+                      </div>
+
+                      <!-- Modal body -->
+                      <div class="modal-body">
+
+                        <!-- start warehouse accordion -->
+                        <div class="modal-select-type my-3">
+                          <div class="type type-three">
+                            <input type="radio" name="item[<?= $rand ?>][itemreleasetype]" class="itemreleasetypeclass custom" data-rdcode="<?= $rand ?>" value="CUSTOM" id="custom_<?= $rand ?>" checked>
+                            <label for="custom" class="text-xs mb-0 text-muted">Custom</label>
+                          </div>
+                        </div>
+
+                        <div class="customitemreleaseDiv<?= $rand ?>">
+                          <?php
+                          foreach ($batchesDetails as $whKey => $wareHouse) {
+                          ?>
+                            <div class="accordion accordion-flush warehouse-accordion p-0" id="accordionFlushExample">
+                              <div class="accordion-item">
+                                <h2 class="accordion-header w-100" id="flush-headingOne">
+                                  <button class="accordion-button btn btn-primary warehouse-header waves-effect waves-light" type="button" data-bs-toggle="collapse" data-bs-target="#collapse<?= $whKey ?>" aria-expanded="true" aria-controls="flush-collapseOne">
+                                    <?= $wareHouse['warehouse_code'] ?> | <?= $wareHouse['warehouse_name'] ?>
+                                  </button>
+                                </h2>
+                                <div id="collapse<?= $whKey ?>" class="accordion-collapse collapse show" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample" style="">
+                                  <div class="accordion-body p-0">
+                                    <h1></h1>
+                                    <div class="card bg-transparent">
+                                      <div class="card-body px-2 mx-3" style="background-color: #f9f9f9;">
+                                        <!-- start location accordion -->
+                                        <?php foreach ($wareHouse['storage_locations'] as $locationKey => $location) {
+                                        ?>
+                                          <div id="locAccordion">
+                                            <div class="card bg-transparent">
+                                              <div class="card-header p-2 border rounded-0 bg-transparent border-0 border-bottom">
+                                                <a class="btn text-dark w-100 storage-after" data-bs-toggle="collapse" href="#collapse<?= $whKey ?><?= $locationKey ?>">
+                                                  <?= $location['storage_location_code'] ?> | <?= $location['storage_location_name'] ?>
+                                                </a>
+                                              </div>
+                                              <div id="collapse<?= $whKey ?><?= $locationKey ?>" class="collapse" data-bs-parent="#locAccordion">
+                                                <div class="card-body bg-light mx-3">
+                                                  <?php
+                                                  // console($location['batches']);
+                                                  foreach ($location['batches'] as $batchKey => $batch) {
+                                                    // $batchItemUom = $ItemsObj->getBaseUnitMeasureById($batch['itemUom'])['data']['uomName'];
+                                                    $uomName = getUomDetail($batch['itemUom'])['data']['uomName'];
+                                                    if (in_array($batch['refActivityName'], ['STRGE-LOC', 'PGI', 'REV-INVOICE', 'CN', 'DN', 'MAT-MAT-IN'])) {
+                                                      $batchno = $batch['logRef'];
+                                                    } else {
+                                                      $batchno = $batch['refNumber'];
+                                                    }
+                                                    $batchStatus = checkBatchStatus($batchno, $company_id, $branch_id, $location_id,$batch['refActivityName']);
+
+                                                    $disbaledstatus = $batchStatus['disabled'];
+                                                    $status = $batchStatus['status'];
+                                                    $placeholderText = $batchStatus['placeholderText'];
+                                                    $placeholderClass = $batchStatus['placeholderClass'];
+                                                  ?>
+                                                    <div class="storage-location mb-2">
+                                                      <div class="input-radio">
+                                                        <?php if ($batch['itemQty'] > 0) { ?>
+                                                          <input type="checkbox" <?= $disbaledstatus ?> name="item[<?= $randCode ?>][batchselectionchekbox][<?= $batch['logRef'] . '_' . $locationKey . '_' . $whKey . $batchKey; ?>]" class="batchCbox batchCheckbox<?= $batch['logRef'] ?>" id="batchCheckbox_<?= $whKey ?><?= $locationKey ?><?= $batchKey ?>">
+                                                        <?php } else { ?>
+                                                          <input type="checkbox" <?= $disbaledstatus ?> name="item[<?= $randCode ?>][batchselectionchekbox][<?= $batch['logRef'] . '_' . $locationKey . '_' . $whKey . $batchKey; ?>]" class="batchCbox batchCheckbox<?= $batch['logRef'] ?>" id="batchCheckbox_<?= $whKey ?><?= $locationKey ?><?= $batchKey ?>" disabled>
+                                                        <?php } ?>
+                                                      </div>
+                                                      <div class="d-grid">
+                                                        <p class="text-sm mb-2">
+                                                          <?= $batch['logRef'] ?>
+                                                        </p>
+                                                        <p class="text-xs mb-2 font-bold batchItemQty" id="batchItemQty_<?= $whKey ?><?= $locationKey ?><?= $batchKey ?>">
+                                                          <span class="text-xs font-italic d-block"><?= formatDateTime($batch['bornDate']) ?> || <?= decimalQuantityPreview($batch['itemQty']) ?> <?= $uomName ?> </span>
+                                                        </p>
+                                                      </div>
+                                                      <div class="input">
+                                                        <?php if ($batch['itemQty'] > 0) { ?>
+                                                          <input type="number" <?= $disbaledstatus ?> step="any" name="item[<?= $randCode ?>][batchselection][<?= $batch['logRef'] . '_' . $locationKey . '_' . $whKey . $batchKey; ?>]" data-maxval="<?= $batch['itemQty'] ?>" data-rdcode="<?= $randCode . '|' . $batch['logRef']; ?>" class="<?= $placeholderClass ?> form-control inputQuantityClass ml-auto enterQty batchqty<?= $batch['logRef']; ?> qty<?= $randCode; ?>" id="enterQty_<?= $batch['logRef']; ?>" placeholder="<?= $placeholderText ?>">
+                                                        <?php } else { ?>
+                                                          <input type="number" <?= $disbaledstatus ?> step="any" name="item[<?= $randCode ?>][batchselection][<?= $batch['logRef'] . '_' . $locationKey . '_' . $whKey . $batchKey; ?>]" data-maxval="<?= $batch['itemQty'] ?>" data-rdcode="<?= $randCode . '|' . $batch['logRef']; ?>" class="<?= $placeholderClass ?> form-control inputQuantityClass ml-auto enterQty batchqty<?= $batch['logRef']; ?> qty<?= $randCode; ?>" id="enterQty_<?= $batch['logRef']; ?>" placeholder="<?= $placeholderText ?>" disabled>
+                                                        <?php } ?>
+                                                      </div>
+                                                    </div>
+                                                    <hr>
+                                                  <?php } ?>
+                                                </div>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        <?php } ?>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                          <?php } ?>
+
+                        </div>
+                        <!-- end warehouse accordion -->
+                      </div>
+
+                      <!-- Modal footer -->
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-success" data-bs-dismiss="modal">Proceed >></button>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+                <input class="form-control" type="hidden" id="checkQtyVal_<?= $rand ?>" name="item[<?= $rand ?>][sumOfBatches]" value="<?= $sumOfBatches ?>">
+              </span>
+              <?php if ($goodsType == 5 || $goodsType == 7) { ?>
+
+                <input type="number" step="any" name="item[<?= $rand ?>][qty]" class="form-control inputQuantityClass itemQty" id="itemQty_<?= $rand ?>" value="<?= inputQuantity($data['goodQty']) ?>">
+              <?php } else { ?>
+                <input type="number" step="any" name="item[<?= $rand ?>][qty]" class="form-control inputQuantityClass itemQty" id="itemQty_<?= $rand ?>" value="" <?php if (count($batchesDetails) > 0) {
+                                                                                                                                                                    echo 'readonly';
+                                                                                                                                                                  } ?>>
+              <?php } ?>
+            </div>
+
+          </td>
+          <input type="hidden" name="item[<?= $rand ?>][disval]" class="form-control itemDisVal" id="itemDisVal_<?= $rand ?>" value="0">
+          <input type="hidden" name="item[<?= $rand ?>][tdsval]" class="form-control itemTdsVal" id="itemTdsVal_<?= $rand ?>" value="0">
+
+          <input class="form-control itemTds inputAmountClass" type="hidden" step="any" name="item[<?= $rand ?>][total_tds_per]" id="total_tds_per_<?= $rand ?>" value="<?= $data['tds']??'0' ?>">
+
+          <td class="text-right"><input type="number" step="any" name="item[<?= $rand ?>][rate]" class="form-control price inputAmountClass" id="price_<?= $rand ?>" value="<?= inputValue($data['unitPrice']) ?>"></td>
+          <td>
+            <div class="d-flex gap-2">
+              <input type="number" step="any" class="form-control tax inputQuantityClass" name="item[<?= $rand ?>][tax]" id="tax_<?= $rand ?>" value="<?= inputQuantity($data['taxPercentage']) ?>">
+              <span class="percent-position">%</span>
+              <input type="hidden" class="form-control tax_amount" name="item[<?= $rand ?>][tax_amount]" id="tax_amount_<?= $rand ?>" value="<?= decimalValuePreview($tax_amount) ?>">
+            </div>
+
+            <!-- <select name="" id="" class="form-control">
+                                                            <option value="0">Select Account</option>
+                                                            <option value="0">Select Account</option>
+                                                            <option value="0">Select Account</option>
+                                                        </select> -->
+          </td>
+          <td class="text-right amount" id="amount_<?= $rand ?>"><?= decimalValuePreview($amount) ?>
+            <input type="hidden" value="<?= decimalValuePreview($amount) ?>" id="amountHidden_<?= $rand ?>" name="item[<?= $rand ?>][amount]">
+          </td>
+          <td>
+            <div class="btns-grp d-flex gap-2">
+              <a style="cursor: pointer" class="btn btn-danger add-btn-minus-bill">
+                <i class="fa fa-minus"></i>
+              </a>
+            </div>
+          </td>
+        </tr>
+      <?php
+      }
+
+      ?>
+
+    </tbody>
+
+    <tr id="subtotalTr">
+      <td colspan="5" class="text-right">Sub Total</td>
+      <td colspan="2" class="text-right" id="subTotal"><?= decimalValuePreview($total) ?>
+        <input type="hidden" id="subTotal" name="subTotal" value="<?= decimalValuePreview($total) ?>">
+
+      </td>
+    </tr>
+    <tr id="subtotalTr">
+      <td colspan="5" class="text-right">Total <?= $tdslable ?></td>
+      <td colspan="2" class="text-right" id="total_tds_c">
+        <input type="number" step="any" style="float: right;" id="total_tds" class="form-control text-right inputAmountClass" name="total_tds" value="<?= inputValue($grninv['data']['grnTotalTds']) ?>">
+
+      </td>
+    </tr>
+    <tr id="subtotalTr">
+      <td colspan="5" class="text-right">Total <?= $tcslable ?></td>
+      <td colspan="2" class="text-right" id="total_tcs_c">
+        <input t type="number" step="any" id="total_tcs" style="float: right;" class="form-control inputAmountClass text-right" name="total_tcs" value="<?= inputValue($grninv['data']['grnTotalTcs']) ?>">
+
+      </td>
+    </tr>
+    <tr id="subtotalTr">
+      <?php
+      $selc = 0;
+      $rounva = 0;
+      if ($grninv['data']['roundoff'] > 0) {
+        $selc = 1;
+        $rounva = $grninv['data']['roundoff'];
+      } else {
+        $selc = 0;
+        $rounva = $grninv['data']['roundoff'] * -1;
+      } ?>
+      <td colspan="5" class="text-right">Round Off</td>
+      <td colspan="2" class="text-right" id="total_round_off_c">
+        <div class="adjust-currency d-flex gap-2 " style="float: right;">
+          <select id="round_sign" name="round_sign" class="form-control text-center">
+            <option value="+" <?php if ($selc == 1) {
+                                echo "selected";
+                              } ?>>+</option>
+            <option value="-" <?php if ($selc == 0) {
+                                echo "selected";
+                              } ?>>-</option>
+          </select>
+          <input type="number" name="round_value" step="any" id="round_value" value="<?= inputValue($rounva) ?>" class="form-control inputAmountClass text-right">
+        </div>
+
+      </td>
+    </tr>
+
+
+
+    <?php
+    $tds = $grninv['data']['grnTotalTds'];
+    $tcs = $grninv['data']['grnTotalTcs'];
+    $round = $grninv['data']['roundoff'];
+    $total = $total - $tds + $tcs + ($round); ?>
+    <tr>
+      <td colspan="5" class="text-right font-bold"> Total</td>
+      <td colspan="2" class="text-right font-bold" id="grandTotal"> <?= decimalValuePreview($total) ?>
+      </td>
+    </tr>
+
+
+    <tr>
+      <td><input type="hidden" id="grandTotalHidden" name="grandTotal" value="<?= decimalValuePreview($total) ?>"></td>
+      <td> <input type="hidden" name="discountAmount" id="discountAmountHidden" class="form-control" value="0"></td>
+      <td><input type="hidden" class="form-control" name="subTotal" id="subTotalHidden" value="<?= decimalValuePreview($total) ?>"></td>
+    </tr>
+
+
+
+
+<?php
+  }
+}
+
+
+?>

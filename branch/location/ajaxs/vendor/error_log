@@ -1,0 +1,7 @@
+[12-Nov-2022 03:58:48 UTC] PHP Warning:  Illegal string offset 'returns' in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/vendor/ajax-gst-review.php on line 33
+[12-Nov-2022 03:59:35 UTC] PHP Warning:  Illegal string offset 'data' in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/vendor/ajax-gst-review.php on line 33
+[12-Nov-2022 03:59:35 UTC] PHP Warning:  Illegal string offset 'returns' in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/vendor/ajax-gst-review.php on line 33
+[12-Nov-2022 03:59:49 UTC] PHP Warning:  Illegal string offset 'data' in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/vendor/ajax-gst-review.php on line 33
+[12-Nov-2022 07:25:58 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/vendor/ajax-gst-review.php on line 65
+[12-Nov-2022 07:26:00 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/vendor/ajax-gst-review.php on line 65
+[12-Nov-2022 07:26:01 UTC] PHP Parse error:  syntax error, unexpected ';', expecting ')' in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/vendor/ajax-gst-review.php on line 65

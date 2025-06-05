@@ -1,0 +1,8 @@
+[24-Nov-2022 12:17:47 Asia/Kolkata] PHP Notice:  Undefined index: logedCustomerAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/customer/func-customer-administrator.php on line 38
+[24-Nov-2022 12:17:47 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/customer/func-customer-administrator.php on line 38
+[24-Nov-2022 12:17:47 Asia/Kolkata] PHP Notice:  Undefined index: logedCustomerAdminInfo in /home3/vitwosvz/alpha.vitwo.in/customer/common/sidebar.php on line 61
+[24-Nov-2022 12:17:47 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/customer/common/sidebar.php on line 61
+[07-Dec-2022 18:04:50 Asia/Kolkata] PHP Notice:  Undefined index: logedCustomerAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/customer/func-customer-administrator.php on line 38
+[07-Dec-2022 18:04:50 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/customer/func-customer-administrator.php on line 38
+[07-Dec-2022 18:04:50 Asia/Kolkata] PHP Notice:  Undefined index: logedCustomerAdminInfo in /home3/vitwosvz/alpha.vitwo.in/customer/common/sidebar.php on line 61
+[07-Dec-2022 18:04:50 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/customer/common/sidebar.php on line 61

@@ -1,0 +1,12 @@
+{
+    "type": "othersInfo",
+    "fields": [
+        {
+            "input": "<input type='text'>",
+            "dropdown": "<select> <option >Select One</option> </select>",
+            "date": "<input type='date'>",
+            "textarea": "<textarea ></textarea>"
+            
+        }
+    ]
+}

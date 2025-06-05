@@ -1,0 +1,7 @@
+DATE,TRANSACTION TYPE,DOCUMENT NUMBER,TRANSACTION DESCRIPTION,OPENING,DEBIT,CREDIT
+"2023-08-30	","grniv	",12345,"grniv	",,0,420
+"2023-08-17	","grniv	",12346,"grniv	",,0,210
+"2023-08-08	","grniv	",12347,"grniv	",,94.4,0
+"2023-08-08	","Payment	",12348,"Payment	",,0,99
+"2023-08-03	","grniv	",12349,"grniv	",,0,303.8
+"2023-08-30	","grniv	",12350,"grniv	",,100,0

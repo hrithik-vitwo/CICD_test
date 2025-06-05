@@ -1,0 +1,61 @@
+[31-Oct-2022 17:01:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function swalToast() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php:23
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 23
+[31-Oct-2022 17:02:13 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function swalToast() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php:23
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 23
+[31-Oct-2022 17:03:54 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function swalToast() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php:23
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 23
+[31-Oct-2022 17:06:20 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function swalToast() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php:23
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 23
+[31-Oct-2022 17:09:33 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function swalToast() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php:23
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 23
+[31-Oct-2022 22:42:05 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function swalToast() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php:25
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 25
+[31-Oct-2022 22:44:55 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined function swalToast() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php:25
+Stack trace:
+#0 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 25
+[31-Oct-2022 22:45:42 Asia/Kolkata] PHP Warning:  curl_exec(): supplied resource is not a valid cURL handle resource in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 37
+[31-Oct-2022 22:45:42 Asia/Kolkata] PHP Warning:  curl_close(): supplied resource is not a valid cURL handle resource in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 44
+[31-Oct-2022 22:47:50 Asia/Kolkata] PHP Warning:  curl_exec(): supplied resource is not a valid cURL handle resource in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 37
+[31-Oct-2022 22:47:50 Asia/Kolkata] PHP Warning:  curl_close(): supplied resource is not a valid cURL handle resource in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 44
+[31-Oct-2022 22:51:36 Asia/Kolkata] PHP Warning:  curl_exec(): supplied resource is not a valid cURL handle resource in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 37
+[31-Oct-2022 22:51:36 Asia/Kolkata] PHP Warning:  curl_close(): supplied resource is not a valid cURL handle resource in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 44
+[31-Oct-2022 22:51:50 Asia/Kolkata] PHP Warning:  curl_exec(): supplied resource is not a valid cURL handle resource in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 37
+[31-Oct-2022 22:51:50 Asia/Kolkata] PHP Warning:  curl_close(): supplied resource is not a valid cURL handle resource in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 44
+[31-Oct-2022 22:52:09 Asia/Kolkata] PHP Warning:  curl_exec(): supplied resource is not a valid cURL handle resource in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 37
+[31-Oct-2022 22:52:09 Asia/Kolkata] PHP Warning:  curl_close(): supplied resource is not a valid cURL handle resource in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax_cancelled_cheque_upload.php on line 44
+[11-Nov-2022 16:44:37 Asia/Kolkata] PHP Notice:  Undefined index: logedBranchAdmi nInfo in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[11-Nov-2022 16:44:37 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[11-Nov-2022 21:21:22 Asia/Kolkata] PHP Notice:  Undefined variable: company_id in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-vendor-verify-gstin.php on line 77
+[11-Nov-2022 21:21:22 Asia/Kolkata] PHP Notice:  Undefined variable: branch_id in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-vendor-verify-gstin.php on line 78
+[11-Nov-2022 21:21:22 Asia/Kolkata] PHP Notice:  Undefined variable: location_id in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-vendor-verify-gstin.php on line 79
+[12-Nov-2022 12:49:26 Asia/Kolkata] PHP Notice:  Undefined index: logedBranchAdmi nInfo in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[12-Nov-2022 12:49:26 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[12-Nov-2022 13:06:37 Asia/Kolkata] PHP Notice:  Undefined index: logedBranchAdmi nInfo in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[12-Nov-2022 13:06:37 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[14-Nov-2022 02:54:16 Asia/Kolkata] PHP Notice:  Undefined index: logedBranchAdmi nInfo in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[14-Nov-2022 02:54:16 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[28-Nov-2022 14:18:27 Asia/Kolkata] PHP Notice:  Undefined index: logedBranchAdmi nInfo in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[28-Nov-2022 14:18:27 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[28-Nov-2022 14:20:00 Asia/Kolkata] PHP Notice:  Undefined index: logedBranchAdmi nInfo in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[28-Nov-2022 14:20:00 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[28-Nov-2022 14:22:27 Asia/Kolkata] PHP Notice:  Undefined index: logedBranchAdmi nInfo in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[28-Nov-2022 14:22:27 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[28-Nov-2022 14:28:14 Asia/Kolkata] PHP Notice:  Undefined index: logedBranchAdmi nInfo in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[28-Nov-2022 14:28:14 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[01-Dec-2022 11:49:36 Asia/Kolkata] PHP Notice:  Undefined index: logedBranchAdmi nInfo in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[01-Dec-2022 11:49:36 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[01-Dec-2022 11:50:12 Asia/Kolkata] PHP Notice:  Undefined index: logedBranchAdmi nInfo in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76
+[01-Dec-2022 11:50:12 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/ajax-customer-verify-gstin.php on line 76

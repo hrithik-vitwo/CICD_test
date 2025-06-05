@@ -1,0 +1,149 @@
+$primary-color: #003060;
+$color-shade-1: #375489;
+$color-shade-2: #627BB3;
+$color-shade-3: #8DA5E0;
+$color-shade-4: #e6edf7;
+$color-shade-5: #BAD0FF;
+$linkColor: #606060;
+$fontSize: 12px;
+
+a {
+    color: $linkColor;
+}
+.bgPrimary{
+    background: $primary-color !important; 
+}
+.bgColor4{
+    background: $color-shade-4 !important;
+}
+
+.sidebarColor {
+    background: linear-gradient(180deg, #003060, #375489) repeat-x !important;
+    color: #fff;;
+}
+
+.bodyColor {
+    background-color: $color-shade-4;
+}
+
+.navbarStyle {
+    background-color: $color-shade-4;
+}
+
+.cardHeader {
+    background: #fff !important;
+    color: $linkColor;
+    border: none;
+    padding: 0px !important;
+}
+.cardHeader h4 a{
+    background:$color-shade-3;
+    padding: 10px;
+    width: 30% !important;
+    color: white !important;
+}
+.cardHeader h4 a::before{
+    content: "";
+    width: 0;
+	height: 0;
+	border-top: 40px solid $color-shade-3;
+	border-right: 40px solid transparent;
+    position: absolute;
+    left: 30%;
+    top:0;
+}
+.footerStyle {
+    background-color: $color-shade-4;
+}
+
+.gradientBtn {
+    background: linear-gradient(180deg, #003060, #375489) repeat-x !important;
+    color: #fff;
+}
+.borderNone{
+    border: none;
+}
+.borderColor{
+    border-color:#ccc;
+    margin-top: 7px;
+}
+.card-outline{
+    border-top: 3px solid $primary-color !important;
+}
+.sidebar-search-results .list-group>.list-group-item:first-child{
+    background-color: $primary-color;
+}
+.form-control{
+    font-size: $fontSize;
+}
+.fontSize{
+    font-size:$fontSize
+}
+
+.select2-dropdown{
+    z-index: 1 !important;
+}
+// **************** material input ***********//
+.input-group {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.input-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.input-group input {
+    border: none;
+    border-bottom: solid 1px #ccc;
+    width: 100%;
+    padding: 10px 0;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    font-size: 12px !important;
+    height: 44px;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #000;
+}
+
+.input-group label {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    color: #aaa;
+    font-weight: 400;
+    transition: transform 0.2s ease, color 0.2s ease;
+    font-size: 12px;
+}
+
+.input-group label:hover {
+    cursor: text;
+}
+
+.input-group input:focus + label {
+    color: #000;
+}
+
+.input-group input:focus + label,
+.input-group input.active + label {
+    transform: translateY(-30px);
+}
+  label:not(.form-check-label):not(.custom-file-label) {
+    font-weight: 400;
+}
+@media only screen and (max-width: 767px) {
+    .cardHeader h4 a::before{
+        width: 40% !important;
+    }
+    .cardHeader h4 a{
+        width: 40% !important;
+    }
+}
+
+
+
+

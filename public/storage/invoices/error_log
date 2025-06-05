@@ -1,0 +1,2 @@
+[09-Nov-2022 07:35:34 UTC] PHP Warning:  scandir(): Directory name cannot be empty in /home3/vitwosvz/alpha.vitwo.in/public/storage/invoices/index.php on line 4
+[09-Nov-2022 07:35:37 UTC] PHP Warning:  scandir(): Directory name cannot be empty in /home3/vitwosvz/alpha.vitwo.in/public/storage/invoices/index.php on line 4

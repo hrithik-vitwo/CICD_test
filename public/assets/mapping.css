@@ -1,0 +1,64 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+.card.mapping-section .card-body h2 {
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 0;
+    border: 0.5px solid #b4b4b4;
+    padding: 14px;
+    border-radius: 10px 10px 0px 0px;
+}
+table.table-mapping span.select2.select2-container.select2-container--default {
+    width: 100% !important;
+}
+
+table.table-mapping .select2-container--default .select2-selection--single {
+    border: 1px solid rgb(180, 180, 180) !important;
+    border-radius: 5px;
+    background: none !important;
+}
+
+table.table-mapping .select2-container--default .select2-selection--single .select2-selection__rendered {
+    font-size: 15px;
+    line-height: 1.5rem;
+    margin-top: 0;
+}
+
+table.table-mapping .select2-container .select2-selection--single {
+    height: auto !important;
+}
+
+table.table-mapping tr th,
+table.table-mapping tr td {
+    border: 1px solid rgb(180, 180, 180);
+    border-collapse: collapse;
+    padding: 5px 10px;
+}
+table.table-mapping tr th{
+    background: #003060;
+    color: #fff;
+    padding: 10px;
+}
+
+select.form-control.select2.mapping-hidden-btn.select2-hidden-accessible .btn-row {
+    display: none;
+}
+
+span.select2-container.select2-container--default.select2-container--open .btn-row {
+    display: none;
+}
+table.table-mapping .select2-container--default .select2-selection--single .select2-selection__arrow{
+    height: 10px;
+}
+.btn-update {
+    display: flex;
+    justify-content: end;
+    margin-top: 1.5em;
+}
+.btn-update button{
+    border-color: #003060;
+}
+.btn-update button:hover{
+    border-color: #003060;
+}

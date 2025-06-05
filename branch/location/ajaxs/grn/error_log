@@ -1,0 +1,27 @@
+[01-Nov-2022 14:17:45 Asia/Kolkata] PHP Notice:  Undefined variable: vendorCode in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process.php on line 468
+[01-Nov-2022 14:21:59 Asia/Kolkata] PHP Notice:  Undefined variable: vendorCode in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process.php on line 468
+[12-Nov-2022 17:00:04 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method BillController::readVendorBillsNew() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php:61
+Stack trace:
+#0 /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php(98): processInvoice(Array)
+#1 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 61
+[12-Nov-2022 17:01:53 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method BillController::readVendorBillsNew() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php:61
+Stack trace:
+#0 /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php(98): processInvoice(Array)
+#1 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 61
+[12-Nov-2022 17:06:56 Asia/Kolkata] PHP Fatal error:  Uncaught Error: Call to undefined method BillController::readVendorBillsNew() in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php:61
+Stack trace:
+#0 /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php(98): processInvoice(Array)
+#1 {main}
+  thrown in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 61
+[28-Nov-2022 16:23:26 Asia/Kolkata] PHP Notice:  Undefined variable: vendorCode in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 599
+[28-Nov-2022 16:23:26 Asia/Kolkata] PHP Notice:  Undefined variable: invoiceFile in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 801
+[28-Nov-2022 16:24:00 Asia/Kolkata] PHP Notice:  Undefined variable: vendorCode in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 599
+[28-Nov-2022 16:24:00 Asia/Kolkata] PHP Notice:  Undefined variable: invoiceFile in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 801
+[28-Nov-2022 16:30:23 Asia/Kolkata] PHP Notice:  Undefined variable: vendorCode in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 599
+[28-Nov-2022 16:30:23 Asia/Kolkata] PHP Notice:  Undefined variable: invoiceFile in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 801
+[28-Nov-2022 16:31:18 Asia/Kolkata] PHP Notice:  Undefined variable: vendorCode in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 599
+[28-Nov-2022 16:31:18 Asia/Kolkata] PHP Notice:  Undefined variable: invoiceFile in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 801
+[28-Nov-2022 16:32:18 Asia/Kolkata] PHP Notice:  Undefined variable: vendorCode in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 599
+[28-Nov-2022 16:32:18 Asia/Kolkata] PHP Notice:  Undefined variable: invoiceFile in /home3/vitwosvz/alpha.vitwo.in/branch/location/ajaxs/grn/ajax-grn-invoice-process-new.php on line 801

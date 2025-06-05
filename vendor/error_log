@@ -1,0 +1,52 @@
+[03-Nov-2022 13:52:33 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[03-Nov-2022 13:52:33 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[03-Nov-2022 13:52:33 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[03-Nov-2022 13:52:33 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[04-Nov-2022 15:52:57 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[04-Nov-2022 15:52:57 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[04-Nov-2022 15:52:57 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[04-Nov-2022 15:52:57 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[07-Nov-2022 13:04:54 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[07-Nov-2022 13:04:54 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[07-Nov-2022 13:04:54 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[07-Nov-2022 13:04:54 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[11-Nov-2022 13:56:09 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[11-Nov-2022 13:56:09 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[11-Nov-2022 13:56:09 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[11-Nov-2022 13:56:09 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[11-Nov-2022 16:48:58 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[11-Nov-2022 16:48:58 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[11-Nov-2022 16:48:58 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[11-Nov-2022 16:48:58 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[11-Nov-2022 21:31:04 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[11-Nov-2022 21:31:04 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[11-Nov-2022 21:31:04 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[11-Nov-2022 21:31:04 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[11-Nov-2022 21:31:59 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[11-Nov-2022 21:31:59 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[11-Nov-2022 21:31:59 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[11-Nov-2022 21:31:59 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[12-Nov-2022 04:24:58 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[12-Nov-2022 04:24:58 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[12-Nov-2022 04:24:58 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[12-Nov-2022 04:24:58 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[12-Nov-2022 12:18:17 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[12-Nov-2022 12:18:17 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[12-Nov-2022 12:18:17 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[12-Nov-2022 12:18:17 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[13-Nov-2022 21:08:44 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[13-Nov-2022 21:08:44 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[13-Nov-2022 21:08:44 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[13-Nov-2022 21:08:44 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[13-Nov-2022 21:09:05 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[13-Nov-2022 21:09:05 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[13-Nov-2022 21:09:05 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[13-Nov-2022 21:09:05 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[01-Dec-2022 17:23:57 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[01-Dec-2022 17:23:57 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[01-Dec-2022 17:23:57 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[01-Dec-2022 17:23:57 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[07-Dec-2022 17:59:06 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[07-Dec-2022 17:59:06 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/app/v1/functions/vendor/func-vendor-administrator.php on line 38
+[07-Dec-2022 17:59:06 Asia/Kolkata] PHP Notice:  Undefined index: logedVendorAdminInfo in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
+[07-Dec-2022 17:59:06 Asia/Kolkata] PHP Notice:  Trying to access array offset on value of type null in /home3/vitwosvz/alpha.vitwo.in/vendor/common/sidebar.php on line 61
