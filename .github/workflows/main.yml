@@ -11,7 +11,23 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Upload to EC2
+    - name: Upload to EC2 (Backup q1 and create tar)
+      uses: appleboy/ssh-action@v1.0.0
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ec2-user
+        key: ${{ secrets.EC2_SSH_KEY }}
+        script: |
+          # Backup current q1 folder to tar
+          tar -czf /home/ec2-user/q1-backup-$(date +'%Y-%m-%d_%H-%M-%S').tar.gz -C /var/www/html q1
+
+          # Move the backup to S3 (make sure you have AWS CLI installed and configured)
+          aws s3 cp /home/ec2-user/q1-backup-$(date +'%Y-%m-%d_%H-%M-%S').tar.gz s3://vitwodeploybackup/q1-backups/
+
+          # Stash the current q1 folder (create a backup zip)
+          mv /var/www/html/q1 /var/www/html/q1-stash
+
+    - name: Upload new code to EC2
       uses: appleboy/scp-action@v0.1.4
       with:
         host: ${{ secrets.EC2_HOST }}
@@ -27,5 +43,12 @@ jobs:
         username: ec2-user
         key: ${{ secrets.EC2_SSH_KEY }}
         script: |
+          # Move new code to the target folder
           sudo cp -r /home/ec2-user/app/* /var/www/html/q1
+
+          # Restart Apache server
           sudo systemctl restart apache2 || sudo service httpd restart
+
+          # Optionally, clean up the stash folder if everything is fine
+          sudo rm -rf /var/www/html/q1-stash
+
